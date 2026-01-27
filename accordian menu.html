@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="accordian menu.css">
 
     <style>
-        @media screen and (max-width:1924px) {
+        /* Removed problematic query */ @media screen and (max-width:2500px) {
 
         
 
@@ -145,7 +145,27 @@
 
 
         }
-    </style>
+    
+    /* Global Responsiveness & Centering */
+    body {
+        max-width: 1200px;
+        margin: 0 auto !important;
+        padding: 20px !important;
+        line-height: 1.6;
+        float: none !important;
+    }
+    img, video, iframe {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+    table, form, fieldset, details {
+        margin: 20px auto !important;
+        float: none !important;
+    }
+    
+</style>
 
     <title>ACCORDIAN MENU</title>
     <link rel="icon" type="image/svg+xml" href="Images/logo.svg">
