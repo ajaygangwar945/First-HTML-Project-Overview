@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+
+        /*Header*/
+
+        .header {
+            background: #099268;
+        }
+
+        .inner-width {
+            margin: auto;
+            padding: 0 25px;
+        }
+
+        .header .top {
+            padding: 35px 0;
+        }
+
+        .top .fa-bars {
+            position: absolute;
+            top: 25px;
+            font-size: 20px;
+            color: #8acfba;
+        }
+
+        .top .menu {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            font-size: 20px;
+            color: #8acfba;
+        }
+
+        .navbar-menu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #212529;
+            overflow-x: hidden;
+            transition: 0.2s;
+        }
+
+        .navbar-menu a {
+            padding: 15px;
+            color: #fff;
+            text-decoration: none;
+            outline: none;
+            display: block;
+            transition: 0.2s
+        }
+
+        .navbar-menu i {
+            padding-right: 20px;
+            font-size: 20px;
+            color: #495057;
+        }
+
+        .navbar-menu .fa-dragon {
+            font-size: 17px;
+            color: #495057;
+        }
+
+        .navbar-menu .fa-desktop {
+            font-size: 17.5px;
+            color: #495057;
+        }
+
+        .navbar-menu .fa-bicycle {
+            font-size: 16px;
+            color: #495057;
+        }
+
+        .navbar-menu .fa-flag {
+            font-size: 19px;
+            color: #495057;
+        }
+
+        .navbar-menu .fa-file-code {
+            padding-left: 3px;
+            font-size: 20px;
+            color: #495057;
+        }
+
+        .navbar-menu .fa-html5 {
+            padding-left: 3px;
+            font-size: 20px;
+            color: #495057;
+        }
+
+        .navbar-menu .fa-sign-in-alt {
+            font-size: 15px;
+            color: #495057;
+        }
+
+        .navbar-menu a:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        /*Six*/
+
+        .six {
+            background: #183153;
+        }
+
+        .six .number {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0;
+        }
+
+        .number .se {
+            outline: none;
+            text-decoration: none;
+            color: #ffd43b;
+            background: none;
+        }
+
+        .number .sev {
+            margin: 10px 0;
+            margin-right: 15px;
+            padding: 5px 10px;
+            font-size: 30px;
+            font-weight: 900;
+            border-radius: 4px;
+            background: #001c40;
+            color: #ffd43b;
+        }
+
+        .number .fo {
+            outline: none;
+            text-decoration: none;
+            color: #f3f5f6;
+            background: none;
+        }
+
+        .number .more {
+            line-height: 23px;
+            color: #B9BDCA;
+        }
+
+        .number .b {
+            color: #f3f5f6;
+            border-bottom: 1px solid #52657e;
+        }
+
+        /*Awesome*/
+
+        .awesome {
+            padding: 80px 0;
+            text-align: center;
+            background: #009469;
+        }
+
+        .awesome .fa-font-awesome {
+            margin: 0;
+            padding: 0;
+            line-height: 39px;
+            font-size: 60px;
+            color: #087F5B;
+            background: #fff;
+        }
+
+        .awesome .title {
+            padding: 15px 0;
+            font-size: 30px;
+            color: #fff;
+        }
+
+        .awesome .tool p {
+            padding: 20px 20px 10px 20px;
+            line-height: 25px;
+            font-size: 18px;
+            color: #f3f7f7;
+        }
+
+        .awesome .start {
+            margin: 20px 10px;
+            padding: 18px 15px;
+            font-size: 25px;
+            border: 1px solid #08505D;
+            border-bottom: 4px solid #08505D;
+            border-radius: 6px;
+            color: #fff;
+            background: #0B7285;
+        }
+
+        .awesome a {
+            outline: none;
+            text-decoration: none;
+            background: none;
+            color: #fff;
+        }
+
+        .fa-meteor {
+            font-size: 30px;
+            margin-right: 10px;
+        }
+
+        .awesome .pro {
+            margin: 0 10px;
+            padding: 18px 15px;
+            font-size: 25px;
+            border: 1px solid #5D9312;
+            border-bottom: 4px solid #5D9312;
+            border-radius: 6px;
+            color: #fff;
+            background: #74B816;
+        }
+
+        .fa-rocket {
+            font-size: 30px;
+            margin-right: 10px;
+        }
+
+        .version {
+            padding-top: 20px;
+            color: #DFF1EC;
+        }
+
+        .version .span {
+            padding: 10px;
+            display: block;
+            color: #DFF1EC;
+        }
+
+        .version .se {
+            color: #46C49E;
+        }
+
+        /*Github*/
+
+        .github {
+            font-size: 15px;
+            text-align: center;
+            background: #fff;
+        }
+
+        .inside p {
+            padding: 15px 10px;
+            line-height: 20px;
+            color: #495057;
+        }
+
+        .github .star {
+            font-size: 10px;
+            font-weight: 700;
+            margin: 0 4px 5px 4px;
+            padding: 2px 4px;
+            color: #333333;
+            background: #EFEFEF;
+            border: 2px solid #D5D5D5;
+            border-radius: 3px;
+        }
+
+        .fa-github {
+            font-size: 10px;
+            font-weight: 700;
+            margin: 0 4px 5px 4px;
+            padding: 3.5px 4px;
+            color: #333333;
+            background: #EFEFEF;
+            border: 2px solid #D5D5D5;
+            border-radius: 3px;
+        }
+
+        .fork {
+            padding-bottom: 15px;
+        }
+
+        /*Covid*/
+
+        .big {
+            padding: 40px 15px;
+            background: #F8F9FA;
+        }
+
+        .virus {
+            padding: 10px;
+            text-align: center;
+            border-radius: 4px 4px 0 0;
+            background: #12B886;
+        }
+
+        .virus i {
+            padding: 10px;
+            color: #C3FAE8;
+        }
+
+        .some {
+            font-size: 28px;
+        }
+
+        .all {
+            font-size: 24px;
+        }
+
+        .spread {
+            padding: 20px;
+            text-align: left;
+            border-radius: 0 0 4px 4px;
+            color: #495057;
+            background: #fff;
+        }
+
+        .space {
+            margin: 40px 0;
+        }
+
+        .ship {
+            padding: 11px;
+            text-align: center;
+            border-radius: 4px 4px 0 0;
+            background: #74B816;
+        }
+
+        .ship i {
+            padding: 10px;
+            color: #E8FAC8;
+            font-size: 28px;
+        }
+
+        .alien {
+            padding: 20px;
+            text-align: left;
+            border-radius: 0 0 4px 4px;
+            color: #495057;
+            background: #fff;
+        }
+
+        /*Duotone*/
+
+        .duotone {
+            padding: 40px 15px;
+            background: #343A40;
+        }
+
+        .duotone h1 {
+            font-weight: 600;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .duotone p {
+            line-height: 24px;
+            padding: 10px 0;
+            color: #E5E8EB;
+        }
+
+        /*Pixel*/
+
+        .pixel {
+            padding: 40px 15px;
+        }
+
+        .pixel h1 {
+            font-size: 20px;
+            color: #495057;
+            font-weight: 600;
+        }
+
+        .pixel p {
+            padding: 20px 0;
+            line-height: 25px;
+            font-size: 15px;
+            font-weight: 300;
+            color: #52585F;
+        }
+
+        .infinite h1 {
+            padding: 40px 0 0 0;
+        }
+
+        .play {
+            padding: 40px 15px;
+            background: #F8F9FA;
+        }
+
+        .box h2 {
+            color: #495057;
+            font-size: 20px;
+            font-weight: 550;
+        }
+
+        .box p {
+            padding: 20px 0;
+            line-height: 25px;
+            font-size: 15px;
+            color: #676D73;
+        }
+
+        /*Desktop*/
+
+        .desktop {
+            padding: 40px 15px;
+            background: #fff;
+            text-align: left;
+        }
+
+        .access i {
+            padding: 0 0 10px 0;
+            font-size: 25px;
+            color: #20C897;
+        }
+
+        .access h6 {
+            padding: 0 0 5px 0;
+            color: #4A5158;
+            font-size: 15px;
+        }
+
+        .access p {
+            line-height: 20px;
+            font-size: 13px;
+            color: #535960;
+        }
+
+        .friendly i {
+            padding: 40px 0 10px 0;
+            font-size: 25px;
+            color: #339AF0;
+        }
+
+        .friendly h6 {
+            padding: 0 0 5px 0;
+            color: #4A5158;
+            font-size: 15px;
+        }
+
+        .friendly p {
+            line-height: 20px;
+            font-size: 13px;
+            color: #535960;
+        }
+
+        .manage i {
+            padding: 40px 0 10px 0;
+            font-size: 25px;
+            color: #20C897;
+        }
+
+        .manage h6 {
+            padding: 0 0 5px 0;
+            color: #4A5158;
+            font-size: 15px;
+        }
+
+        .manage p {
+            line-height: 20px;
+            font-size: 13px;
+            color: #535960;
+        }
+
+        .tried i {
+            padding: 40px 0 10px 0;
+            font-size: 25px;
+            color: #339AF0;
+        }
+
+        .tried h6 {
+            padding: 0 0 5px 0;
+            color: #4A5158;
+            font-size: 15px;
+        }
+
+        .tried p {
+            line-height: 20px;
+            font-size: 13px;
+            color: #535960;
+        }
+
+        /*Footer*/
+
+        footer {
+            padding: 0 0 40px 0;
+            background-color: #343A40;
+        }
+
+        h6 {
+            padding: 40px 0 0 0;
+            text-transform: uppercase;
+            color: #848C95;
+        }
+
+        footer p {
+            padding: 9px 0 4px 0;
+            color: #DADFE3;
+        }
+
+        .made {
+            padding: 40px 0;
+            background: #212529;
+            text-align: center;
+        }
+
+        .icon {
+            color: #747B82;
+            font-size: 11px;
+            padding: 0 10px 15px 0;
+        }
+
+        .made p {
+            color: #747B82;
+            text-align: center;
+            line-height: 18px;
+            font-size: 10px;
+        }
+
+        .terms {
+            font-size: 11px;
+            padding: 0 10px;
+            color: #CDD3D9;
+        }
+
+        .plus {
+            font-size: 20px;
+            vertical-align: -2px;
+            font-weight: 900;
+            color: #858D95;
+        }
+    </style>
+
+    <title>FONT AWESOME</title>
+    <link rel="icon" type="image/svg+xml" href="Images/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+</head>
+
+<body>
+
+    <!--Header-->
+
+    <header class="header" id="home">
+        <div class="inner-width">
+
+            <div class="top">
+
+                <i class="fas fa-bars" onclick="openNav()"></i>
+
+                <div id="mySidenav" class="navbar-menu">
+
+                    <a href="#home" class="closebtn" onclick="closeNav()">
+                        <i class="fas fa-home"></i>
+
+                        Home
+
+                    </a>
+
+                    <a href="#start" class="closebtn" onclick="closeNav()">
+                        <i class="fas fa-dragon"></i>
+
+                        Start
+
+                    </a>
+
+
+                    <a href="#icons" class="closebtn" onclick="closeNav()">
+                        <i class="fas fa-icons"></i>
+
+                        Icons
+
+                    </a>
+
+                    <a href="#desktop" class="closebtn" onclick="closeNav()">
+                        <i class="fas fa-desktop"></i>
+
+                        Desktop
+
+                    </a>
+
+                    <a href="free.html" class="closebtn" onclick="closeNav()">
+                        <i class="fas fa-bicycle"></i>
+
+                        Plans
+
+                    </a>
+
+                    <a href="font awesome 6.html" class="closebtn" onclick="closeNav()">
+                        <i class="fas fa-flag"></i>
+
+                        Font Awesome 6
+
+                    </a>
+
+                    <a href="mobile website.html" class="closebtn" onclick="closeNav()">
+                        <i class="fas fa-file-code"></i>
+
+                        Mobile Website
+
+                    </a>
+
+                    <a href="home.html" class="closebtn" onclick="closeNav()">
+                        <i class="fab fa-html5"></i>
+
+                        Html
+
+                    </a>
+
+                    <a href="sign in.html" class="closebtn" onclick="closeNav()">
+                        <i class="fas fa-sign-in-alt"></i>
+
+                        Sign In
+
+                    </a>
+
+                </div>
+
+                <a href="sign in.html"><i class="menu fas fa-sign-in-alt" aria-label="Sign in" title="Sign in"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!--Six-->
+
+    <section class="six">
+        <div class="inner-width">
+
+            <div class="number">
+
+                <span class="sev"> <a href="font awesome 6.html" class="se">
+                        6</a></span>
+
+                <span class="more">
+
+                    <span class="b"> <a href="font awesome 6.html" class="fo">
+                            Font Awesome 6</a></span> is coming with
+                    more icons, styles, services, and awesome!
+                </span>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Awesome-->
+
+    <section class="awesome" id="start">
+        <div class="inner-width">
+
+            <div class="center">
+
+                <i class="fab fa-font-awesome"></i>
+
+            </div>
+
+            <h1 class="title">Font Awesome</h1>
+
+            <div class="tool">
+
+                <p>Get vector icons and social logos on your website with Font Awesome, the web's most popular icon set
+                    and toolkit.
+                </p>
+
+            </div>
+
+            <div class="start">
+
+                <i class="fas fa-meteor"></i>
+
+                <span class="free"><a href="free.html">Start for
+                        Free</a></span>
+
+            </div>
+
+            <div class="pro">
+
+                <i class="fas fa-rocket"></i>
+
+                <span class="with"> <a href="free.html"> Get More with
+                        Pro</a></span>
+
+            </div>
+
+            <div class="version">
+
+                <ins class="se">
+                    <span class="span">Version 5.14.0</span>
+                </ins>
+
+                <ins class="se"><span class="span">1,598 Free Icons</span></ins>
+
+                <ins class="se"><span class="span">7,848 Pro Icons</span></ins>
+
+                <ins class="se"><span class="span">Download
+                    </span></ins>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Github-->
+
+    <section class="github">
+        <div class="inner-width">
+
+            <div class="inside">
+
+                <p>Font Awesome is one of the top open source projects on GitHub.</p>
+
+            </div>
+
+            <div class="fork">
+
+                <span class="fab fa-github"> Star</span>
+
+                <span class="star">63,667</span>
+
+                <span class="fab fa-github"> Fork</span>
+
+                <span class="star">10,948</span>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Covid-->
+
+    <section class="big" id="icons">
+        <div class="inner-width">
+
+            <section class="covid">
+
+                <div class="soap">
+
+                    <div class="virus">
+
+                        <span class="some">
+
+                            <i class="fas fa-virus"></i>
+
+                            <i class="fas fa-shield-virus"></i>
+
+                            <i class="fas fa-pump-medical"></i>
+
+                            <i class="fas fa-users-slash"></i>
+
+                            <i class="fas fa-soap"></i>
+
+                            <i class="fas fa-stopwatch-20"></i>
+
+                            <i class="fas fa-hand-sparkles"></i>
+
+                            <i class="fas fa-head-side-mask"></i>
+
+                        </span>
+
+                        <span class="all">
+
+                            <i class="fas fa-head-side-cough"></i>
+
+                            <i class="fas fa-lungs-virus"></i>
+
+                            <i class="fas fa-virus-slash"></i>
+
+                            <i class="fas fa-people-arrows"></i>
+
+                            <i class="fas fa-house-user"></i>
+
+                            <i class="fas fa-handshake-slash"></i>
+
+                            <i class="fas fa-temperature-high"></i>
+
+                            <i class="fas fa-laptop-house"></i>
+
+                        </span>
+
+                    </div>
+
+                    <div class="spread">
+                        COVID-19:Help spread awareness and not the virus with these free icons!
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="space">
+
+                <div class="air">
+
+                    <div class="ship">
+
+                        <i class="fas fa-user-astronaut"></i>
+
+                        <i class="fas fa-space-shuttle"></i>
+
+                        <i class="fas fa-satellite"></i>
+
+                        <i class="fas fa-meteor"></i>
+
+                        <i class="fas fa-rocket"></i>
+
+                        <i class="fas fa-satellite-dish"></i>
+
+                        <i class="fas fa-moon"></i>
+
+                        <i class="fas fa-sun"></i>
+
+                        <i class="fas fa-atom"></i>
+
+                        <i class="fas fa-magnet"></i>
+
+                        <i class="fas fa-robot"></i>
+
+                        <i class="fas fa-globe"></i>
+
+                        <i class="fas fa-skull-crossbones"></i>
+
+                        <i class="fas fa-radiation-alt"></i>
+
+                        <i class="fas fa-biohazard"></i>
+
+                        <i class="fas fa-dna"></i>
+                    </div>
+
+                    <div class="alien">
+                        Our new Science Fiction icons are ready to beam up.
+                    </div>
+
+                </div>
+
+        </div>
+
+    </section>
+
+    </div>
+    </section>
+
+    <!--Duotone-->
+
+    <section class="duotone">
+        <div class="inner-width">
+
+            <h1>Introducing Duotone Icons</h1>
+
+            <p>Add another layer to your designs with our new duotone icons,available as part of Font Awesome Pro.These
+                beautiful icons work out-of-the-box by inheriting your project's base color, or customize them however
+                you'd like.</p>
+
+        </div>
+    </section>
+
+    <!--Pixel-->
+
+    <section class="pixel">
+        <div class="inner-width">
+
+            <h1>Professionaly Designed + Pixel + Perfect </h1>
+
+            <p>Each and every symbol is designed from scratch against guidelines and standards forged from years of
+                experience of illustrating and designing icons. The result is a consistent look and feel that spans
+                thousands of icons across three unique styles.
+
+            </p>
+
+            <hr color="#5F656C" size="1px">
+
+            <div class="infinite">
+
+                <h1>Near-Infinite Icons</h1>
+
+                <p>Font Awesome has grown to have over 5,000 icons and continues to add the most popular and needed
+                    icons.Stop hunting down missing icons you need,combining from multiple sets,or finding that
+                    company's official logo in a dirty corner of the internet.</p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Play-->
+
+    <section class="play">
+        <div class="inner-width">
+
+            <div class="box">
+
+                <h2>Play with Our Icons</h2>
+
+                <p>Our icons are easy to use on the web out of the box.And that box includes support styling to help you
+                    size,place,style and even animate any icon.See what you can do with one line of our easy to remember
+                    code.</p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Desktop-->
+
+    <section class="desktop" id="desktop">
+        <div class="inner-width">
+
+            <div class="access">
+
+                <i class="fas fa-phone"></i>
+
+                <h6>Accessibility-Minded</h6>
+                <p>Font Awesome loves screen readers! With our auto-accessibility feature , it's super simple to do the
+                    right thing for your users.</p>
+
+            </div>
+
+            <div class="friendly">
+
+                <i class="fas fa-desktop"></i>
+
+                <h6>Desktop-Friendly</h6>
+                <p>Font Awesome is fantastic to work with on the desktop,especially with all-new ligatures.Try it in
+                    your next design or presentation!</p>
+
+            </div>
+
+            <div class="manage">
+
+                <i class="fas fa-bus"></i>
+
+                <h6>Manage & Use Your Way</h6>
+                <p>Use Font Awesome how you want:via CDN,Download Font Awesome to host yourself, or install the latest
+                    via npm. </p>
+            </div>
+
+            <div class="tried">
+                <i class="fas fa-pen"></i>
+
+                <h6>Tried & Tested</h6>
+
+                <p>We've stress tested them, so that your icons and styling work and display perfectly in all modern
+                    browser.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer class="footer">
+        <div class="inner-width">
+
+            <h6>Project</h6>
+
+            <p>Latest Release</p>
+
+            <p>Updates</p>
+
+            <p>JavaScript API</p>
+
+            <p>GraphQL API</p>
+
+            <p>License</p>
+
+            <p>GitHub Project</p>
+
+            <h6>Icons</h6>
+
+            <p>Gallery</p>
+
+            <p>Cheatsheet</p>
+
+            <p>Leaderboard</p>
+
+            <p>Request an Icon</p>
+
+            <h6>Support</h6>
+
+            <p>Troubleshooting</p>
+
+            <p>Questions</p>
+
+            <p>Report a Blog</p>
+
+            <p>Get Help</p>
+
+            <h6>Company</h6>
+
+            <p>Blog</p>
+
+            <p>Status</p>
+
+            <p>Contact Us</p>
+
+            <p>@fontawesome</p>
+
+        </div>
+    </footer>
+
+    <div class="made">
+        <div class="inner-width">
+
+            <span class="icon far fa-copyright"> Fonticons,Inc.</span>
+
+            <span class="terms">Terms</span>
+
+            <span class="plus">+</span>
+
+            <span class="terms">Privacy</span>
+
+            <p>Made with <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i> in Bentonville, Boston, Joplin,
+                Seattle, Vergennes.</p>
+
+        </div>
+    </div>
+
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+
+
+    <!-- Overview Button -->
+    <style>
+    .overview-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Darker glass for better contrast on light pages */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        color: white !important; /* Force white text */
+        font-family: sans-serif;
+        font-weight: bold;
+        z-index: 9999;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .overview-btn:hover {
+        background: rgba(0, 0, 0, 0.7);
+        transform: translateY(2px); /* Move down slightly since it's at top */
+        box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+        color: white !important;
+    }
+    </style>
+    <a href="index.html" class="overview-btn">🏠 Overview</a>
+
+</body>
+
+</html>

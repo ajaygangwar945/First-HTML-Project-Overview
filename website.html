@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-family: serif;
+            box-sizing: border-box;
+        }
+
+        /*Navbar*/
+
+        .navbar {
+            position: fixed;
+            background-color: #fff;
+            width: 100%;
+            padding: 8px 0;
+            top: 0;
+            z-index: 999;
+            transition: .3s linear;
+        }
+
+        .inner-width {
+            max-width: 1300px;
+            margin: auto;
+            padding: 0 5px;
+        }
+
+        .navbar .inner-width {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 50px;
+            background-size: contain;
+        }
+
+        .menu {
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        .navbar-menu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #fff;
+            overflow-x: hidden;
+            transition: 0.2s;
+            padding: 0px;
+        }
+
+        #abtn a {
+            padding: 25px 40px;
+            font-size: 80px;
+            font-weight: 900;
+        }
+
+        #ahome a {
+            margin-top: 60px;
+        }
+
+        .navbar-menu a {
+            color: #111;
+            text-decoration: none;
+            outline: none;
+            display: block;
+            transition: 0.2s linear;
+        }
+
+        .navbar-menu a:hover,
+        .offcanvas a:focus {
+            color: #48dbfb;
+        }
+
+        .cbtn .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 100px;
+            margin-left: 0px;
+            font-weight: 900;
+        }
+
+
+        /*Home*/
+
+        #home {
+            height: 100vh;
+            min-height: 500px;
+            background: url(Images/Aj.jpeg) no-repeat center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #home .inner-width {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+        }
+
+        #home .content {
+            width: 100%;
+            color: #fff;
+        }
+
+        #home .content h1 {
+            font-size: 60px;
+            margin-bottom: 60px;
+        }
+
+        #home .content h1::after {
+            content: " Ajay";
+            animation: textanim 10s linear infinite;
+        }
+
+        @keyframes textanim {
+            25% {
+                content: " A Developer";
+            }
+
+            50% {
+                content: " A Designer";
+            }
+
+            75% {
+                content: " A Youtuber";
+            }
+        }
+
+        .sm a {
+            color: #fff;
+            font-size: 25px;
+            margin: 0 10px;
+            transition: .2s linear;
+        }
+
+        .sm a:hover {
+            color: #48dbfb;
+        }
+
+        #home .buttons {
+            margin-top: 60px;
+        }
+
+        #home .buttons a {
+            display: inline-block;
+            margin: 15px 30px;
+            color: #48dbfb;
+            font-size: 25px;
+            font-weight: 500;
+            width: 240px;
+            border: 1px solid #48dbfb;
+            padding: 14px 0;
+            border-radius: 6px;
+            transition: .2s linear;
+        }
+
+        #home .buttons a:hover,
+        #home .buttons a:nth-child(2) {
+            background: #48dbfb;
+            color: #fff;
+        }
+
+        /*About*/
+
+        section {
+            padding: 100px 0;
+            background-color: #f1f1f1;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 80px;
+            position: relative;
+            font-size: 28px;
+            padding-bottom: 20px;
+            color: #111;
+        }
+
+        .section-title::before {
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: #111;
+            bottom: 0;
+            left: calc(50% - 40px);
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 10px;
+            background-color: #48dbfb;
+            border: 4px solid #f1f1f1;
+            left: calc(50% - 12px);
+            bottom: -7px;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .about-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: 100px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h3 {
+            margin: 10px 0;
+            color: #444;
+            font-size: 16px;
+        }
+
+        .about-text h3 span:nth-child(1):after,
+        .about-text h3 span:nth-child(2):after {
+            content: "";
+            width: 6px;
+            height: 6px;
+            background-color: #444;
+            display: inline-block;
+            border-radius: 50%;
+            margin: 0 14px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        .about-text p {
+            /*font-size:17px;*/
+            text-align: justify;
+            line-height: 26px;
+            margin-top: 20px;
+        }
+
+        .skills {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            width: calc(50% - 20px);
+            margin: 15px 0;
+        }
+
+        .skill-info {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .skill-bar {
+            height: 3px;
+            background-color: #ddd;
+            margin-top: 14px;
+            position: relative;
+        }
+
+        .skill-bar::after {
+            content: "";
+            position: absolute;
+            height: 6px;
+            background-color: #48dbfb;
+            bottom: 0;
+        }
+
+        .html:after {
+            width: 90%;
+        }
+
+        .css:after {
+            width: 80%;
+        }
+
+        .js:after {
+            width: 70%;
+        }
+
+        .php:after {
+            width: 60%;
+        }
+
+        .mysql:after {
+            width: 90%;
+        }
+
+        .c:after {
+            width: 80%;
+        }
+
+        /*Services*/
+
+        section.dark {
+            background-color: #353b48;
+        }
+
+        section.dark .section-title {
+            color: #f1f1f1;
+        }
+
+        section.dark .section-title::before {
+            background-color: #f1f1f1;
+        }
+
+        section.dark .section-title::after {
+            border: 4px solid #353b48;
+        }
+
+        section.dark p {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            width: calc(33% - 20px);
+            text-align: center;
+            border: 4px solid #48dbfb;
+            border-radius: 6px;
+            margin: 20px 0;
+            padding: 40px 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .service .icon {
+            color: #48dbfb;
+            font-size: 40px;
+            margin-bottom: 20px;
+            transition: .3s linear;
+        }
+
+        .service h4 {
+            font-size: 24px;
+            margin-bottom: 6px;
+        }
+
+        .service:hover {
+            background-color: #48dbfb;
+        }
+
+        .service:hover .icon {
+            color: #fff;
+        }
+
+        /*Education*/
+
+        .time-line,
+        .works {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .block {
+            width: calc(50% - 20px);
+            background: #fff;
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            padding: 30px;
+            position: relative;
+        }
+
+        .block::before {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 120%;
+            background-color: #ddd;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .block::after {
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color: #48dbfb;
+            left: -28px;
+            top: 30px;
+            border-radius: 50%;
+        }
+
+        .block h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .block p {
+            font-size: 15px;
+            color: #444;
+        }
+
+        /*Works*/
+
+        .work {
+            width: calc(33% - 10px);
+            overflow: hidden;
+            border-radius: 6px;
+            margin: 10px 0;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .work img {
+            width: 100%;
+            height: 100%;
+            transition: .4s linear;
+        }
+
+        .work::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-color: #48dbfbcc;
+            transition: .2s linear;
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        .work .info {
+            position: absolute;
+            z-index: 2;
+            bottom: 40px;
+            left: 40px;
+            color: #fff;
+            transition: .4s linear;
+            opacity: 0;
+        }
+
+        .work:hover img {
+            transform: scale(1.6) rotate(25deg);
+        }
+
+        .work:hover::before,
+        .work:hover .info {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /*Touch*/
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .contact-info .item {
+            width: calc(33% - 20px);
+            height: 160px;
+            background-color: #353b48;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: .2s linear;
+        }
+
+        .contact-info i {
+            display: block;
+            font-size: 40px;
+            line-height: 120px;
+            height: 100px;
+        }
+
+        .item:hover {
+            background-color: #48dbfb;
+        }
+
+        .contact-form {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            height: 50px;
+            margin: 10px 0;
+            background: #353b48;
+            border: none;
+            outline: none;
+            padding: 20px;
+            border-radius: 4px;
+            color: #fff;
+        }
+
+        .nameZone,
+        .emailZone {
+            max-width: calc(50% - 10px);
+        }
+
+        .messageZone {
+            min-height: 200px;
+            resize: vertical;
+        }
+
+        .contact-form .btn {
+            width: 180px;
+            background-color: transparent;
+            color: #48dbfb;
+            font-size: 16px;
+            border: 2px solid #48dbfb;
+            padding: 0;
+            margin-left: auto;
+            cursor: pointer;
+            transition: .2s linear;
+        }
+
+        .btn:hover {
+            background-color: #48dbfb;
+            color: #fff;
+        }
+
+        /*Footer*/
+
+        footer {
+            background: url(Images/Footer.jpg);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .copyright {
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+
+        .copyright a {
+            color: #48dbfb;
+            font-size: 16px;
+        }
+
+        /*Go Top*/
+
+        .go-top {
+            position: fixed;
+            z-index: 999;
+            bottom: 40px;
+            right: 40px;
+            width: 40px;
+            height: 40px;
+            background-color: #48dbfb;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            color: #fff;
+            outline: none;
+        }
+
+
+        @media screen and (max-width:980px) {
+
+            .inner-width {
+                max-width: 800px;
+            }
+
+            .about-pic {
+                margin: 0 auto 60px;
+            }
+
+            .about-text {
+                flex: 100%;
+                text-align: center;
+            }
+
+            .service {
+                width: calc(50% - 20px);
+            }
+
+            .block {
+                width: calc(100% - 20px);
+                margin-left: auto;
+            }
+
+            .work {
+                width: calc(50% - 10px);
+            }
+
+            .contact-info .item {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+        }
+
+        @media screen and (max-width:600px) {
+
+            .inner-width {
+                max-width: 600px;
+                padding: 0 20px;
+            }
+
+            .skill {
+                width: 100%;
+            }
+
+            .service {
+                width: 100%;
+            }
+
+            .work {
+                width: 100%;
+            }
+
+            .nameZone,
+            .emailZone {
+                max-width: 100%;
+            }
+
+        }
+
+        @media screen and (max-width:330px) {
+
+            .navbar {
+                display: none;
+            }
+
+            #home .content h1 {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+
+            .sm a {
+                color: #fff;
+                font-size: 20px;
+                margin: 0 10px;
+                transition: .2s linear;
+            }
+
+            .inner-width {
+                padding: 0 15px;
+            }
+
+            .skill {
+                width: 100%;
+            }
+
+            .service {
+                width: 100%;
+            }
+
+            .work {
+                width: 100%;
+            }
+
+            .nameZone,
+            .emailZone {
+                max-width: 100%;
+            }
+
+        }
+    </style>
+
+    <title>WEBSITE</title>
+    <link rel="icon" type="image/svg+xml" href="Images/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+</head>
+
+<body>
+
+
+    <!--Navbar-->
+
+
+    <nav class="navbar">
+        <div class="inner-width">
+
+            <div class="logo fas fa-crown"></div>
+
+            <div id="mySidenav" class="navbar-menu">
+
+                <div class="cbtn">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                </div>
+
+                <div id="abtn">
+
+                    <span id="ahome"><a href="#home">Home</a></span>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#education">Education</a>
+                    <a href="#works">Works</a>
+                    <a href="#contact">Contact</a>
+
+                </div>
+
+            </div>
+
+            <div class="menu fas fa-bars" onclick="openNav()">
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!--Home-->
+
+
+    <section id="home">
+
+        <div class="inner-width">
+
+            <div class="content">
+
+                <h1>Hi I'm</h1>
+
+                <div class="sm">
+                    <a href="#" class="fab fa-facebook-f" aria-label="Facebook" title="Facebook"></a>
+                    <a href="#" class="fab fa-twitter" aria-label="Twitter" title="Twitter"></a>
+                    <a href="#" class="fab fa-instagram" aria-label="Instagram" title="Instagram"></a>
+                    <a href="#" class="fab fa-linkedin-in" aria-label="LinkedIn" title="LinkedIn"></a>
+                    <a href="" class="fab fa-youtube" aria-label="YouTube" title="YouTube"></a>
+                </div>
+
+                <div class="buttons">
+                    <a href="">Contact Me</a>
+                    <a href="">Download CV</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--About-->
+
+
+    <section id="about">
+
+        <div class="inner-width">
+
+            <h1 class="section-title">About</h1>
+
+            <div class="about-content">
+
+                <img src="Images/Rose 1.jpg" class="about-pic" alt="Rose" title="Rose">
+
+                <div class="about-text">
+
+                    <h2>Hi! I'm Ajay</h2>
+
+                    <h3>
+                        <span>Developer</span>
+                        <span>Designer</span>
+                        <span>Youtuber</span>
+                    </h3>
+
+                    <p>
+                        HTML stands for Hyper Text Markup Language it was created by Berners-Lee in late 1991, which is
+                        the most widely used language on Web to develop web pages.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="skills">
+
+                <div class="skill">
+
+                    <div class="skill-info">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar html"></div>
+                </div>
+
+                <div class="skill">
+
+                    <div class="skill-info">
+                        <span>CSS</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar css"></div>
+                </div>
+
+                <div class="skill">
+
+                    <div class="skill-info">
+                        <span>JAVASCRIPT</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar js"></div>
+                </div>
+
+                <div class="skill">
+
+                    <div class="skill-info">
+                        <span>PHP</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill-bar php"></div>
+                </div>
+
+                <div class="skill">
+
+                    <div class="skill-info">
+                        <span>MY SQL</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar mysql"></div>
+                </div>
+
+                <div class="skill">
+
+                    <div class="skill-info">
+                        <span>C++</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar c"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--Services-->
+
+
+    <section id="services" class="dark">
+
+        <div class="inner-width">
+
+            <h1 class="section-title">Services</h1>
+
+            <div class="services">
+
+                <div class="service">
+
+                    <i class="icon fas fa-paint-brush"></i>
+
+                    <h4>Design</h4>
+
+                    <p> Web browsers can read HTML files and compose them into visible or audible web pages. </p>
+
+                </div>
+
+                <div class="service">
+
+                    <i class="icon fas fa-pager"></i>
+
+                    <h4>Build Websites</h4>
+
+                    <p> Web browsers can read HTML files and compose them into visible or audible web pages. </p>
+
+                </div>
+
+                <div class="service">
+
+                    <i class="icon fas fa-database"></i>
+
+                    <h4>Manage Databases</h4>
+
+                    <p> Web browsers can read HTML files and compose them into visible or audible web pages. </p>
+
+                </div>
+
+                <div class="service">
+
+                    <i class="icon fab fa-android"></i>
+
+                    <h4>Android Apps</h4>
+
+                    <p> Web browsers can read HTML files and compose them into visible or audible web pages. </p>
+
+                </div>
+
+                <div class="service">
+
+                    <i class="icon fas fa-credit-card"></i>
+
+                    <h4>Ui Design</h4>
+
+                    <p> Web browsers can read HTML files and compose them into visible or audible web pages. </p>
+
+                </div>
+
+                <div class="service">
+
+                    <i class="icon fas fa-keyboard"></i>
+
+                    <h4>Edit text</h4>
+
+                    <p> Web browsers can read HTML files and compose them into visible or audible web pages. </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--Education-->
+
+
+    <section id="education">
+
+        <div class="inner-width">
+
+            <h1 class="section-title">Education & Experiences</h1>
+
+            <div class="time-line">
+
+                <div class="block">
+
+                    <h4>2018-2019</h4>
+
+                    <h3>Software Engineering</h3>
+                    <p>
+                        HTML can be edited by using a professional HTML editor like Adobe Dreamweaver ,Microsoft
+                        Expression Web,CoffeeCup HTML Editor. </p>
+
+
+                </div>
+
+
+                <div class="block">
+
+                    <h4>2018-2019</h4>
+
+                    <h3>Software Engineering</h3>
+                    <p>
+                        HTML can be edited by using a professional HTML editor like Adobe Dreamweaver ,Microsoft
+                        Expression Web,CoffeeCup HTML Editor. </p>
+
+
+                </div>
+
+                <div class="block">
+
+                    <h4>2018-2019</h4>
+
+                    <h3>Software Engineering</h3>
+                    <p>
+                        HTML can be edited by using a professional HTML editor like Adobe Dreamweaver ,Microsoft
+                        Expression Web,CoffeeCup HTML Editor. </p>
+
+
+                </div>
+
+                <div class="block">
+
+                    <h4>2018-2019</h4>
+
+                    <h3>Software Engineering</h3>
+                    <p>
+                        HTML can be edited by using a professional HTML editor like Adobe Dreamweaver ,Microsoft
+                        Expression Web,CoffeeCup HTML Editor. </p>
+
+
+                </div>
+
+                <div class="block">
+
+                    <h4>2018-2019</h4>
+
+                    <h3>Software Engineering</h3>
+                    <p>
+                        HTML can be edited by using a professional HTML editor like Adobe Dreamweaver ,Microsoft
+                        Expression Web,CoffeeCup HTML Editor. </p>
+
+
+                </div>
+                <div class="block">
+
+                    <h4>2018-2019</h4>
+
+                    <h3>Software Engineering</h3>
+                    <p>
+                        HTML can be edited by using a professional HTML editor like Adobe Dreamweaver ,Microsoft
+                        Expression Web,CoffeeCup HTML Editor. </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--Works-->
+
+
+    <section id="works" class="dark">
+
+        <div class="inner-width">
+
+            <h1 class="section-title">Works</h1>
+
+            <div class="works">
+
+                <a class="work">
+                    <img src="Images/H.png" alt="">
+                    <div class="info">
+                        <h3>Work Title</h3>
+
+                        <div class="cat">Music,Headset</div>
+
+                    </div>
+                </a>
+
+
+
+                <a class="work">
+                    <img src="Images/Wa.png" alt="">
+                    <div class="info">
+                        <h3>Work Title</h3>
+
+                        <div class="cat">Music,Headset</div>
+
+                    </div>
+                </a>
+
+
+                <a class="work">
+                    <img src="Images/N.jpg" alt="">
+                    <div class="info">
+                        <h3>Work Title</h3>
+
+                        <div class="cat">Music,Headset</div>
+
+                    </div>
+                </a>
+
+
+                <a class="work">
+                    <img src="Images/W.png" alt="">
+                    <div class="info">
+                        <h3>Work Title</h3>
+
+                        <div class="cat">Music,Headset</div>
+
+                    </div>
+                </a>
+
+
+                <a class="work">
+                    <img src="Images/C.png" alt="">
+                    <div class="info">
+                        <h3>Work Title</h3>
+
+                        <div class="cat">Music,Headset</div>
+
+                    </div>
+                </a>
+
+
+
+                <a class="work">
+                    <img src="Images/He.jpg" alt="">
+                    <div class="info">
+                        <h3>Work Title</h3>
+
+                        <div class="cat">Music,Headset</div>
+
+                    </div>
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Contact-->
+
+    <section id="contact">
+
+        <div class="inner-width">
+
+            <h1 class="section-title">Get In Touch</h1>
+
+            <div class="contact-info">
+
+                <div class="item">
+                    <i class="fas fa-mobile-alt"></i>
+                    +111 111111111
+                </div>
+
+
+                <div class="item">
+                    <i class="fas fa-envelope"></i>
+                    email@address.com
+                </div>
+
+                <div class="item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Uttar Pradesh,India
+                </div>
+
+            </div>
+
+            <form action="#" class="contact-form">
+
+                <input type="text" class="nameZone" placeholder="Your Full Name">
+
+
+                <input type="email" class="emailZone" placeholder="Your Email">
+
+
+                <input type="text" class="subjectZone" placeholder="Subject">
+
+                <textarea class="messageZone" placeholder="Message">
+</textarea>
+
+                <input type="submit" class="btn" value="Send Message">
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!--Footer-->
+
+    <footer>
+
+        <div class="inner-width">
+
+            <div class="copyright">
+                &copy; 2020 | Created & Designed By <a
+                    href="ajay.html">Ajay</a>
+            </div>
+
+
+            <div class="sm">
+                <a href="" class="fab fa-facebook-f" aria-label="Facebook" title="Facebook"></a>
+                <a href="" class="fab fa-twitter" aria-label="Twitter" title="Twitter"></a>
+                <a href="" class="fab fa-instagram" aria-label="Instagram" title="Instagram"></a>
+                <a href="" class="fab fa-linkedin-in" aria-label="LinkedIn" title="LinkedIn"></a>
+                <a href="" class="fab fa-youtube" aria-label="YouTube" title="YouTube"></a>
+            </div>
+
+
+        </div>
+
+    </footer>
+
+    <!--Go Top BTN-->
+
+    <button type="button" class="go-top fas fa-arrow-up" aria-label="Scroll to top" title="Scroll to top"></button>
+
+
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "800px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+
+
+    <!-- Overview Button -->
+    <style>
+    .overview-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Darker glass for better contrast on light pages */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        color: white !important; /* Force white text */
+        font-family: sans-serif;
+        font-weight: bold;
+        z-index: 9999;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .overview-btn:hover {
+        background: rgba(0, 0, 0, 0.7);
+        transform: translateY(2px); /* Move down slightly since it's at top */
+        box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+        color: white !important;
+    }
+    </style>
+    <a href="index.html" class="overview-btn">🏠 Overview</a>
+
+</body>
+
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="inside html 5.css">
+
+    <style>
+        @media screen and (max-width:1924px) {
+
+        
+
+            body {
+                font-size: 40px;
+            }
+
+            p {
+                margin: 40px;
+                padding: 20px;
+                text-indent: 25px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 110px;
+            }
+
+            h2 {
+                font-size: 60px;
+            }
+
+            h3 {
+                font-size: 50px;
+            }
+
+            img {
+                width: calc(100% - 80px);
+                border-radius: 14px;
+            }
+
+            form {
+                margin: 40px;
+                padding: 50px;
+                border-radius: 14px;
+            }
+
+            input[type="text"],
+            input[type="password"],
+            input[type="color"],
+            input[type="date"],
+            input[type="datetime"],
+            input[type="datetime-local"],
+            input[type="email"],
+            input[type="month"],
+            input[type="number"],
+            input[type="range"],
+            input[type="search"],
+            input[type="tel"],
+            input[type="time"],
+            input[type="url"],
+            input[type="week"] {
+                border: 8px solid #00e6ac;
+                border-radius: 50px;
+                padding: 20px 10px;
+                margin: 30px auto;
+                width: 240px;
+                font-size: 40px;
+            }
+
+            input[type="text"]:hover,
+            input[type="password"]:hover {
+                width: 360px;
+            }
+
+            input[type="submit"] {
+                margin: 30px auto;
+                border: 8px solid #ffd633;
+                padding: 20px 10px;
+                width: 160px;
+                border-radius: 50px;
+                font-size: 40px;
+            }
+
+            input[type="radio"],
+            input[type="checkbox"] {
+                height: 40px;
+                width: 40px;
+            }
+
+            label {
+                font-size: 40px;
+            }
+
+            .anchor {
+                padding: 20px;
+                margin: 40px 240px;
+                font-size: 40px;
+                border-radius: 14px;
+            }
+
+            a {
+                padding: 20px;
+                font-size: 50px;
+                margin: 60px;
+                border-radius: 14px;
+            }
+
+        
+
+        
+        }
+
+        @media screen and (max-width:330px) {
+
+            body {
+                font-size: 15px;
+            }
+
+            p {
+                margin: 20px;
+                padding: 20px;
+                text-indent: 15px;
+                border-radius: 7px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            img {
+                width: 280px;
+                border-radius: 7px;
+            }
+
+            form {
+                margin: 20px;
+                padding: 25px;
+                border-radius: 7px;
+            }
+
+            input[type="text"],
+            input[type="password"],
+            input[type="color"],
+            input[type="date"],
+            input[type="datetime"],
+            input[type="datetime-local"],
+            input[type="email"],
+            input[type="month"],
+            input[type="number"],
+            input[type="range"],
+            input[type="search"],
+            input[type="tel"],
+            input[type="time"],
+            input[type="url"],
+            input[type="week"] {
+                border: 4px solid #00e6ac;
+                border-radius: 25px;
+                padding: 10px 5px;
+                margin: 15px auto;
+                width: 120px;
+                font-size: 20px;
+            }
+
+            input[type="text"]:hover,
+            input[type="password"]:hover {
+                width: 180px;
+            }
+
+            input[type="submit"] {
+                margin: 15px auto;
+                border: 4px solid #ffd633;
+                padding: 10px 5px;
+                width: 80px;
+                border-radius: 25px;
+                font-size: 20px;
+            }
+
+            input[type="radio"],
+            input[type="checkbox"] {
+                height: 20px;
+                width: 20px;
+            }
+
+            label {
+                font-size: 20px;
+            }
+
+            .anchor {
+                padding: 10px;
+                margin: 20px 75px;
+                font-size: 20px;
+                border-radius: 7px;
+            }
+
+            a {
+                padding: 10px;
+                font-size: 25px;
+                margin: 30px;
+                border-radius: 7px;
+            }
+
+        }
+    </style>
+
+    <title>HTML 5 FORM</title>
+    <link rel="icon" type="image/svg+xml" href="Images/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+</head>
+
+<body>
+
+    <h1>Html 5 Forms
+    </h1>
+
+    <p>HTML5 brings many features and improvements to web form creation. There are new attributes and input types that
+        were introduced to help create better experiences for web users.
+        <br><br>
+
+        Form creation is done in HTML5 the same way as it was in HTML4.
+    </p>
+
+    <form>
+
+        <label>Your Name</label>
+
+        <input id="user" name="username" type="text" placeholder="Username">
+
+    </form>
+
+    <h2>New Attributes
+    </h2>
+
+    <p>HTML5 has introduced a new attribute called placeholder. On input and textarea elements, this attribute provides
+        a hint to the user of what information can be entered into the field. </p>
+
+    <form>
+
+        <label>Your E-mail Address </label>
+
+        <input type="text" name="email" placeholder="email@example.com">
+
+    </form>
+
+    <h3>Autofocus</h3>
+
+    <p>The autofocus attribute makes the desired input focus when the form loads.</p>
+
+    <form>
+
+        <label>Your E-mail Aaddress </label>
+
+        <input type="text" name="email" placeholder="Email">
+
+    </form>
+
+    <h2>Form With Required Fields</h2>
+
+    <p>The "required" attribute is used to make the input elements required. </p>
+
+    <p>The form will not be submitted without filling in the required fields.
+
+    </p>
+
+    <form autocomplete="off">
+
+        <label>Your E-mail Address </label>
+
+        <input name="Email" type="text" required placeholder="Email">
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <h3>HTML5 added several new input types:
+    </h3>
+    <p id="para">
+
+        - color
+        <br>
+        - date
+        <br>
+        - datetime
+        <br>
+        - datetime-local
+        <br>
+        - email
+        <br>
+        - month
+        <br>
+        - number
+        <br>
+        - range
+        <br>
+        - search
+        <br>
+        - tel
+        <br>
+        - time
+        <br>
+        - url
+        <br>
+        - week
+    </p>
+
+    <form>
+
+        <label for="fav-color">Color</label>
+
+        <input id="fav-color" type="color">
+
+        <label>Date</label>
+
+        <input type="date" placeholder="Date">
+
+        <label>Datetime</label>
+
+        <input type="datetime" placeholder="Datetime">
+
+        <label>Datetime-Local</label>
+
+        <input type="datetime-local" placeholder="Datetime-local">
+
+        <label>Email</label>
+
+        <input type="email" placeholder="Email">
+
+        <label for="billing-month">Month</label>
+
+        <input id="billing-month" type="text" inputmode="numeric" pattern="\d{4}-\d{2}" placeholder="YYYY-MM"
+            aria-describedby="billing-month-hint">
+        <small id="billing-month-hint">(Format: YYYY-MM)</small>
+
+        <label>Number</label>
+
+        <input type="number" placeholder="Number">
+
+        <label for="satisfaction-range">Range</label>
+
+        <input id="satisfaction-range" type="range" title="Drag to select a value">
+
+        <label>Search</label>
+
+        <input type="search" placeholder="Search">
+
+        <label>Tel</label>
+
+        <input type="tel" placeholder="Tel">
+
+        <label for="meeting-time">Time</label>
+
+        <input id="meeting-time" type="time" title="Select a time">
+
+        <label>Url</label>
+
+        <input type="url" placeholder="Url">
+
+        <label for="schedule-week">Week</label>
+
+        <input id="schedule-week" type="text" inputmode="numeric" pattern="\d{4}-W\d{2}" placeholder="YYYY-Www"
+            aria-describedby="schedule-week-hint">
+        <small id="schedule-week-hint">(Format: YYYY-Www)</small>
+
+    </form>
+
+    <h3>New Input Attributes In HTML5</h3>
+    <p id="para">
+        - autofocus <br>
+        - form <br>
+        - formaction <br>
+        - formenctype <br>
+        - formmethod <br>
+        - formnovalidate <br>
+        - formtarget <br>
+        - height and width <br>
+        - list <br>
+        - min and max <br>
+        - multiple <br>
+        - pattern (regexp) <br>
+        - placeholder <br>
+        - required <br>
+        - step
+
+    </p>
+
+    <a href="login.html">To Open Login Form</a>
+
+    <a href="awesome login form.html">To Open Awesome Login Form</a>
+
+    <a href="accordian menu.html">To Open Accordian Menu</a>
+
+    <a href="html 5.html" class="anchor">Take Me Back</a>
+
+
+    <!-- Overview Button -->
+    <style>
+    .overview-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Darker glass for better contrast on light pages */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        color: white !important; /* Force white text */
+        font-family: sans-serif;
+        font-weight: bold;
+        z-index: 9999;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .overview-btn:hover {
+        background: rgba(0, 0, 0, 0.7);
+        transform: translateY(2px); /* Move down slightly since it's at top */
+        box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+        color: white !important;
+    }
+    </style>
+    <a href="index.html" class="overview-btn">🏠 Overview</a>
+
+</body>
+
+</html>

@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+
+        /*Header*/
+
+        .header {
+            padding: 25px 0;
+            background: #155592;
+            text-align: center;
+        }
+
+        .inner-width {
+            padding: 0 25px;
+        }
+
+        .header .fa-bars {
+            position: absolute;
+            top: 34px;
+            left: 25px;
+            font-size: 20px;
+            color: #92B5D3;
+        }
+
+        .navbar-menu {
+            text-align: left;
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #212529;
+            overflow-x: hidden;
+            transition: 0.2s;
+        }
+
+        .navbar-menu a {
+            padding: 15px;
+            color: #fff;
+            text-decoration: none;
+            outline: none;
+            display: block;
+            transition: 0.2s
+        }
+
+        .navbar-menu i {
+            padding-right: 20px;
+            font-size: 20px;
+            color: #495057;
+        }
+
+        .navbar-menu .fa-dragon {
+            font-size: 17px;
+            color: #495057;
+        }
+
+        .navbar-menu .fa-desktop {
+            font-size: 17.5px;
+            color: #495057;
+        }
+
+        .navbar-menu .fa-bicycle {
+            font-size: 16px;
+            color: #495057;
+        }
+
+        .navbar-menu .fa-flag {
+            font-size: 19px;
+            color: #495057;
+        }
+
+        .navbar-menu .fa-file-code {
+            padding-left: 3px;
+            font-size: 20px;
+            color: #495057;
+        }
+
+        .navbar-menu .fa-html5 {
+            padding-left: 3px;
+            font-size: 20px;
+            color: #495057;
+        }
+
+        .navbar-menu .fa-sign-in-alt {
+            font-size: 15px;
+            color: #495057;
+        }
+
+        .navbar-menu a:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        .header a {
+            text-decoration: none;
+            outline: none;
+            color: none;
+            background: none;
+        }
+
+        .header .fa-font-awesome {
+            width: 28px;
+            padding: 0;
+            margin: 5px 94px 0 94px;
+            line-height: 24px;
+            font-size: 40px;
+            background: #fff;
+            color: #0F3B66;
+        }
+
+        .header .f {
+            position: absolute;
+            top: 34px;
+            right: 25px;
+            padding-left: 0;
+            font-size: 20px;
+            color: #92B5D3;
+        }
+
+        /*Six*/
+
+        .six {
+            padding: 8px 0;
+            border-top: 8px solid #172F4F;
+            border-bottom: 8px solid #172F4F;
+            background: #183153;
+        }
+
+        .six a {
+            text-decoration: none;
+            outline: none;
+            color: none;
+            background: none;
+        }
+
+        .s {
+            color: #ffd43b;
+        }
+
+        .six .number {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .number .sev {
+            padding: 0 6px;
+            font-size: 30px;
+            font-weight: 900;
+            border-radius: 4px;
+            background: #001c40;
+            color: #ffd43b;
+        }
+
+        .number .more {
+            padding-left: 18px;
+            line-height: 23px;
+            color: #B9BDCA;
+        }
+
+        .number .b {
+            color: #f3f5f6;
+            border-bottom: 1px solid #52657e;
+        }
+
+        /*Free*/
+
+        .free {
+            padding: 50px 0 0 0;
+            background: #155695;
+            text-align: center;
+        }
+
+        .free .fa-rocket {
+            font-size: 60px;
+            color: #A5D8FF;
+        }
+
+        .free h1 {
+            padding: 20px 10px;
+            font-size: 30px;
+            color: #F8F9FA;
+        }
+
+        .free p {
+            line-height: 30px;
+            font-size: 20px;
+            color: #A0D4FC;
+        }
+
+        .free .form {
+            text-align: center;
+            margin: 50px 0;
+            background: #fff;
+            border-radius: 5px;
+        }
+
+        .form .color {
+            padding: 20px 23px 0 20px;
+        }
+
+        .form h6 {
+            font-size: 14px;
+            text-align: left;
+            color: #4A5158;
+        }
+
+        input[type="text"] {
+            margin: 10px 0;
+            padding: 12px 10px;
+            text-align: center;
+            display: block;
+            outline: none;
+            width: 100%;
+            font-size: 17px;
+            border: 2px solid #DEE2E6;
+            border-radius: 3px;
+        }
+
+        input[type="text"]:hover {
+            border: 2px solid #4DABF7;
+            box-shadow: 0px 0px 3px #4DABF7, -0px -0px 3px #4DABF7;
+        }
+
+        input[type="submit"] {
+            display: block;
+            outline: none;
+            margin: 15px 0 10px 0;
+            padding: 12px 10px;
+            width: 100%;
+            font-size: 17px;
+            font-weight: 900;
+            color: #fff;
+            background: #B9CCE0;
+            border: 2px solid #B2C3D1;
+            border-radius: 4px;
+            border-bottom: 4px solid #B2C3D1;
+        }
+
+        .form h5 {
+            padding-bottom: 20px;
+            font-size: 12px;
+            color: #C5CAD0;
+        }
+
+        .form .blue {
+            padding: 20px 23px 20px 23px;
+            background: #E7F5FF;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .blue h3 {
+            color: #98A3AB;
+            text-decoration: underline;
+            font-size: 10px;
+            padding-bottom: 20px;
+        }
+
+        .blue span {
+            color: #949EA7;
+            font-weight: 900;
+            font-size: 10px;
+        }
+
+        .blue .path {
+            padding: 5px;
+            background: #000;
+            color: #fff;
+        }
+
+        .site {
+            display: flex;
+            padding-bottom: 50px;
+        }
+
+        .site i {
+            font-size: 25px;
+            color: #F8F9FA;
+        }
+
+        .site .fa-dragon {
+            padding-top: 4px;
+            font-size: 20px;
+            color: #F8F9FA;
+        }
+
+        .site h6 {
+            padding-left: 25px;
+            text-align: left;
+            font-size: 15px;
+            color: #F8F9FA;
+        }
+
+        .site p {
+            padding-left: 25px;
+            text-align: left;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        /*Other*/
+
+        .other {
+            padding: 40px 0;
+            background: #F8F9FA;
+            text-align: center;
+        }
+
+        .other h1 {
+            color: #495057;
+            font-size: 25px;
+            padding-bottom: 40px;
+        }
+
+        .other .download {
+            margin-bottom: 25px;
+            padding: 25px;
+            background: #fff;
+            border-radius: 5px;
+        }
+
+        .other .desktop {
+            margin-bottom: 15px;
+            padding: 25px;
+            background: #fff;
+            border-radius: 5px;
+        }
+
+        .download i,
+        .desktop i {
+            font-size: 30px;
+            color: #20C897;
+        }
+
+        .download h2,
+        .desktop h2 {
+            padding: 10px 0;
+            font-size: 18px;
+            color: #495057;
+        }
+
+        .download h6,
+        .desktop h6 {
+            font-size: 12px;
+            color: #ADB5BD;
+        }
+
+        /*Plan*/
+
+        .plan {
+            padding: 40px 10px 45px 10px;
+            background: #fff;
+        }
+
+        .plan h1 {
+            font-size: 25px;
+            color: #495057;
+        }
+
+        .plan .every {
+            padding-top: 30px;
+        }
+
+        .every .fa-box {
+            padding-bottom: 10px;
+            font-size: 25px;
+            color: #20C897;
+        }
+
+        .every .fa-dragon {
+            padding-bottom: 10px;
+            font-size: 25px;
+            color: #339AF0
+        }
+
+        .every h5 {
+            font-size: 18px;
+            color: #495057;
+        }
+
+        .every p {
+            line-height: 20px;
+            font-size: 15px;
+            color: #495057;
+        }
+
+        /*Footer*/
+
+        footer {
+            padding: 0 0 40px 0;
+            background-color: #343A40;
+        }
+
+        .footer h6 {
+            padding: 40px 0 0 0;
+            text-transform: uppercase;
+            color: #848C95;
+        }
+
+        footer p {
+            padding: 9px 0 4px 0;
+            color: #DADFE3;
+        }
+
+        .made {
+            padding: 40px 0;
+            background: #212529;
+            text-align: center;
+        }
+
+        .made .icon {
+            color: #747B82;
+            font-size: 11px;
+            padding: 0 10px 15px 0;
+        }
+
+        .made p {
+            color: #747B82;
+            text-align: center;
+            line-height: 18px;
+            font-size: 10px;
+        }
+
+        .terms {
+            font-size: 11px;
+            padding: 0 10px;
+            color: #CDD3D9;
+        }
+
+        .plus {
+            font-size: 20px;
+            vertical-align: -2px;
+            font-weight: 900;
+            color: #858D95;
+        }
+    </style>
+
+    <title>FREE</title>
+    <link rel="icon" type="image/svg+xml" href="Images/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+</head>
+
+<body>
+
+    <!--Header-->
+
+    <header class="header" id="home">
+        <div class="inner-width">
+
+            <i class="fas fa-bars" onclick="openNav()"></i>
+
+            <div id="mySidenav" class="navbar-menu">
+
+                <a href="#home" class="closebtn" onclick="closeNav()">
+                    <i class="fas fa-home"></i>
+
+                    Home
+
+                </a>
+
+                <a href="#start" class="closebtn" onclick="closeNav()">
+                    <i class="fas fa-dragon"></i>
+
+                    Start
+
+                </a>
+
+
+                <a href="#plan" class="closebtn" onclick="closeNav()">
+                    <i class="fas fa-icons"></i>
+
+                    Plan
+
+                </a>
+
+                <a href="#desktop" class="closebtn" onclick="closeNav()">
+                    <i class="fas fa-desktop"></i>
+
+                    Desktop
+
+                </a>
+
+                <a href="font awesome.html" class="closebtn" onclick="closeNav()">
+                    <i class="fas fa-bicycle"></i>
+
+                    Font Awesome
+
+                </a>
+
+                <a href="font awesome 6.html" class="closebtn" onclick="closeNav()">
+                    <i class="fas fa-flag"></i>
+
+                    Font Awesome 6
+
+                </a>
+
+                <a href="mobile website.html" class="closebtn" onclick="closeNav()">
+                    <i class="fas fa-file-code"></i>
+
+                    Mobile Website
+
+                </a>
+
+                <a href="home.html" class="closebtn" onclick="closeNav()">
+                    <i class="fab fa-html5"></i>
+
+                    Html
+
+                </a>
+
+                <a href="sign in.html" class="closebtn" onclick="closeNav()">
+                    <i class="fas fa-sign-in-alt"></i>
+
+                    Sign In
+
+                </a>
+
+            </div>
+
+            <a href="font awesome.html"><i class="fab fa-font-awesome" aria-label="Font Awesome"
+                    title="Font Awesome"></i></a>
+
+            <a href="sign in.html"><i class="f fas fa-sign-in-alt" aria-label="Sign in" title="Sign in"></i></a>
+
+        </div>
+    </header>
+
+    <!--Six-->
+
+    <section class="six">
+        <div class="inner-width">
+
+            <div class="number">
+
+                <span class="sev"> <a href="font awesome 6.html" class="s">
+                        6</a>
+                </span>
+
+                <span class="more">
+
+                    <a href="font awesome 6.html">
+                        <span class="b">Font Awesome 6</span></a> is coming with more icons, styles, services, and
+                    awesome!
+                </span>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Free-->
+
+    <section class="free" id="start">
+        <div class="inner-width">
+
+            <i class="fas fa-rocket"></i>
+
+            <h1>Get Started for Free</h1>
+
+            <p>CDN powered Kits.1 line of code.Live in under 1 minute.</p>
+
+            <div class="form">
+
+                <div class="color">
+
+                    <h6>Enter your email to create your first kit!</h6>
+
+                    <form>
+
+                        <input type="text" placeholder="e.g.severus@hogwarts">
+
+                        <input type="submit" value="Send Kit Code </>">
+
+                        <h5><ins>Already have an account?</ins></h5>
+
+                    </form>
+
+                </div>
+
+                <div class="blue">
+
+                    <h3>Why do you need my email address?</h3>
+
+                    <span>Powered by</span>
+
+                    <span class="path">STACKPATH</span>
+
+                </div>
+
+            </div>
+
+            <div class="site">
+
+                <i class="fas fa-dragon"></i>
+
+                <span>
+
+                    <h6>Icons on Your Site.Fast.</h6>
+
+                    <p>Our CDN powered kits make using our icons faster and more powerful than ever .Make changes
+                        without ever pushing code or managing files.</p>
+
+                </span>
+
+            </div>
+
+            <div class="site">
+
+                <i class="fas fa-briefcase"></i>
+
+                <span>
+
+                    <h6>Auto-Accessibilty & More</h6>
+
+                    <p>Easily automate your icons,accessibilty,control load timing,get Font Awesome Version 4
+                        compatibility,and more.</p>
+
+                </span>
+
+            </div>
+
+            <div class="site">
+
+                <i class="fab fa-earlybirds"></i>
+
+                <span>
+
+                    <h6>Level Up Your Icons</h6>
+
+                    <p>Upgrade to Pro and get 6,250 more icons,more styles,& the fastest icons with all-new
+                        auto-subsetting.</p>
+
+                </span>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Other-->
+
+    <section class="other" id="desktop">
+        <div class="inner-width">
+
+            <h1>Other Ways to Use </h1>
+
+            <div class="download">
+
+                <i class="fas fa-download"></i>
+
+                <h2>Download</h2>
+
+                <h6>Serve Font Awesome yourself.</h6>
+
+            </div>
+
+            <div class="desktop">
+
+                <i class="fas fa-desktop"></i>
+
+                <h2>Desktop</h2>
+
+                <h6>Install locally and use in desktop apps.</h6>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Plan-->
+
+    <section class="plan" id="plan">
+        <div class="inner-width">
+
+            <h1>Every Plan Includes </h1>
+
+            <div class="every">
+
+                <i class="fas fa-box"></i>
+
+                <h5>Hosted Kits</h5>
+
+                <p>kits are easiet way to get Font Awesome on your website.You include a code snippet;we'll serve up
+                    your icons.</p>
+
+            </div>
+
+            <div class="every">
+
+                <i class="fas fa-dragon"></i>
+
+                <h5>Fast Icons</h5>
+
+                <p>Our global CDN and caching means your icons load fast.Set asynchronous loading for even more control.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer class="footer">
+        <div class="inner-width">
+
+            <h6>Project</h6>
+
+            <p>Latest Release</p>
+
+            <p>Updates</p>
+
+            <p>JavaScript API</p>
+
+            <p>GraphQL API</p>
+
+            <p>License</p>
+
+            <p>GitHub Project</p>
+
+            <h6>Icons</h6>
+
+            <p>Gallery</p>
+
+            <p>Cheatsheet</p>
+
+            <p>Leaderboard</p>
+
+            <p>Request an Icon</p>
+
+            <h6>Support</h6>
+
+            <p>Troubleshooting</p>
+
+            <p>Questions</p>
+
+            <p>Report a Blog</p>
+
+            <p>Get Help</p>
+
+            <h6>Company</h6>
+
+            <p>Blog</p>
+
+            <p>Status</p>
+
+            <p>Contact Us</p>
+
+            <p>@fontawesome</p>
+
+        </div>
+    </footer>
+
+    <div class="made">
+        <div class="inner-width">
+
+            <span class="icon far fa-copyright"> Fonticons,Inc.</span>
+
+            <span class="terms">Terms</span>
+
+            <span class="plus">+</span>
+
+            <span class="terms">Privacy</span>
+
+            <p>Made with <i class="fas fa-heart"></i> & <i class="fas fa-coffee"></i> in Bentonville, Boston, Joplin,
+                Seattle, Vergennes.</p>
+
+        </div>
+    </div>
+
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+
+
+    <!-- Overview Button -->
+    <style>
+    .overview-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Darker glass for better contrast on light pages */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        color: white !important; /* Force white text */
+        font-family: sans-serif;
+        font-weight: bold;
+        z-index: 9999;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .overview-btn:hover {
+        background: rgba(0, 0, 0, 0.7);
+        transform: translateY(2px); /* Move down slightly since it's at top */
+        box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+        color: white !important;
+    }
+    </style>
+    <a href="index.html" class="overview-btn">🏠 Overview</a>
+
+</body>
+
+</html>

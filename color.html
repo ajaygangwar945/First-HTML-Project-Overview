@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="inside html basics.css">
+
+    <style>
+        @media screen and (max-width:1924px) {
+
+        
+
+            body {
+                font-size: 40px;
+            }
+
+            p {
+                margin: 40px;
+                padding: 20px;
+                text-indent: 25px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 100px;
+            }
+
+            h2 {
+                font-size: 60px;
+            }
+
+            img {
+                width: calc(100% - 80px);
+                border-radius: 14px;
+            }
+
+            .anchor {
+                padding: 20px;
+                margin: 40px 240px;
+                font-size: 40px;
+                border-radius: 14px;
+            }
+
+        
+
+        
+        }
+
+        @media screen and (max-width:330px) {
+
+            body {
+                font-size: 15px;
+            }
+
+            p {
+                margin: 20px;
+                padding: 20px;
+                text-indent: 15px;
+                border-radius: 7px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            img {
+                width: 280px;
+                border-radius: 7px;
+            }
+
+            .anchor {
+                padding: 10px;
+                margin: 20px 75px;
+                font-size: 20px;
+                border-radius: 7px;
+            }
+
+        }
+    </style>
+
+    <title>COLOR</title>
+    <link rel="icon" type="image/svg+xml" href="Images/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+</head>
+
+<body>
+
+    <h1>Html Color</h1>
+
+    <p>In html we can use color name,hexadecimal value or rgb.
+    </p>
+
+    <h2>Hexadecimal Values</h2>
+
+    <p>Hexadecimal are start from 0 to f.Over million of combination we can design.
+        <br><br>
+        Hex values are written using the hashtag symbol (#), followed by either three or six hex characters.
+    </p>
+
+    <h2>Html Color Model</h2>
+
+    <p>Colors are displayed in combinations of red, green, and blue light (RGB).
+        <br>
+        <br>
+        As shown in the picture below, the circles overlap, forming new colors.
+    </p>
+
+    <img src="Images/330px-AdditiveColor.svg.png" alt="Additive color model diagram" title="Additive color model">
+
+    <a href="html basics.html" class="anchor">Take Me Back</a>
+
+
+    <!-- Overview Button -->
+    <style>
+    .overview-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Darker glass for better contrast on light pages */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        color: white !important; /* Force white text */
+        font-family: sans-serif;
+        font-weight: bold;
+        z-index: 9999;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .overview-btn:hover {
+        background: rgba(0, 0, 0, 0.7);
+        transform: translateY(2px); /* Move down slightly since it's at top */
+        box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+        color: white !important;
+    }
+    </style>
+    <a href="index.html" class="overview-btn">🏠 Overview</a>
+
+</body>
+
+</html>

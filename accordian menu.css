@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    font-size: 70px;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: url(Images/Leave.jpg) no-repeat;
+    background-size: 1000px 1800px;
+}
+
+.middle {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu {
+    width: 700px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.item {
+    border-top: 10px solid #2980b9;
+    overflow: hidden;
+}
+
+.btn {
+    display: block;
+    padding: 20px 24px;
+    background: #3498db;
+    color: white;
+    position: relative;
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background: #3498db;
+    left: 20px;
+    bottom: -15px;
+    transform: rotate(45deg);
+}
+
+.btn i {
+    margin-right: 40px;
+}
+
+.smenu {
+    background: #333;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    max-height: 0;
+}
+
+.smenu a {
+    display: block;
+    padding: 20px 30px;
+    color: white;
+    font-size: 50px;
+    margin: 8px 0;
+    position: relative;
+}
+
+.smenu a:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background: #3498db;
+    left: 0%;
+    top: 0%;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.smenu a:hover:before {
+    opacity: 1;
+}
+
+.item:target .smenu {
+    max-height: 10em;
+}
+
+.anchor {
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    outline: none;
+    bottom: 180px;
+    margin: 0 140px;
+    width: 680px;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 900;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    padding: 40px 10px;
+    border-radius: 25px;
+    background: #fff;
+    color: #3498db;
+}

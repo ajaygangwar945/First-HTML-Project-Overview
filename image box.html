@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: serif;
+            margin: 0;
+            padding: 0;
+            text-transform: capitalize;
+            font-variant: small-caps;
+        }
+
+        h2 {
+            color: #2ecc71;
+            font-size: 40px;
+        }
+
+        .image-box-title {
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .row>.column {
+            padding: 0 8px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .column {
+            float: left;
+            width: 25%;
+        }
+
+        /* This is for modal background */
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: #b0d7c5;
+        }
+
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        /* This is for close button */
+
+        .close {
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .cursor {
+            cursor: pointer
+        }
+
+        /* This is for next & prev buttons */
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        img {
+            margin-bottom: -4px;
+        }
+
+        .thumbnail {
+            width: 100%;
+        }
+
+        .caption-container {
+            text-align: center;
+            background-color: #00b867;
+            padding: 2px 16px;
+            color: white;
+        }
+
+        .demo {
+            opacity: 0.6;
+        }
+
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+
+        img.hover-shadow {
+            transition: 0.3s;
+        }
+
+        .hover-shadow:hover {
+            box-shadow: 0 4px 8px 0 rgba (0, 0, 0, 0.2), 0 6px 20px 0 rgba (0, 0, 0, 0.19);
+        }
+
+        .anchor {
+            position: relative;
+            text-align: center;
+            width: 220px;
+            top: 10px;
+            margin: 35px 50px;
+            background-color: #2eec71;
+            color: #fff;
+            display: block;
+            outline: none;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 8px;
+            padding: 10px;
+            font-weight: 900;
+        }
+    </style>
+
+    <title>IMAGE BOX</title>
+
+<body>
+
+    <h2 class="image-box-title" aria-label="Image Box" title="Image Box">Image Box</h2>
+
+
+    <div class="row">
+
+        <div class="column">
+
+            <img src="Images/11.jpg" class="thumbnail hover-shadow cursor" onclick="openModal();currentSlide(1)"
+                alt="Bird" title="Bird" class="hover-shadow cursor">
+
+        </div>
+
+
+        <div class="column">
+
+            <img src="Images/Tropical.jpg" class="thumbnail hover-shadow cursor" onclick="openModal();currentSlide(2)"
+                alt="Tropical Plants" title="Tropical Plants">
+
+        </div>
+
+        <div class="column">
+
+            <img src="Images/Ajay.jpg" class="thumbnail hover-shadow cursor" onclick="openModal();currentSlide(3)"
+                alt="Laptop" title="Laptop">
+
+        </div>
+
+    </div>
+
+
+    <!-- Unicode character for Sign "×" is '&times' -->
+
+    <div id="myModal" class="modal">
+
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+
+        <div class="modal-content">
+
+
+
+            <div class="mySlides">
+
+                <div class="numbertext">1 / 3</div>
+
+                <img src="Images/11.jpg" class="thumbnail">
+
+            </div>
+
+
+
+            <div class="mySlides">
+
+                <div class="numbertext">2 / 3</div>
+
+                <img src="Images/Tropical.jpg" class="thumbnail">
+
+            </div>
+
+
+            <div class="mySlides">
+
+                <div class="numbertext">3 / 3</div>
+
+                <img src="Images/Ajay.jpg" class="thumbnail">
+
+            </div>
+
+            <!-- Unicode character for "prev" sign "❮" is '&#10094' -->
+
+            <a class="prev" onclick="plusSlides (-1)">&#10094;</a>
+
+            <!-- Unicode character for "next" sign "❯" is '&#10095' -->
+
+            <a class="next" onclick="plusSlides (1)">&#10095;</a>
+
+            <div class="caption-container">
+
+                <p id="caption"></p>
+
+            </div>
+
+            <div class="column">
+
+                <img class="demo cursor thumbnail" src="Images/11.jpg" onclick="currentSlide(1)" alt="Bird">
+
+            </div>
+
+            <div class="column">
+
+                <img class="demo cursor thumbnail" src="Images/Tropical.jpg" onclick="currentSlide(2)"
+                    alt="Tropical Plants">
+
+            </div>
+
+            <div class="column">
+
+                <img class="demo cursor thumbnail" src="Images/Ajay.jpg" onclick="currentSlide(3)" alt="Laptop">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function openModal() { document.getElementById('myModal').style.display = "block"; }
+
+        function closeModal() { document.getElementById('myModal').style.display = "none"; }
+
+        var slideIndex = 1; showSlides(slideIndex); function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block"; dots[slideIndex - 1].className += " active"; captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+    </script>
+
+    <div align="center">
+
+        <a href="image tag.html" class="anchor">To Learn Image Tag </a>
+
+    </div>
+
+
+    <!-- Overview Button -->
+    <style>
+    .overview-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Darker glass for better contrast on light pages */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        color: white !important; /* Force white text */
+        font-family: sans-serif;
+        font-weight: bold;
+        z-index: 9999;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .overview-btn:hover {
+        background: rgba(0, 0, 0, 0.7);
+        transform: translateY(2px); /* Move down slightly since it's at top */
+        box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+        color: white !important;
+    }
+    </style>
+    <a href="index.html" class="overview-btn">🏠 Overview</a>
+
+</body>
+
+</html>

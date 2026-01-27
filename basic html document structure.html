@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="basic html document structure.css">
+
+    <style>
+        @media screen and (max-width:1924px) {
+
+        
+
+            body {
+                font-size: 40px;
+            }
+
+            p {
+                margin: 40px;
+                padding: 20px;
+                font-weight: 600;
+                text-indent: 25px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 90px;
+            }
+
+            h2 {
+                font-size: 50px;
+            }
+
+            a {
+                padding: 20px;
+                margin: 40px 240px;
+                font-size: 40px;
+                border-radius: 14px;
+            }
+
+        
+
+        
+        }
+
+        @media screen and (max-width:330px) {
+
+            body {
+                font-size: 15px;
+            }
+
+            p {
+                margin: 20px;
+                padding: 20px;
+                font-weight: 600;
+                text-indent: 15px;
+                border-radius: 7px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            a {
+                padding: 10px;
+                margin: 20px 75px;
+                font-size: 20px;
+                border-radius: 7px;
+            }
+
+        }
+    </style>
+
+    <title>BASIC HTML DOCUMENT STRUCTURE</title>
+    <link rel="icon" type="image/svg+xml" href="Images/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+</head>
+
+<body>
+
+    <h1>Basic Html Document Structure</h1>
+
+    <h2>The Html Tag</h2>
+
+    <p>Although various versions have been released over the years, HTML basics remain the same.</p>
+
+    <p>The structure of an HTML document has been compared with that of a sandwich. As a sandwich has two slices of
+        bread, the HTML document has opening and closing HTML tags. <br><br>
+
+        These tags, like the bread in a sandwich, surround everything else.
+    </p>
+
+    <h2>The Head Tag </h2>
+
+    <p>Immediately following the opening HTML tag, you'll find the head of the document, which is identified by opening
+        and closing head tags.
+        <br><br>
+
+        <b>The head of an HTML file contains all of the non-visual elements that help make the page work.</b>
+    </p>
+
+    <h2>The Body Tag
+    </h2>
+
+    <p>The body tag follows the head tag.
+        <b>All visual-structural elements are contained within the body tag. </b>
+        <br><br>
+        Headings, paragraphs, lists, quotes, images, and links are just a few of the elements that can be contained
+        within the body tag.
+    </p>
+
+    <h2>The Html File</h2>
+
+    <p> HTML files are text files, so you can use any text editor to create your first webpage.
+        <br>
+        There are some very nice HTML editors available; you can choose the one that works for you.
+    </p>
+
+    <p> Don’t forget to save the file. HTML file names should end in either<b> <u>.html</u></b> or<b><u>.htm</u></b></p>
+
+    <h2>The Title Tag
+    </h2>
+
+    <p>To place a title on the tab describing the web page, add a title element to your head section.</p>
+
+    <a href="home.html">Take Me Back</a>
+
+
+    <!-- Overview Button -->
+    <style>
+    .overview-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Darker glass for better contrast on light pages */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        color: white !important; /* Force white text */
+        font-family: sans-serif;
+        font-weight: bold;
+        z-index: 9999;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .overview-btn:hover {
+        background: rgba(0, 0, 0, 0.7);
+        transform: translateY(2px); /* Move down slightly since it's at top */
+        box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+        color: white !important;
+    }
+    </style>
+    <a href="index.html" class="overview-btn">🏠 Overview</a>
+
+</body>
+
+</html>

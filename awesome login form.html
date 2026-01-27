@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="awesome login form.css">
+
+    <style>
+        @media screen and (max-width:1924px) {
+
+        
+
+            body {
+                background-size: 2500px 3000px;
+                background: url(Images/House.jpg) no-repeat cover;
+            }
+
+            .login-form {
+                width: calc(100% - 120px);
+                height: 1000px;
+                margin: 80px 190px;
+                padding: 20px;
+            }
+
+            .login-form h1 {
+                margin: 40px 70px;
+                font-size: 100px;
+            }
+
+            .textb {
+                margin-bottom: 10px;
+            }
+
+            .textb input {
+                width: 100%;
+                height: 80px;
+                border-radius: 14px;
+                font-size: 30px;
+                padding: 20px 60px 0 10px;
+            }
+
+            .placeholder {
+                font-size: 30px;
+                line-height: 100px;
+                top: 0;
+                left: 40px;
+            }
+
+            .show-password {
+                right: 20px;
+                line-height: 100px;
+                font-size: 24px;
+                top: 0px;
+            }
+
+            .textb input:focus~.placeholder,
+            .textb input:valid~.placeholder {
+                left: 36px;
+                top: -20px;
+            }
+
+            .checkbox {
+                font-size: 30px;
+                font-weight: 500;
+                margin: 40px 0;
+            }
+
+            .checkbox input {
+                width: 40px;
+                height: 40px;
+                border-radius: 8px;
+                margin-right: 20px;
+            }
+
+            .checkbox .fa-check {
+                left: 0px;
+                top: 8px;
+                font-size: 30px;
+                width: 40px;
+            }
+
+            .btn {
+                width: 100px;
+                height: 100px;
+                margin: 40px auto;
+                font-size: 40px;
+                border-radius: 20px;
+            }
+
+            .login-form a {
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+
+            .btn:disabled {
+                background-color: transparent;
+                color: #ddd;
+                border: 4px solid;
+            }
+
+            .anchor {
+                margin: 50px 240px;
+                padding: 20px;
+                font-size: 50px;
+            }
+
+        
+
+        
+        }
+
+        @media screen and (max-width:330px) {
+
+            body {
+                background-size: 450px 480px;
+                background: url(Images/House.jpg) no-repeat;
+                max-height: 4px;
+            }
+
+            .login-form {
+                width: 265px;
+                height: 350px;
+                margin: 25px 27px;
+                padding: 20px;
+            }
+
+            .login-form h1 {
+                margin: 10px 0;
+                font-size: 35px;
+            }
+
+            .textb {
+                margin-bottom: 5px;
+            }
+
+            .textb input {
+                width: 100%;
+                height: 40px;
+                border-radius: 7px;
+                font-size: 15px;
+                padding: 10px 30px 0 5px;
+            }
+
+            .placeholder {
+                font-size: 15px;
+                line-height: 50px;
+                top: 0;
+                left: 20px;
+            }
+
+            .show-password {
+                right: 10px;
+                line-height: 50px;
+                font-size: 12px;
+                top: 0px;
+            }
+
+            .textb input:focus~.placeholder,
+            .textb input:valid~.placeholder {
+                left: 18px;
+                top: -10px;
+            }
+
+            .checkbox {
+                font-size: 15px;
+                font-weight: 500;
+                margin: 20px 0;
+            }
+
+            .checkbox input {
+                width: 20px;
+                height: 20px;
+                border-radius: 4px;
+                margin-right: 10px;
+            }
+
+            .checkbox .fa-check {
+                left: 0px;
+                top: 4px;
+                font-size: 15px;
+                width: 20px;
+            }
+
+            .btn {
+                width: 50px;
+                height: 50px;
+                margin: 20px auto;
+                font-size: 20px;
+                border-radius: 10px;
+            }
+
+            .login-form a {
+                font-size: 15px;
+                margin-bottom: 5px;
+            }
+
+            .btn:disabled {
+                background-color: transparent;
+                color: #ddd;
+                border: 2px solid;
+            }
+
+            .anchor {
+                margin: 15px 27px;
+                padding: 10px;
+                width: 265px;
+                font-size: 25px;
+            }
+
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+
+    <title>AWESOME LOGIN FORM</title>
+    <link rel="icon" type="image/svg+xml" href="Images/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+</head>
+
+<body>
+
+    <form action="#" class="login-form">
+
+        <h1>Sign In</h1>
+
+        <div class="textb">
+            <label class="sr-only" for="login-username">Username</label>
+            <input id="login-username" type="text" required>
+            <div class="placeholder">Username</div>
+        </div>
+
+        <div class="textb">
+            <label class="sr-only" for="login-password">Password</label>
+            <input id="login-password" type="password" required>
+            <div class="placeholder">Password</div>
+            <div class="show-password fas fa-eye-slash"></div>
+        </div>
+
+        <div class="checkbox">
+            <input id="stay-signed-in" type="checkbox">
+            <div class="fas fa-check">
+            </div> <label for="stay-signed-in">Stay Signed In</label>
+        </div>
+
+        <button type="submit" class="btn fas fa-arrow-right" aria-label="Submit login form"
+            title="Submit login form"></button>
+
+        <a href="">Can't Sign In ?</a>
+        <a href="">Create Account</a>
+
+    </form>
+
+    <a href="html 5 form.html" class="anchor">To Learn Form Element</a>
+
+
+    <!-- Overview Button -->
+    <style>
+    .overview-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Darker glass for better contrast on light pages */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        color: white !important; /* Force white text */
+        font-family: sans-serif;
+        font-weight: bold;
+        z-index: 9999;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .overview-btn:hover {
+        background: rgba(0, 0, 0, 0.7);
+        transform: translateY(2px); /* Move down slightly since it's at top */
+        box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+        color: white !important;
+    }
+    </style>
+    <a href="index.html" class="overview-btn">🏠 Overview</a>
+
+</body>
+
+</html>

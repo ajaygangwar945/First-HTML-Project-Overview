@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="inside html 5.css">
+
+    <style>
+        @media screen and (max-width:1924px) {
+
+        
+
+            body {
+                font-size: 40px;
+            }
+
+            p {
+                margin: 40px;
+                padding: 20px;
+                text-indent: 25px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 90px;
+            }
+
+            h2 {
+                font-size: 70px;
+            }
+
+            svg {
+                height: 1000px;
+                width: calc(100% - 80px);
+                border-radius: 14px;
+            }
+
+            .logo {
+                width: calc(100% - 160px);
+                padding: 20px;
+                border-radius: 14px;
+            }
+
+            div {
+                display: none;
+            }
+
+            .anchor {
+                padding: 20px;
+                margin: 40px 240px;
+                font-size: 40px;
+                border-radius: 14px;
+            }
+
+            a {
+                padding: 20px;
+                font-size: 50px;
+                margin: 60px;
+                border-radius: 14px;
+            }
+
+        
+
+        
+        }
+
+        @media screen and (max-width:330px) {
+
+            body {
+                font-size: 15px;
+            }
+
+            p {
+                margin: 20px;
+                padding: 20px;
+                text-indent: 15px;
+                border-radius: 7px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            svg {
+                height: 280px;
+                width: 280px;
+                border-radius: 7px;
+            }
+
+            .logo {
+                width: 240px;
+                padding: 20px;
+                border-radius: 7px;
+            }
+
+            div {
+                display: none;
+            }
+
+            .anchor {
+                padding: 10px;
+                margin: 20px 75px;
+                font-size: 20px;
+                border-radius: 7px;
+            }
+
+            a {
+                padding: 10px;
+                font-size: 25px;
+                margin: 30px;
+                border-radius: 7px;
+            }
+
+        }
+    </style>
+
+    <title>SVG</title>
+    <link rel="icon" type="image/svg+xml" href="Images/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+</head>
+
+<body>
+
+    <h1>Scalable Vector Graphics</h1>
+
+    <p>SVG stands for Scalable Vector Graphics, and is used to draw shapes with HTML-style markup.
+
+        <br>
+        It offers several methods for drawing paths, boxes, circles, text, and graphic images.
+    </p>
+
+    <h2>Inserting Svg Images</h2>
+
+    <p> An SVG image can be added to HTML code with just a basic image tag that includes a source attribute pointing to
+        the image.</p>
+
+    <img src="Images/logo.svg" alt="LOGO" class="logo">
+
+    <h2>Drawing Shapes With Svg
+    </h2>
+
+    <p>To draw shapes with SVG, you first need to create an SVG element tag with two attributes: width and height. </p>
+
+    <h2>Drawing A Circle</h2>
+
+    <svg>
+        <circle cx="50%" cy="50%" r="43%" fill="#00264d" stroke="#ffd633" stroke-width="2%">
+    </svg>
+
+    <p>
+        To create a circle, add a circle tag. </p>
+
+    <p> - cx pushes the center of the circle further to the right of the screen
+        <br>
+        - cy pushes the center of the circle further down from the top of the screen
+        <br>
+        - r defines the radius
+        <br>
+        - fill determines the color of our circle
+        <br>
+        - stroke adds an outline to the circle
+    </p>
+
+    <h2>Drawing A Rectangle</h2>
+
+    <p>To draw rectangle type rect in svg.We can define start point or height and weight.</p>
+
+    <svg>
+        <rect x="4.8%" y="7.5%" height="85%" width="90%" fill="#00264d" stroke="#ffd633" stroke-width="2%">
+    </svg>
+
+    <h2>Drawing A Line</h2>
+
+    <p>By using svg we can draw line and make more attractive.</p>
+
+    <p>(x1, y1) define the start coordinates(x2, y2) define the end coordinates.</p>
+
+    <svg>
+        <line x1="10%" y1="10%" x2="90%" y2="90%" stroke="#ffd633" stroke-linecap="round" stroke-width="5%">
+    </svg>
+
+    <div>
+
+        <h2>Drawing A Polyline</h2>
+
+        <p>We can also draw polyline by using svg.
+            <br><br>
+            polyline defines shapes built from multiple line definitions:
+        </p>
+
+        <svg>
+            <polyline points="100 100,400 800,800 200" fill="none" stroke="#ffd633" stroke-linejoin="miter"
+                stroke-linecap="round" stroke-width="50px">
+        </svg>
+
+    </div>
+
+    <h2>Drawing A Ellipse
+    </h2>
+
+    <p>The ellipse is similar to the circle, with one exception:
+        <br><br>
+        You can independently change the horizontal and vertical axes of its radius, using the rx and ry attributes.
+    </p>
+
+    <svg>
+        <ellipse cx="50%" cy="50%" rx="45%" ry="34%" fill="#00264d" stroke="#ffd633" stroke-width="2%">
+    </svg>
+
+    <div>
+
+        <h2>Drawing A Polygon</h2>
+
+        <p>
+            The polygon element is used to create a graphic with at least three sides. The polygon element is unique
+            because it automatically closes off the shape for you. </p>
+
+        <svg>
+            <polygon points="100 100,400 800,800 200" fill="#00264d" stroke="#ffd633" stroke-width="20px">
+        </svg>
+
+    </div>
+
+    <h2>Shape Animations </h2>
+
+    <p>SVG animations can be created using the animate element.
+
+        <br><br>
+        The example below creates a rectangle that will change its position in 3 seconds and will then repeat the
+        animation twice.
+    </p>
+
+    <p><b>AttributeName</b>: Specifies which attribute will be affected by the animation.<br><br>
+
+        <b>from</b>: Specifies the starting value of the attribute.<br><br>
+
+        <b>to</b>: Specifies the ending value of the attribute.<br><br>
+
+        <b>dur</b>: Specifies how long the animation runs (duration).
+        <br><br>
+
+        <b>fill</b>: Specifies whether or not the attribute's value should return to its initial value when the
+        animation is finished (Values: "remove" resets the value; "freeze" keeps the “to value”).<br><br>
+        <b>repeatCount</b>: Specifies the repeat count of the animation.
+    </p>
+
+    <h2>Circle With Animation</h2>
+
+    <svg>
+        <circle cx="50%" cy="50%" r="43%" fill="#00264d" stroke="#ffd633" stroke-width="2%">
+
+            <animate attributeName="cx" from="0" to="100%" dur="5s" fill="freeze" repeatCount="indefinite">
+
+    </svg>
+
+    <h2>Rectangle With Animation</h2>
+
+    <svg>
+        <rect x="4.8%" y="7.5%" height="85%" width="90%" fill="#00264d" stroke="#ffd633" stroke-width="2%">
+
+            <animate attributeName="x" from="0" to="100%" dur="5s" fill="freeze" repeatCount="indefinite">
+
+    </svg>
+
+    <h2>Line With Animation</h2>
+
+    <svg>
+        <line x1="10%" y1="10%" x2="90%" y2="90%" stroke="#ffd633" stroke-linecap="round" stroke-width="5%">
+
+            <animate attributeName="x1" from="0" to="100%" dur="5s" fill="freeze" repeatCount="indefinite">
+
+    </svg>
+
+    <div>
+
+        <h2>Polyline With Animation</h2>
+
+        <svg>
+            <polyline points="100 100,400 800,800 200" fill="none" stroke="#ffd633" stroke-linejoin="miter"
+                stroke-linecap="round" stroke-width="50px">
+
+                <animate attributeName="stroke" from="#3498db" to="#2ecc71" dur="5s" fill="freeze"
+                    repeatCount="indefinite">
+
+        </svg>
+
+    </div>
+
+    <h2>Ellipse With Animation</h2>
+
+    <svg>
+        <ellipse cx="50%" cy="50%" rx="45%" ry="34%" fill="#00264d" stroke="#ffd633" stroke-width="2%">
+            <animate attributeName="cx" from="0" to="100%" dur="5s" fill="freeze" repeatCount="indefinite">
+    </svg>
+
+    <div>
+
+        <h2>Polygon With Animation</h2>
+
+        <svg>
+            <polygon points="100 100,400 800,800 200" fill="#00264d" stroke="#ffd633" stroke-width="20px">
+
+                <animate attributeName="stroke" from="#3498db" to="#2ecc71" dur="5s" fill="freeze"
+                    repeatCount="indefinite">
+
+        </svg>
+
+    </div>
+
+    <a href="html 5.html" class="anchor">Take Me Back</a>
+
+
+    <!-- Overview Button -->
+    <style>
+    .overview-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Darker glass for better contrast on light pages */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        color: white !important; /* Force white text */
+        font-family: sans-serif;
+        font-weight: bold;
+        z-index: 9999;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .overview-btn:hover {
+        background: rgba(0, 0, 0, 0.7);
+        transform: translateY(2px); /* Move down slightly since it's at top */
+        box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+        color: white !important;
+    }
+    </style>
+    <a href="index.html" class="overview-btn">🏠 Overview</a>
+
+</body>
+
+</html>

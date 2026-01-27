@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+
+        /*Header*/
+
+        .header {
+            padding: 15px 0;
+            background: #fff;
+        }
+
+        .inner-width {
+            padding: 0 15px;
+        }
+
+        a {
+            outline: none;
+            text-decoration: none;
+            background: none;
+            color: none;
+        }
+
+        .fa-flag {
+            color: #183153;
+            font-size: 20px;
+        }
+
+        .fa-sign-in-alt {
+            color: #183153;
+            font-size: 20px;
+            padding-left: 240px;
+        }
+
+        .bottom {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .bottom h1 {
+            color: #183153;
+        }
+
+        .bottom span {
+            padding: 5px 13px;
+            color: #FFD43B;
+            background: #183153;
+            border-radius: 8px;
+        }
+
+        .bottom p {
+            padding: 25px 7px 0 7px;
+            line-height: 20px;
+            font-size: 13px;
+            font-weight: 300;
+            color: #183153;
+        }
+
+        /*Pre Order Now*/
+
+        .order {
+            padding: 40px 5px;
+            background: #F0F1F3;
+            text-align: center;
+        }
+
+        video {
+            margin: 0;
+            padding: 0;
+            width: 290px;
+            border-radius: 8px;
+        }
+
+        .now {
+            margin: 12px 0;
+        }
+
+        .now span {
+            margin: 0 60px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #183153;
+            color: #fff;
+        }
+
+        .bot {
+            font-size: 14px;
+            font-weight: 900;
+            border-radius: 8px 8px 0 0;
+            border-bottom: 2px dotted #001C40;
+        }
+
+        .tom {
+            font-weight: 900;
+            border-radius: 0 0 8px 8px;
+        }
+
+        b {
+            font-size: 25px;
+            padding-right: 5px;
+        }
+
+        sup {
+            font-size: 17px;
+            padding-bottom: 8px;
+        }
+
+        .pre {
+            margin: 25px 60px;
+            padding: 10px 20px;
+            background: #FFD43B;
+            color: #183153;
+            border: 1.5px solid #183153;
+            border-bottom: 4px solid #183153;
+            border-radius: 5px;
+        }
+
+        .pre span {
+            font-size: 12px;
+            font-weight: 500;
+            vertical-align: 2px;
+        }
+
+        .fa-clock {
+            font-size: 17px;
+            padding-right: 10px;
+        }
+
+        .order p {
+            margin: 0 60px 25px 60px;
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: 300;
+            color: #183153;
+        }
+
+        .icon i {
+            font-size: 20px;
+            padding: 0 5px;
+            color: #183153;
+        }
+
+        /*More Icons*/
+
+        .more {
+            padding: 35px 5px;
+            text-align: center;
+            background: #183153;
+        }
+
+        .more p {
+            line-height: 23px;
+            color: #FAFBFB;
+        }
+
+        .styles {
+            padding: 9px 0 0 0;
+        }
+
+        .styles div {
+            padding: 9px 0;
+        }
+
+        .styles i {
+            padding-right: 10px;
+            font-size: 21px;
+            color: #FFD43B;
+        }
+
+        .styles span {
+            font-weight: 900;
+            color: #FFF;
+            border-bottom: 2px dotted #fff;
+        }
+
+        /*New*/
+
+        .new {
+            padding: 30px 5px;
+            background: #F0F1F3;
+        }
+
+        .new h1 {
+            font-size: 23px;
+            text-align: center;
+            color: #183153;
+        }
+
+        .new p {
+            padding: 10px 0;
+            font-size: 15px;
+            font-weight: 300;
+            line-height: 22px;
+            text-align: center;
+            color: #183153;
+        }
+
+        .soon {
+            margin: 10px 116px 0 116px;
+            padding: 3px 2px;
+            font-size: 10px;
+            font-weight: 800;
+            text-align: center;
+            background: #FFD43B;
+            color: #183153;
+            border-radius: 5px;
+        }
+
+        .new h2 {
+            padding: 10px 0;
+            text-align: center;
+            font-size: 16px;
+            color: #183153;
+        }
+
+        .car {
+            margin: 10px 0;
+        }
+
+        .bike {
+            padding: 60px 0;
+            text-align: center;
+            background: #183153;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .bike i {
+            padding: 0 10px;
+            font-size: 60px;
+            color: #63E6BE;
+        }
+
+        .fresh {
+            padding: 20px;
+            display: flex;
+            background: #fff;
+            border-radius: 0 0 8px 8px;
+            color: #183153;
+        }
+
+        .fresh .di {
+            font-size: 20px;
+            color: #183153;
+            margin-left: 5px
+        }
+
+        .refresh {
+            margin-left: 25px;
+            margin-right: 10px;
+        }
+
+        .refresh b {
+            font-size: 15px;
+        }
+
+        .refresh small {
+            padding-top: 10px;
+            line-height: 12px;
+            font-size: 12px;
+            font-weight: 300;
+        }
+
+        .light {
+            margin: 60px 0 0 0;
+        }
+
+        .light h3 {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 900;
+            color: #183153;
+            padding: 8px 0;
+        }
+
+        .bell {
+            text-align: center;
+            margin: 10px 0 0 0;
+            padding: 60px 0;
+            background: #183153;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .bell i {
+            font-size: 60px;
+            padding: 0 10px;
+            color: #74C0FC;
+        }
+
+        .leaf {
+            padding: 20px;
+            display: flex;
+            background: #fff;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .leaf i {
+            padding-left: 5px;
+            color: #183153;
+            font-size: 20px;
+        }
+
+        .leaf .as {
+            margin-left: 25px;
+            margin-right: 10px;
+        }
+
+        .leaf h5 {
+            color: #183153;
+            font-size: 15px;
+        }
+
+        .leaf .inside {
+            font-weight: 300;
+            color: #183153;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        .sharp {
+            padding: 50px 0 0 0;
+        }
+
+        .sharp h5 {
+            padding: 7px 0;
+            text-align: center;
+            color: #183153;
+            font-size: 16px;
+        }
+
+        .sharp p {
+            padding: 8px 5px;
+            text-align: center;
+            color: #183153;
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        .make {
+            padding: 25px 0 0 0;
+        }
+
+        .make .flex {
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        .first,
+        .third {
+            padding-right: 30px;
+        }
+
+        .first .fa-icons,
+        .third .fa-icons {
+            padding: 35px 30px;
+            display: block;
+            font-size: 65px;
+            background: #FFD43B;
+            color: #193154;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .first .solid,
+        .third .solid {
+            padding: 10px 0;
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+            color: #193154;
+            background: #fff;
+        }
+
+        .first .harp,
+        .third .harp {
+            display: block;
+            padding: 0 0 10px 0;
+            font-size: 15px;
+            font-weight: 600;
+            color: #193154;
+            background: #fff;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .arp {
+            display: block;
+            padding: 5px;
+            margin: 0 15px 10px 15px;
+            font-size: 12px;
+            border: 1.5px solid #193154;
+        }
+
+        .second .fa-icons,
+        .fourth .fa-icons {
+            padding: 35px 30px;
+            display: block;
+            font-size: 65px;
+            background: #FAB005;
+            color: #193154;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .second .solid,
+        .fourth .solid {
+            padding: 10px 0;
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+            color: #193154;
+            background: #fff;
+        }
+
+        .second .harp,
+        .fourth .harp {
+            display: block;
+            padding: 0 0 10px 0;
+            font-size: 15px;
+            font-weight: 600;
+            color: #193154;
+            background: #fff;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .second .arp,
+        .fourth .arp {
+            display: block;
+            padding: 5px;
+            margin: 0 15px 10px 15px;
+            font-size: 12px;
+            border: 1.5px solid #193154;
+        }
+
+        .third,
+        .fourth {
+            padding-top: 20px;
+        }
+
+        .fifth {
+            margin: 0 75px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .fifth .fa-icons {
+            padding: 35px 30px;
+            display: block;
+            font-size: 65px;
+            background: #FFD43B;
+            color: #193154;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .fifth .solid {
+            padding: 10px 0;
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+            color: #193154;
+            background: #fff;
+        }
+
+        .fifth .harp {
+            display: block;
+            padding: 0 0 10px 0;
+            font-size: 15px;
+            font-weight: 600;
+            color: #193154;
+            background: #fff;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .fifth .arp {
+            display: block;
+            padding: 5px;
+            margin: 0 15px 10px 15px;
+            font-size: 12px;
+            border: 1.5px solid #193154;
+        }
+
+        /*Setting*/
+
+        .setting {
+            padding: 40px 5px;
+            background: #F0F1F3;
+            text-align: center;
+        }
+
+        .setting h2 {
+            font-size: 25px;
+            font-weight: 900;
+            color: #183153;
+        }
+
+        .setting p {
+            padding: 10px 0 20px 0;
+            font-size: 15px;
+            font-weight: 300;
+            color: #183153;
+            line-height: 22px;
+        }
+
+        .official {
+            background: #ffffff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 15px 0 40px 0;
+            padding: 20px 30px 0px 30px;
+        }
+
+        .la {
+            margin: 15px 0 50px 0;
+        }
+
+        .official .fa-plug {
+            padding-right: 5px;
+            color: #63E6BE;
+            font-size: 47px;
+        }
+
+        .fa-puzzle-piece {
+            color: #B197FC;
+            padding: 0px;
+            font-size: 35px;
+        }
+
+        .fa-css3 {
+            color: #E599F7;
+            padding: 0px;
+            font-size: 40px;
+        }
+
+        .fa-space-shuttle {
+            color: #FFD43B;
+            padding: 0px;
+            font-size: 32px;
+        }
+
+        .fa-box {
+            padding: 0px;
+            font-size: 40px;
+            color: #74C0FC;
+        }
+
+        .word h6 {
+            padding-left: 30px;
+            color: #183153;
+            font-weight: 900;
+            text-align: left;
+            font-size: 15px;
+        }
+
+        .word p {
+            padding-left: 30px;
+            color: #183153;
+            font-weight: 300;
+            line-height: 20px;
+            text-align: left;
+            font-size: 12px;
+        }
+
+        .yourself .up {
+            margin-top: 10px;
+            padding: 20px 22px 22px 22px;
+            background: #183153;
+            border-radius: 8px;
+        }
+
+        .up h4 {
+            font-size: 20px;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        .up p {
+            font-size: 12px;
+            font-weight: 400;
+            text-align: left;
+            line-height: 18px;
+            color: #F6F7F9;
+        }
+
+        .add .logo {
+            padding: 10px 0 20px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo i {
+            width: 36px;
+            font-size: 23px;
+            padding-top: 8px;
+            padding-right: 13px;
+            color: #63E6BE;
+        }
+
+        .logo span {
+            font-size: 12px;
+            font-weight: 400;
+            text-align: left;
+            line-height: 18px;
+            color: #F6F7F9;
+        }
+
+        .add .ready {
+            padding: 10px 0 20px 0;
+            display: flex;
+        }
+
+        .ready i {
+            width: 36px;
+            font-size: 25px;
+            padding-top: 8px;
+            padding-right: 20px;
+            color: #63E6BE;
+        }
+
+        .ready span {
+            font-size: 12px;
+            font-weight: 400;
+            text-align: left;
+            line-height: 18px;
+            color: #F6F7F9;
+        }
+
+        .pack {
+            text-align: center;
+            padding: 60px 0 0 0;
+        }
+
+        .pack h1 {
+            color: #183153;
+        }
+
+        .pack p {
+            padding-bottom: 50px;
+        }
+
+        .get {
+            align-items: center;
+            padding: 0 5px;
+            padding-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            color: #183153;
+        }
+
+        .get i {
+            font-size: 40px;
+            padding-right: 20px;
+        }
+
+        .get h6 {
+            font-weight: 900;
+            text-align: left;
+        }
+
+        .fa-file-archive {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .get p {
+            font-size: 10px;
+            line-height: 15px;
+            font-weight: 300;
+            text-align: left;
+            padding: 6px 0 0 0;
+        }
+
+        /*Footer*/
+
+        .footer {
+            padding-top: 40px;
+            background: #183153;
+        }
+
+        .brew {
+            text-align: center;
+            margin: 12px 0;
+        }
+
+        .brew span {
+            margin: 0 61px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #FFD43B;
+            color: #183153;
+        }
+
+        .brew .to {
+            padding: 15px 50px;
+            font-size: 18px;
+            font-weight: 900;
+            border-radius: 8px 8px 0 0;
+            border-bottom: 2px dotted #FAB107;
+        }
+
+        .brew .p {
+            font-weight: 900;
+            border-radius: 0 0 8px 8px;
+            padding-bottom: 20px;
+        }
+
+        .brew b {
+            font-size: 25px;
+            padding-right: 5px;
+        }
+
+        .brew sup {
+            font-size: 17px;
+            padding-bottom: 8px;
+        }
+
+        .about {
+            margin: 25px 60px;
+            padding: 10px 20px;
+            background: #FFF;
+            color: #001C40;
+            border: 1.5px solid #001C40;
+            border-bottom: 6px solid #001C40;
+            border-radius: 8px 8px 10px 10px;
+        }
+
+        .about span {
+            font-size: 12px;
+            font-weight: 900;
+            vertical-align: 2px;
+        }
+
+        .fa-clock {
+            font-size: 17px;
+            padding-right: 10px;
+        }
+
+        .footer h6 {
+            text-align: center;
+            color: #fff;
+            font-size: 15px;
+        }
+
+        .footer p {
+            padding: 10px 0;
+            line-height: 20px;
+            text-align: center;
+            color: #F1F2F4;
+            font-size: 15px;
+        }
+
+        .but {
+            padding: 20px 0 30px 0;
+            text-align: center;
+        }
+
+        .but i {
+            font-size: 20px;
+            padding: 0 5px;
+            color: #878FA3;
+        }
+
+        .contact {
+            padding: 10px;
+            background: #001C40;
+        }
+
+        .contact .fa-flag {
+            font-size: 15px;
+            color: #fff;
+        }
+
+        .contact span {
+            padding: 0 5px;
+            color: #fff;
+            font-size: 10px;
+        }
+
+        .fa-copyright {
+            padding-left: 59px;
+            font-size: 10px;
+            color: #747F95;
+        }
+
+        .contact .inc {
+            padding-left: 0;
+            padding-right: 0;
+            font-size: 10px;
+            color: #747F95;
+        }
+    </style>
+
+    <title>FONT AWESOME 6</title>
+    <link rel="icon" type="image/svg+xml" href="Images/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+</head>
+
+<body>
+
+    <!--Header-->
+
+    <header class="header">
+        <div class="inner-width">
+
+            <div class="top">
+
+                <a href="font awesome.html" class="anchor">
+                    <i class="far fa-flag" aria-label="Back to Font Awesome examples"
+                        title="Back to Font Awesome examples"></i>
+                </a>
+
+                <a href="sign in.html" class="anchor">
+                    <i class="fas fa-sign-in-alt" aria-label="Sign in" title="Sign in"></i>
+                </a>
+
+            </div>
+
+            <div class="bottom">
+
+                <h1>Font Awesome <span>6</span></h1>
+
+                <p>The next generation of the web's favourite icon library + toolkit is coming .Pre-order today to get
+                    early access to new icons, tecnology, and more!</p>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!--Pre Order Now-->
+
+    <section class="order">
+        <div class="inner-width">
+
+            <video src="Video/sample.mp4" poster="Images/Font.png" controls>
+            </video>
+
+            <div class="now">
+
+                <span class="bot">NOW BREWING!</span>
+
+                <span class="tom">
+                    <sup>$</sup>
+                    <b>99</b>
+                    <small>per year</small>
+                </span>
+
+            </div>
+
+            <div class="pre">
+
+                <i class="far fa-clock"></i>
+
+                <span>Pre-Order Now</span>
+
+            </div>
+
+            <p>Pre-order now and get early access and releases over the next year.Plus,get instant access to version 5
+                Pro while you wait!</p>
+
+            <div class="icon">
+
+                <i class="fab fa-twitter"></i>
+
+                <i class="fab fa-facebook"></i>
+
+                <i class="fas fa-envelope"></i>
+
+                <i class="fas fa-link"></i>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--More Icons-->
+
+    <section class="more">
+        <div class="inner-width">
+
+            <p>Font Awesome 6 contains absolutely everything from Font Awesome 5 plus:</p>
+
+            <div class="styles">
+
+                <div>
+
+                    <i class="fas fa-icons"></i>
+
+                    <span>More Icons</span>
+
+                </div>
+
+                <div>
+
+                    <i class="fas fa-heart"></i>
+
+                    <span>More Styles</span>
+
+                </div>
+
+                <div>
+
+                    <i class="fas fa-plug"></i>
+
+                    <span>More Services</span>
+
+                </div>
+
+                <div>
+
+                    <i class="fas fa-rocket"></i>
+
+                    <span>More Awesome</span>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--New-->
+
+    <section class="new">
+        <div class="inner-width">
+
+            <h1>New Icons + Styles!</h1>
+
+            <p>To better match the needs + look your projects,Font Awesome 6 has even more consistenly designed icons in
+                more styles than ever before.</p>
+
+            <div class="soon">SOON!</div>
+
+            <h2>New + Revamped Icons</h2>
+
+            <div class="car">
+
+                <div class="bike">
+
+                    <i class="fas fa-car"></i>
+
+                    <i class="fas fa-motorcycle"></i>
+
+                    <i class="fas fa-camera"></i>
+
+                </div>
+
+                <div class="fresh">
+
+                    <i class="di far fa-star"></i>
+
+                    <span class="refresh">
+
+                        <b>500+ Fresh and Refreshed Icons</b>
+                        <br>
+                        <small>Not only have we added a huge collection of NEW icons, we've revamped and given our
+                            existing icons some love and attention.</small>
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="light">
+
+                <div class="soon">SOON!</div>
+
+                <h3>Thin Style of All Icons!</h3>
+
+                <div class="blue">
+
+                    <div class="bell">
+
+                        <i class="b fas fa-bomb"></i>
+
+                        <i class="a far fa-bell"></i>
+
+                        <i class="o fas fa-cloud-upload-alt"></i>
+
+                    </div>
+
+                    <div class="leaf">
+
+                        <span class="i">
+
+                            <i class="fas fa-leaf"></i>
+
+                        </span>
+
+                        <span class="as">
+
+                            <h5>Icons as Light as an fa-feather</h5>
+
+                            <span class="inside">
+                                Introducing Font Awesome Thin, a brand-new icon style for those of you who like things
+                                svelt and modern.
+                            </span>
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="sharp">
+
+                <div class="soon">SOON!</div>
+
+                <h5>A Sharp Family of All Font Awesome Icons!</h5>
+
+                <p>We're adding an entirely new Font Awesome Family.All of our existing icon styles (including the new
+                    thin style),rendered in a crisp new look.</p>
+
+                <div class="make">
+
+                    <div class="flex">
+
+                        <div class="first">
+
+                            <span class="fas fa-icons"></span>
+
+                            <span class="solid">Solid</span>
+
+                            <span class="harp"><span class="arp">SHARP</span></span>
+
+                        </div>
+
+                        <div class="second">
+
+                            <span class="fas fa-icons"></span>
+
+                            <span class="solid">Regular</span>
+
+                            <span class="harp"><span class="arp">SHARP</span></span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="flex">
+
+                        <div class="third">
+
+                            <span class="fas fa-icons"></span>
+
+                            <span class="solid">Light</span>
+
+                            <span class="harp"><span class="arp">SHARP</span></span>
+
+                        </div>
+
+                        <div class="fourth">
+
+                            <span class="fas fa-icons"></span>
+
+                            <span class="solid">Thin</span>
+
+                            <span class="harp"><span class="arp">SHARP</span></span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="fifth">
+
+                        <span class="fas fa-icons"></span>
+
+                        <span class="solid">Duotone</span>
+
+                        <span class="harp"><span class="arp">SHARP</span></span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Setting-->
+
+    <section class="setting">
+        <div class="inner-width">
+
+            <h2>More Settings, Services, and Speed!</h2>
+
+            <p>Font Awesome 6 makes it easier to use icons where you want to.More plugins and packages to match your
+                stack.Less time wrestling browser rendering.</p>
+
+            <div class="official">
+
+                <i class="fas fa-plug"></i>
+
+                <span class="word">
+
+                    <h6>Official WordPress Plugin</h6>
+
+                    <p>Finally, an easy and dependable way to use icons in your pages and posts.</p>
+
+                </span>
+
+            </div>
+
+            <div class="official">
+
+                <i class="fas fa-puzzle-piece"></i>
+
+                <span class="word">
+
+                    <h6>Official Web Component</h6>
+
+                    <p>The future is now and includes universal simple syntax all the W3 posts.</p>
+
+                </span>
+
+            </div>
+
+            <div class="official">
+
+                <i class="fas fa-box"></i>
+
+                <span class="word">
+
+                    <h6>Official Django Plugin</h6>
+
+                    <p>Pip'ing ain't easy sometimes unless you're installing our awesome package.</p>
+
+                </span>
+
+            </div>
+
+            <div class="official">
+
+                <i class="fab fa-css3"></i>
+
+                <span class="word">
+
+                    <h6>CSS Custom Properties</h6>
+
+                    <p>Change any visual configuration globally or right "on the style spot".</p>
+
+                </span>
+
+            </div>
+
+            <div class="official la">
+
+                <i class="fas fa-space-shuttle"></i>
+
+                <span class="word">
+
+                    <h6>Performance Improvements</h6>
+
+                    <p>Make the kilobyte kessel run in record time and load icons at lightspeed.</p>
+
+                </span>
+
+            </div>
+
+            <div class="yourself">
+
+                <h2>Add More Awesome Yourself!</h2>
+
+                <p>Last but certainly not least,personally extend Font Awesome to suit what you need and want.</p>
+
+                <div class="up">
+
+                    <h4>Upload Your Own Icons!<h4>
+
+                            <p>With Font Awesome 6,you can now upload your own icons to a kit and easily use them right
+                                alongside Font Awesome Icons!</p>
+
+                            <div class="add">
+
+                                <div class="logo">
+
+                                    <i class="fas fa-hand-sparkles"></i>
+
+                                    <span>Easily add your logo or custom icons to Font Awesome.
+                                    </span>
+
+                                </div>
+
+                                <div class="ready">
+
+                                    <i class="fas fa-user-astronaut"></i>
+
+                                    <span>This feature is almost ready for release as a beta.Folks who pre-order will
+                                        get early access!
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                </div>
+
+            </div>
+
+            <div class="pack">
+
+                <h1>A Plan Packed with Instant Awesome!</h1>
+
+                <p>When you pre-order Version 6 of Font Awesome, you're also getting a 1 year Pro-level subscription
+                    with tons ready to use right away.</p>
+
+                <div class="get">
+
+                    <i class="fas fa-icons"></i>
+
+                    <span class="rel">
+
+                        <h6>All 7,842 Released Icons</h6>
+
+                        <p>Get all of the pro icons + categories we've released in version 5!</p>
+
+                    </span>
+
+                </div>
+
+                <div class="get">
+
+                    <i class="fas fa-heart"></i>
+
+                    <span class="rel">
+
+                        <h6>4 Icons Styles</h6>
+
+                        <p>Use our solid,regular,light,and duotone styles.And there's brands too!</p>
+
+                    </span>
+
+                </div>
+
+                <div class="get">
+
+                    <i class="fas fa-file-archive"></i>
+
+                    <span class="rel">
+
+                        <h6>A Pro License</h6>
+
+                        <p>Never think twice about using icons in as many projects as you'd like.</p>
+
+                    </span>
+
+                </div>
+
+                <div class="get">
+
+                    <i class="fas fa-briefcase"></i>
+
+                    <span class="rel">
+
+                        <h6>Services and Tools</h6>
+
+                        <p>Make easy work of hosting icons,desktop design, and icon installation!</p>
+
+                    </span>
+
+                </div>
+
+                <div class="get">
+
+                    <i class="fas fa-download"></i>
+
+                    <span class="rel">
+
+                        <h6>Download Pro Assets</h6>
+
+                        <p>Grab copies of icons and assets for the web and for desktop anytime you want.</p>
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer class="footer">
+        <div class="inner-width">
+
+            <div class="brew">
+
+                <span class="to">NOW BREWING!</span>
+
+                <span class="p">
+                    <sup>$</sup>
+                    <b>99</b>
+                    <small>per year</small>
+                </span>
+
+            </div>
+
+            <div class="about">
+
+                <i class="lock far fa-clock"></i>
+
+                <span>Pre-Order Now
+                </span>
+
+            </div>
+
+            <h6>All the Awesome to Come.</h6>
+
+            <p>Pre-order now and get early access and releases over the next year.Plus,get instant access to version 5
+                Pro while you wait!</p>
+
+            <div class="but">
+
+                <i class="fab fa-twitter"></i>
+
+                <i class="fab fa-facebook"></i>
+
+                <i class="fas fa-envelope"></i>
+
+                <i class="fas fa-link"></i>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="contact">
+
+        <a href="font awesome.html"><i class="far fa-flag" aria-label="Back to Font Awesome examples"
+                title="Back to Font Awesome examples"></i>
+        </a>
+
+        <span>Terms</span>
+
+        <span>Privacy</span>
+
+        <span>Contact</span>
+
+        <i class="far fa-copyright"></i>
+
+        <span class="inc">Fonticons,Inc.
+        </span>
+
+    </div>
+
+
+    <!-- Overview Button -->
+    <style>
+    .overview-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: rgba(0, 0, 0, 0.5); /* Darker glass for better contrast on light pages */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        color: white !important; /* Force white text */
+        font-family: sans-serif;
+        font-weight: bold;
+        z-index: 9999;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .overview-btn:hover {
+        background: rgba(0, 0, 0, 0.7);
+        transform: translateY(2px); /* Move down slightly since it's at top */
+        box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+        color: white !important;
+    }
+    </style>
+    <a href="index.html" class="overview-btn">🏠 Overview</a>
+
+</body>
+
+</html>

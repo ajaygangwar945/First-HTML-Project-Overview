@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 900;
+    font-variant: small-caps;
+    text-align: center;
+    text-transform: capitalize;
+    color: #00264d;
+}
+
+p {
+    margin: 50px;
+    padding: 40px;
+    text-align: justify;
+    text-indent: 50px;
+    word-spacing: 5px;
+    background-color: #ffd633;
+    border-radius: 25px;
+}
+
+h1 {
+    font-size: 140px;
+}
+
+h2 {
+    font-size: 95px;
+
+}
+
+h3 {
+    font-size: 70px;
+}
+
+img {
+    width: 880px;
+    border-radius: 25px;
+}
+
+.table {
+    width: 880px;
+    height: 400px;
+    vertical-align: middle;
+    background-color: #ffd633;
+    border-radius: 25px;
+    border: 6px solid #00264d;
+}
+
+iframe {
+    width: 880px;
+    height: 850px;
+    border-radius: 25px;
+}
+
+form {
+    background-color: #00264d;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+input[type="text"],
+input[type="password"] {
+    background: none;
+    display: block;
+    outline: none;
+    text-align: center;
+    color: white;
+    border: 10px solid #00e6ac;
+    border-radius: 80px;
+    padding: 40px 20px;
+    margin: 40px auto;
+    width: 350px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 900;
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+    width: 450px;
+    border-color: #ffd633;
+}
+
+input[type="submit"] {
+    background: none;
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    border: 10px solid #ffd633;
+    padding: 40px 20px;
+    width: 250px;
+    outline: none;
+    color: #ffd633;
+    font-weight: 900;
+    border-radius: 80px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffd633;
+    color: #00264d;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    outline: none;
+    background: none;
+    height: 100px;
+    width: 100px;
+}
+
+.form {
+    color: #00e6ac;
+}
+
+span {
+    vertical-align: 30px;
+    font-size: 70px;
+    margin: 20px;
+}
+
+a {
+    display: block;
+    outline: none;
+    text-decoration: none;
+    font-size: 70px;
+    color: #00e6ac;
+    background-color: #00264d;
+    border-radius: 25px;
+    margin: 100px;
+    padding: 40px;
+}
+
+.image {
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+
+.anchor {
+    font-size: 50px;
+    margin: 100px 250px;
+    background-color: #00264d;
+    color: #ffd633;
+}
