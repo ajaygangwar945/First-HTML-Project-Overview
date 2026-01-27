@@ -93,67 +93,31 @@
     <title>TABLE TAG</title>
     <link rel="icon" type="image/svg+xml" href="Images/logo.svg">
     <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+
+
 <style>
-    
-    </style>
-<style>
-    /* --- ULTIMATE RESPONSIVE RESET --- */
-    * { box-sizing: border-box !important; }
-    html { font-size: 16px !important; }
+    /* --- LIGHT RESPONSIVE FIX (Layout Only) --- */
     body {
-        max-width: 1000px !important;
-        margin: 0 auto !important;
-        padding: 5vw !important;
-        font-size: 1rem !important;
-        line-height: 1.6 !important;
-        text-align: center !important;
-        word-wrap: break-word !important;
-        overflow-x: hidden !important;
-        background-color: #f4f4f4 !important;
-        color: #333 !important;
-        float: none !important;
-    }
-    h1, h2, h3, h4, h5, h6, #h1 { 
-        margin: 0.5em 0 !important; 
-        padding: 10px !important; 
-        background: transparent !important; 
-        color: #00264d !important;
-        line-height: 1.2 !important;
-    }
-    h1, #h1 { font-size: 2.2rem !important; }
-    h2 { font-size: 1.8rem !important; }
-    p, li, label, input, select, textarea, a { 
-        font-size: 1rem !important; 
-        margin: 10px auto !important;
-        width: auto !important;
-        max-width: 100% !important;
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow-x: hidden;
+        word-wrap: break-word;
     }
     img, video, iframe {
         max-width: 100% !important;
         height: auto !important;
-        display: block !important;
-        margin: 20px auto !important;
-        border-radius: 8px !important;
     }
     table, form, fieldset, details {
         max-width: 100% !important;
-        width: 100% !important;
-        margin: 20px auto !important;
-        border-collapse: collapse !important;
-    }
-    .overview-btn {
-        position: fixed !important;
-        font-size: 0.8rem !important;
-        padding: 8px 15px !important;
-        top: 10px !important;
-        right: 10px !important;
         width: auto !important;
-        z-index: 10000 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
-    @media (max-width: 600px) {
-        body { padding: 15px !important; }
-        h1, #h1 { font-size: 1.8rem !important; }
-        h2 { font-size: 1.5rem !important; }
+    @media (max-width: 768px) {
+        /* Scale down the massive fonts relatively without changing style */
+        body, h1, h2, h3, h4, h5, h6, p, a, li { 
+            font-size: clamp(16px, 8vw, 60px) !important; 
+        }
     }
     </style>
 </head>
