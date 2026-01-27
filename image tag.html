@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="inside html basics.css">
 
     <style>
-        /* Removed problematic query */ @media screen and (max-width:2500px) {
+        /* Removed problematic query */ @media screen and (max-max-width: 100%) {
 
         
 
@@ -54,7 +54,7 @@
         
         }
 
-        @media screen and (max-width:330px) {
+        @media screen and (max-max-width: 100%) {
 
             body {
                 font-size: 15px;
@@ -76,7 +76,7 @@
             }
 
             img {
-                width: 280px;
+                max-width: 100%;
                 border-radius: 7px;
             }
 
@@ -98,7 +98,7 @@
     
     /* Global Responsiveness & Centering */
     body {
-        max-width: 1200px;
+        max-max-width: 100%;
         margin: 0 auto !important;
         padding: 20px !important;
         line-height: 1.6;
@@ -113,6 +113,35 @@
     table, form, fieldset, details {
         margin: 20px auto !important;
         float: none !important;
+    }
+    
+
+    /* Global Responsiveness & Centering */
+    body {
+        max-max-width: 100%;
+        margin: 0 auto !important;
+        padding: 2.5vw !important;
+        line-height: 1.6;
+        float: none !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    img, video, iframe {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 8px;
+    }
+    table, form, fieldset, details {
+        max-width: 100% !important;
+        width: auto !important;
+        margin: 40px auto !important;
+        float: none !important;
+        border-collapse: collapse;
+    }
+    input, select, textarea {
+        max-width: 100%;
+        box-sizing: border-box;
     }
     
 </style>

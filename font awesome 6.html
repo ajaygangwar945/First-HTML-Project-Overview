@@ -79,7 +79,7 @@
         video {
             margin: 0;
             padding: 0;
-            width: 290px;
+            max-width: 100%;
             border-radius: 8px;
         }
 
@@ -601,7 +601,7 @@
         }
 
         .logo i {
-            width: 36px;
+            max-width: 100%;
             font-size: 23px;
             padding-top: 8px;
             padding-right: 13px;
@@ -622,7 +622,7 @@
         }
 
         .ready i {
-            width: 36px;
+            max-width: 100%;
             font-size: 25px;
             padding-top: 8px;
             padding-right: 20px;
@@ -805,7 +805,7 @@
     
     /* Global Responsiveness & Centering */
     body {
-        max-width: 1200px;
+        max-max-width: 100%;
         margin: 0 auto !important;
         padding: 20px !important;
         line-height: 1.6;
@@ -820,6 +820,35 @@
     table, form, fieldset, details {
         margin: 20px auto !important;
         float: none !important;
+    }
+    
+
+    /* Global Responsiveness & Centering */
+    body {
+        max-max-width: 100%;
+        margin: 0 auto !important;
+        padding: 2.5vw !important;
+        line-height: 1.6;
+        float: none !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    img, video, iframe {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 8px;
+    }
+    table, form, fieldset, details {
+        max-width: 100% !important;
+        width: auto !important;
+        margin: 40px auto !important;
+        float: none !important;
+        border-collapse: collapse;
+    }
+    input, select, textarea {
+        max-width: 100%;
+        box-sizing: border-box;
     }
     
 </style>

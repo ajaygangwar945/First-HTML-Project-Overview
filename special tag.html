@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="special tag.css">
     <style>
-        /* Removed problematic query */ @media screen and (max-width:2500px) {
+        /* Removed problematic query */ @media screen and (max-max-width: 100%) {
 
 
 
@@ -69,20 +69,20 @@
                 border-radius: 50px;
                 padding: 20px 10px;
                 margin: 30px auto;
-                width: 200px;
+                max-width: 100%;
                 font-size: 40px;
             }
 
             input[type="text"]:hover,
             input[type="password"]:hover {
-                width: 300px;
+                max-width: 100%;
             }
 
             input[type="submit"] {
                 margin: 30px auto;
                 border: 8px solid #ffd633;
                 padding: 20px 10px;
-                width: 140px;
+                max-width: 100%;
                 border-radius: 50px;
                 font-size: 40px;
             }
@@ -90,7 +90,7 @@
             input[type="radio"],
             input[type="checkbox"] {
                 height: 40px;
-                width: 40px;
+                max-width: 100%;
             }
 
             meter {
@@ -117,7 +117,7 @@
 
         }
 
-        @media screen and (max-width:330px) {
+        @media screen and (max-max-width: 100%) {
 
             body {
                 font-size: 15px;
@@ -147,7 +147,7 @@
             }
 
             img {
-                width: 280px;
+                max-width: 100%;
                 border-radius: 7px;
             }
 
@@ -178,20 +178,20 @@
                 border-radius: 25px;
                 padding: 10px 5px;
                 margin: 15px auto;
-                width: 100px;
+                max-width: 100%;
                 font-size: 20px;
             }
 
             input[type="text"]:hover,
             input[type="password"]:hover {
-                width: 150px;
+                max-width: 100%;
             }
 
             input[type="submit"] {
                 margin: 15px auto;
                 border: 4px solid #ffd633;
                 padding: 10px 5px;
-                width: 70px;
+                max-width: 100%;
                 border-radius: 25px;
                 font-size: 20px;
             }
@@ -199,11 +199,11 @@
             input[type="radio"],
             input[type="checkbox"] {
                 height: 20px;
-                width: 20px;
+                max-width: 100%;
             }
 
             meter {
-                width: 280px;
+                max-width: 100%;
                 height: 20px;
             }
 
@@ -248,7 +248,7 @@
     
     /* Global Responsiveness & Centering */
     body {
-        max-width: 1200px;
+        max-max-width: 100%;
         margin: 0 auto !important;
         padding: 20px !important;
         line-height: 1.6;
@@ -263,6 +263,35 @@
     table, form, fieldset, details {
         margin: 20px auto !important;
         float: none !important;
+    }
+    
+
+    /* Global Responsiveness & Centering */
+    body {
+        max-max-width: 100%;
+        margin: 0 auto !important;
+        padding: 2.5vw !important;
+        line-height: 1.6;
+        float: none !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    img, video, iframe {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 8px;
+    }
+    table, form, fieldset, details {
+        max-width: 100% !important;
+        width: auto !important;
+        margin: 40px auto !important;
+        float: none !important;
+        border-collapse: collapse;
+    }
+    input, select, textarea {
+        max-width: 100%;
+        box-sizing: border-box;
     }
     
 </style>

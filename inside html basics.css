@@ -1,7 +1,36 @@
 
     /* Global Responsiveness & Centering */
     body {
-        max-width: 1200px;
+        max-max-width: 100%;
+        margin: 0 auto !important;
+        padding: 2.5vw !important;
+        line-height: 1.6;
+        float: none !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    img, video, iframe {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 8px;
+    }
+    table, form, fieldset, details {
+        max-width: 100% !important;
+        width: auto !important;
+        margin: 40px auto !important;
+        float: none !important;
+        border-collapse: collapse;
+    }
+    input, select, textarea {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+
+    /* Global Responsiveness & Centering */
+    body {
+        max-max-width: 100%;
         margin: 0 auto !important;
         padding: 20px !important;
         line-height: 1.6;
@@ -55,12 +84,12 @@ h3 {
 }
 
 img {
-    width: 880px;
+    max-width: 100%;
     border-radius: 25px;
 }
 
 .table {
-    width: 880px;
+    max-width: 100%;
     height: 400px;
     vertical-align: middle;
     background-color: #ffd633;
@@ -69,7 +98,7 @@ img {
 }
 
 iframe {
-    width: 880px;
+    max-width: 100%;
     height: 850px;
     border-radius: 25px;
 }
@@ -92,7 +121,7 @@ input[type="password"] {
     border-radius: 80px;
     padding: 40px 20px;
     margin: 40px auto;
-    width: 350px;
+    max-width: 100%;
     transition: 0.25s;
     cursor: pointer;
     font-family: "Times New Roman", Times, serif;
@@ -105,7 +134,7 @@ input[type="password"] {
 
 input[type="text"]:hover,
 input[type="password"]:hover {
-    width: 450px;
+    max-width: 100%;
     border-color: #ffd633;
 }
 
@@ -116,7 +145,7 @@ input[type="submit"] {
     text-align: center;
     border: 10px solid #ffd633;
     padding: 40px 20px;
-    width: 250px;
+    max-width: 100%;
     outline: none;
     color: #ffd633;
     font-weight: 900;
@@ -140,7 +169,7 @@ input[type="checkbox"] {
     outline: none;
     background: none;
     height: 100px;
-    width: 100px;
+    max-width: 100%;
 }
 
 .form {

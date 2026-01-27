@@ -11,19 +11,28 @@ def normalize_css(content, is_html=True):
     body {
         max-width: 1200px;
         margin: 0 auto !important;
-        padding: 20px !important;
+        padding: 2.5vw !important;
         line-height: 1.6;
         float: none !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     img, video, iframe {
         max-width: 100%;
         height: auto;
         display: block;
         margin: 20px auto;
+        border-radius: 8px;
     }
     table, form, fieldset, details {
-        margin: 20px auto !important;
+        max-width: 100% !important;
+        width: auto !important;
+        margin: 40px auto !important;
         float: none !important;
+        border-collapse: collapse;
+    }
+    input, select, textarea {
+        max-width: 100%;
+        box-sizing: border-box;
     }
     """
 
@@ -41,12 +50,11 @@ def normalize_css(content, is_html=True):
         content = resp_styles + "\n" + content
 
     # Clean up the problematic 1924px media query if it exists
-    # Often it forces huge fonts or weird margins
-    # We'll try to find any occurrence of '@media screen and (max-width:1924px)'
-    # and comment it out or normalize it.
+    # We'll comment it out to neutralize it completely
+    content = content.replace('@media screen and (max-width:1924px)', '/* Disabled fixed-scale query */ @media screen and (max-width:1px)')
     
-    # Simple approach: Replace the offending line with a neutral one
-    content = re.sub(r'@media\s+screen\s+and\s+\(max-width\s*:\s*1924px\)', '/* Removed problematic query */ @media screen and (max-width:2500px)', content)
+    # Also handle some common fixed widths in the project
+    content = re.sub(r'width\s*:\s*\d+px', 'max-width: 100%', content)
     
     return content
 

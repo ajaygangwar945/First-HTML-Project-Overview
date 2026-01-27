@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        /* Removed problematic query */ @media screen and (max-width:2500px) {
+        /* Removed problematic query */ @media screen and (max-max-width: 100%) {
 
         body {
             margin: 0px;
@@ -42,7 +42,7 @@
             border-radius: 80px;
             padding: 40px 20px;
             margin: 40px auto;
-            width: 350px;
+            max-width: 100%;
             transition: 0.25s;
             cursor: pointer;
             font-size: 30px;
@@ -50,7 +50,7 @@
 
         input[type="text"]:hover,
         input[type="password"]:hover {
-            width: 450px;
+            max-width: 100%;
             border-color: #2ecc71;
         }
 
@@ -61,7 +61,7 @@
             text-align: center;
             border: 6px solid #2ecc71;
             padding: 40px 20px;
-            width: 250px;
+            max-width: 100%;
             outline: none;
             color: white;
             font-weight: 900;
@@ -108,20 +108,20 @@
                 border-radius: 68px;
                 padding: 40px 15px;
                 margin: 40px auto;
-                width: 260px;
+                max-width: 100%;
                 font-size: 30px;
             }
 
             input[type="text"]:hover,
             input[type="password"]:hover {
-                width: 380px;
+                max-width: 100%;
             }
 
             input[type="submit"] {
                 margin: 40px auto;
                 border: 4px solid #2ecc71;
                 padding: 30px 15px;
-                width: 180px;
+                max-width: 100%;
                 border-radius: 84px;
                 font-size: 30px;
             }
@@ -137,7 +137,7 @@
         
         }
 
-        @media screen and (max-width:330px) {
+        @media screen and (max-max-width: 100%) {
 
             body {
                 font-size: 15px;
@@ -158,20 +158,20 @@
                 border-radius: 24px;
                 padding: 15px 5px;
                 margin: 15px auto;
-                width: 120px;
+                max-width: 100%;
                 font-size: 10px;
             }
 
             input[type="text"]:hover,
             input[type="password"]:hover {
-                width: 180px;
+                max-width: 100%;
             }
 
             input[type="submit"] {
                 margin: 15px auto;
                 border: 2px solid #2ecc71;
                 padding: 12px 5px;
-                width: 80px;
+                max-width: 100%;
                 border-radius: 24px;
                 font-size: 15px;
             }
@@ -186,7 +186,7 @@
     
     /* Global Responsiveness & Centering */
     body {
-        max-width: 1200px;
+        max-max-width: 100%;
         margin: 0 auto !important;
         padding: 20px !important;
         line-height: 1.6;
@@ -201,6 +201,35 @@
     table, form, fieldset, details {
         margin: 20px auto !important;
         float: none !important;
+    }
+    
+
+    /* Global Responsiveness & Centering */
+    body {
+        max-max-width: 100%;
+        margin: 0 auto !important;
+        padding: 2.5vw !important;
+        line-height: 1.6;
+        float: none !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    img, video, iframe {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 8px;
+    }
+    table, form, fieldset, details {
+        max-width: 100% !important;
+        width: auto !important;
+        margin: 40px auto !important;
+        float: none !important;
+        border-collapse: collapse;
+    }
+    input, select, textarea {
+        max-width: 100%;
+        box-sizing: border-box;
     }
     
 </style>
