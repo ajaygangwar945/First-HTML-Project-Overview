@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="html basics.css">
+
+    <style>
+        @media screen and (max-width:1924px) {
+
+            body {
+                font-size: 40px;
+            }
+
+            p {
+                margin: 10px 40px;
+                padding: 10px 40px;
+                font-weight: 400;
+                text-indent: 25px;
+                font-size: 30px;
+            }
+
+            #h1 {
+                font-size: 120px;
+                padding: 40px 0;
+            }
+
+            h1 {
+                font-size: 80px;
+            }
+
+            h2 {
+                font-size: 70px;
+            }
+
+            h3 {
+                font-size: 60px;
+            }
+
+            h4 {
+                font-size: 50px;
+            }
+
+            h5 {
+                font-size: 40px;
+            }
+
+            h6 {
+                font-size: 30px;
+            }
+
+            img {
+                width: calc(100% - 80px);
+                border-radius: 14px;
+            }
+
+            div {
+                padding: 20px 0;
+            }
+
+            hr {
+                height: 10px;
+                margin: 20px;
+            }
+
+            ul,
+            ol {
+                font-size: 30px;
+                padding-left: 110px;
+                text-align: left;
+            }
+
+            a {
+                padding: 20px;
+                margin: 40px 70px;
+                font-size: 40px;
+                border-radius: 14px;
+            }
+
+            .anchor {
+                padding: 20px;
+                margin: 40px 240px;
+                font-size: 40px;
+                border-radius: 14px;
+            }
+
+        }
+
+
+        @media screen and (max-width:330px) {
+
+            body {
+                font-size: 15px;
+            }
+
+            p {
+                margin: 5px 20px;
+                padding: 5px 20px;
+                font-weight: 400;
+                text-indent: 15px;
+                font-size: 15px;
+            }
+
+            #h1 {
+                font-size: 40px;
+                padding: 20px 0;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 25px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            h4 {
+                font-size: 15px;
+            }
+
+            h5 {
+                font-size: 10px;
+            }
+
+            h6 {
+                font-size: 5px;
+            }
+
+            img {
+                width: 250px;
+                border-radius: 7px;
+            }
+
+            div {
+                padding: 10px 0;
+            }
+
+            hr {
+                height: 5px;
+                margin: 10px;
+            }
+
+            ul,
+            ol {
+                font-size: 15px;
+                padding-left: 55px;
+                text-align: left;
+            }
+
+            a {
+                padding: 10px;
+                margin: 20px 35px;
+                font-size: 20px;
+                border-radius: 7px;
+            }
+
+            .anchor {
+                padding: 10px;
+                margin: 20px 75px;
+                font-size: 20px;
+                border-radius: 7px;
+            }
+
+        }
+    </style>
+
+    <title>HTML BASICS</title>
+</head>
+
+<body>
+
+    <h1 id="h1">Html Basics</h1>
+
+    <h2>The Paragraph Element</h2>
+
+    <p>To create paragraph simply type paragraph element with opening and closing tag.</p>
+
+    <h2>Single Line Break</h2>
+
+    <p>Use of br tag to add single line break without starting a paragraph.
+        <br><br>
+        Br tag is empty tag it has no end tag.
+    </p>
+
+    <h2>Formatting Elements</h2>
+
+    <p>In HTML, there is a list of elements that specify text style.
+        <br>
+        Formatting elements were designed to display special types of text.
+    </p>
+
+    <p>This is regular text </p>
+
+    <p><b> Bold text </b></p>
+
+    <p><i> Italic text </i></p>
+
+    <p><u>Underline text</u></p>
+
+    <p><small> Small text </small></p>
+
+    <p><big> Big text </big></p>
+
+    <p><strong> Strong text </strong></p>
+
+    <p><sub> Subscripted text </sub></p>
+
+    <p><sup> Superscripted text </sup></p>
+
+    <p><ins> Inserted text </ins></p>
+
+    <p><del> Deleted text </del></p>
+
+    <h2>Html Headings</h2>
+
+    <p>HTML includes six levels of headings, which are ranked according to importance.
+        These are h1, h2, h3, h4, h5,
+        and h6.</p>
+
+    <p>
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+    <h6>This is heading 6</h6>
+    <h5>This is heading 5</h5>
+    <h4>This is heading 4</h4>
+    <h3>This is heading 3</h3>
+    <h2>This is heading 2</h2>
+    <h1>This is heading 1</h1>
+    </p>
+
+    <h2>Horzontal Lines</h2>
+
+    <p>To create horizontal line type hr tag in web page.</p>
+
+    <div>
+
+        <hr size="25px" color="#00e6ac">
+
+        <hr size="25px" color="#00e6ac">
+
+        <marquee>Hello World !!!!</marquee>
+        <hr size="25px" color="#00e6ac">
+
+        <hr size="25px" color="#00e6ac">
+
+    </div>
+
+    <h2> Comments
+    </h2>
+
+    <p>The browser does not display comments, but they help document the HTML and add descriptions, reminders, and other
+        notes. </p>
+
+    <h2>Html Elements
+    </h2>
+
+    <p>HTML documents are made up of HTML elements.
+        An HTML element is written using a start tag and an end tag, and with the content in between.
+    </p>
+
+    <p>HTML documents consist of nested HTML elements. In the example below, the body element includes the p tags, the
+        br tag and the content. </p>
+
+    <p>Some elements are quite small. Since you can't put contents within a break tag, and you don't have an opening and
+        closing break tag, it’s a separate, single element. </p>
+
+    <h2>Html Attributes</h2>
+
+    <p>Attributes provide additional information about an element or a tag, while also modifying them. Most attributes
+        have a value; the value modifies the attribute.</p>
+
+    <p>Attributes are always specified in the start tag, and they appear in name="value" pairs.
+    </p>
+
+    <h2>The Image Tag</h2>
+
+    <p>The img tag is used to insert an image. It contains only attributes, and does not have a closing tag.
+        <br><br>
+        The image's URL (address) can be defined using the src attribute.
+    </p>
+
+    <img src="Images/Iron_man.png" alt="IRON MAN">
+
+    <a href="image tag.html">More On Image Tag</a>
+
+    <h2> The Anchor Tag
+    </h2>
+
+    <p>Links are also an integral part of every web page. You can add links to text or images that will enable the user
+        to click on them in order to be directed to another file or webpage.
+    </p>
+
+    <p>In HTML, links are defined using the a tag.
+
+        Use the href attribute to define the link's destination address: </p>
+
+    <a href="anchor tag.html">More On Anchor Tag</a>
+
+    <h2>Html Ordered Lists</h2>
+
+    <p>An ordered list starts with the ol tag, and each list item is defined by the li tag.
+        Here is an example of an ordered list.</p>
+
+    <ol>
+        <li>Red</li>
+        <li>Blue</li>
+        <li>Green</li>
+    </ol>
+
+    <h2>Html Unordered Lists</h2>
+
+    <p>An unordered list starts with the ul tag. </p>
+
+    <ul>
+        <li>Red</li>
+        <li>Blue</li>
+        <li>Green</li>
+    </ul>
+
+    <h2>Table Tag</h2>
+
+    <p>Tables are defined by using the table tag.<br>
+        Tables are divided into table rows with the tr tag.<br>
+        Table rows are divided into table columns (table data) with the td tag.
+    </p>
+
+    <a href="table tag.html">More On Table Tag</a>
+
+    <h2>Types Of Elements</h2>
+
+    <p> In HTML, most elements are defined as block level or inline elements.
+
+    <h3>Block Level Elements</h3>
+
+    <p>Block level elements start from a new line.
+        <br>
+        For example: h1, form, li, ol, ul, p, pre, table, div, etc.
+    </p>
+
+    <h3>Inline Elements</h3>
+
+    <p>Inline elements are normally displayed without line breaks.
+        For example: b, a, strong, img, input, em, span, etc.
+    </p>
+
+    <h4>The Div Element</h4>
+
+    <p>The div element is a block-level element that is often used as a container for other HTML elements.<br>
+        When used together with some CSS styling, the div element can be used to style blocks of content. </p>
+
+    <h4>The Span Element</h4>
+
+    <p>Similarly, the span element is an inline element that is often used as a container for some text.
+        When used together with CSS, the span element can be used to style parts of the text.</p>
+
+    <h2>Other Elements</h2>
+
+    <p>Other elements can be used either as block level elements or inline elements. This includes the following
+        elements:
+        <br>
+        APPLET - embedded Java applet<br>
+        IFRAME - Inline frame
+        <br>
+        INS - inserted text
+        <br>
+        MAP - image map
+        <br>
+        OBJECT - embedded object
+        <br>
+        SCRIPT - script within an HTML document
+        <br><br>
+
+        You can insert inline elements inside block elements. For example, you can have multiple span elements inside a
+        div element.
+    </p>
+
+    <h2>The Form Element</h2>
+
+    <p>Html forms are used to collect information from the user.<br>
+        Forms are defined using the form element, with its opening and closing tags.</p>
+
+    <a href="form.html">More On Form Element</a>
+
+    <h2>Html color</h2>
+
+    <p>HTML colors are expressed as hexadecimal values.<br>
+
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+        .</p>
+
+    <p>As you can see, there are 16 values there, 0 through F. Zero represents the lowest value, and F represents the
+        highest.</p>
+
+    <a href="color.html">More On Html Color</a>
+
+    <h2>The Frame Element</h2>
+
+    <p>A page can be divided into frames using a special frame document.<br>
+
+        The frame tag defines one specific window (frame) within a frameset. Each frame in a frameset can have different
+        attributes, such as border, scrolling, the ability to resize, etc. </p>
+
+    <a href="frame.html">More On Frame Element</a>
+
+    <a href="index.html" class="anchor">Take Me Back</a>
+
+</body>
+
+</html>

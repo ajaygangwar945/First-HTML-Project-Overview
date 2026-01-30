@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: monospace;
+            font-size: 50px;
+            font-weight: 900;
+            font-variant: small-caps;
+            text-align: center;
+            text-transform: capitalize;
+            background-color: #34495e;
+        }
+
+        h1 {
+            color: white;
+            font-size: 100px;
+            text-align: center;
+        }
+
+        form {
+            background-color: #191919;
+            margin: 150px;
+            padding: 50px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            background: none;
+            display: block;
+            outline: none;
+            text-align: center;
+            color: white;
+            border: 6px solid #3498db;
+            border-radius: 80px;
+            padding: 40px 20px;
+            margin: 40px auto;
+            width: 350px;
+            trasition: 0.25s;
+            cursor: pointer;
+            font-size: 30px;
+        }
+
+        input[type="text"]:hover,
+        input[type="password"]:hover {
+            width: 450px;
+            border-color: #2ecc71;
+        }
+
+        input[type="submit"] {
+            background: none;
+            display: block;
+            margin: 40px auto;
+            text-align: center;
+            border: 6px solid #2ecc71;
+            padding: 40px 20px;
+            width: 250px;
+            outline: none;
+            color: white;
+            font-weight: 900;
+            border-radius: 80px;
+            trasition: 0.25s;
+            cursor: pointer;
+            font-weight: 900;
+            font-size: 30px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2ecc71;
+        }
+
+        a {
+            outline: none;
+            text-decoration: none;
+            display: block;
+            margin: 80px 150px;
+            padding: 40px 10px;
+            font-size: 55px;
+            color: #191919;
+            background-color: #fff;
+        }
+
+        @media screen and (max-width:1924px) {
+
+            body {
+                font-size: 40px;
+            }
+
+            h1 {
+                font-size: 60px;
+            }
+
+            form {
+                margin: 100px;
+                padding: 50px;
+            }
+
+            input[type="text"],
+            input[type="password"] {
+                border: 4px solid #3498db;
+                border-radius: 68px;
+                padding: 40px 15px;
+                margin: 40px auto;
+                width: 260px;
+                font-size: 30px;
+            }
+
+            input[type="text"]:hover,
+            input[type="password"]:hover {
+                width: 380px;
+            }
+
+            input[type="submit"] {
+                margin: 40px auto;
+                border: 4px solid #2ecc71;
+                padding: 30px 15px;
+                width: 180px;
+                border-radius: 84px;
+                font-size: 30px;
+            }
+
+            a {
+                padding: 20px;
+                font-size: 50px;
+                margin: 100px;
+            }
+
+        }
+
+        @media screen and (max-width:330px) {
+
+            body {
+                font-size: 15px;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+
+            form {
+                margin: 35px;
+                padding: 25px;
+            }
+
+            input[type="text"],
+            input[type="password"] {
+                border: 2px solid #3498db;
+                border-radius: 24px;
+                padding: 15px 5px;
+                margin: 15px auto;
+                width: 120px;
+                font-size: 10px;
+            }
+
+            input[type="text"]:hover,
+            input[type="password"]:hover {
+                width: 180px;
+            }
+
+            input[type="submit"] {
+                margin: 15px auto;
+                border: 2px solid #2ecc71;
+                padding: 12px 5px;
+                width: 80px;
+                border-radius: 24px;
+                font-size: 15px;
+            }
+
+            a {
+                padding: 5px;
+                font-size: 23px;
+                margin: 35px;
+            }
+
+        }
+    </style>
+
+    <title>LOGIN</title>
+</head>
+
+<body>
+
+    <form autocomplete="off">
+
+        <h1>LOGIN</h1>
+
+        <input type="text" name="username" placeholder="USERNAME" required>
+
+        <input type="password" name="password" placeholder="PASSWORD" required>
+
+        <input type="submit" value="LOGIN">
+
+    </form>
+
+    <a href="html 5 form.html">To learn Form Element</a>
+
+</body>
+
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="accordian menu.css">
+
+    <style>
+        @media screen and (max-width:1924px) {
+
+            * {
+                font-size: 50px;
+            }
+
+            body {
+                background-size: 1924px 2000px;
+            }
+
+            .middle {
+                top: 40%;
+                left: center;
+            }
+
+            .menu {
+                width: 530px;
+                border-radius: 14px;
+            }
+
+            .item {
+                border-top: 8px solid #2980b9;
+            }
+
+            .btn {
+                padding: 20px 28px;
+            }
+
+            .btn:before {
+                width: 28px;
+                height: 23px;
+                left: 30px;
+                bottom: -10px;
+                transform: rotate (45deg);
+            }
+
+            .btn i {
+                margin-right: 20px;
+            }
+
+            .smenu a {
+                padding: 20px 30px;
+                font-size: 40px;
+                margin: 0;
+            }
+
+            .smenu a:before {
+                width: 10px;
+                height: 100%;
+                left: 0%;
+                top: 0%;
+            }
+
+            .anchor {
+                text-align: center;
+                bottom: 80px;
+                margin: 0 188px;
+                width: 550px;
+                font-size: 50px;
+                padding: 30px;
+                border-radius: 14px;
+            }
+
+        }
+
+        @media screen and (max-width:330px) {
+
+            * {
+                font-size: 25px;
+            }
+
+            body {
+                background-size: 450px 480px;
+            }
+
+            .middle {
+                top: 10%;
+                left: 26px;
+            }
+
+            .menu {
+                width: 265px;
+                border-radius: 7px;
+            }
+
+            .item {
+                border-top: 4px solid #2980b9;
+            }
+
+            .btn {
+                padding: 10px 14px;
+            }
+
+            .btn:before {
+                width: 14px;
+                height: 6px;
+                left: 15px;
+                bottom: -5px;
+                transform: rotate (45deg);
+            }
+
+            .btn i {
+                margin-right: 10px;
+            }
+
+            .smenu a {
+                padding: 10px 15px;
+                font-size: 20px;
+                margin: 0;
+            }
+
+            .smenu a:before {
+                width: 5px;
+                height: 100%;
+                left: 0%;
+                top: 0%;
+            }
+
+            .anchor {
+                bottom: 40px;
+                margin: 0 26px;
+                width: 245px;
+                font-size: 25px;
+                padding: 10px;
+                border-radius: 7px;
+            }
+
+        }
+    </style>
+
+    <title>ACCORDIAN MENU</title>
+</head>
+
+<body>
+
+    <div class="middle">
+        <div class="menu">
+
+            <li class="item" id="profile">
+
+                <a href="#profile" class="btn"><i class="far fa-user"></i>Profile</a>
+
+                <div class="smenu">
+                    <a href="#">Posts</a>
+                    <a href="#">Picture</a>
+                </div>
+
+            </li>
+
+            <li class="item" id="messages">
+
+                <a href="#messages" class="btn"><i class="far fa-envelope"></i>Messages</a>
+
+                <div class="smenu">
+                    <a href="">New</a>
+                    <a href="">Sent</a>
+                    <a href="">Spam</a>
+                </div>
+            </li>
+
+            <li class="item" id="setting">
+
+                <a href="#setting" class="btn"><i class="fas fa-cog"></i>Settings</a>
+
+                <div class="smenu">
+                    <a href="">Password</a>
+                    <a href="">Language</a>
+                </div>
+            </li>
+
+            <li class="item">
+                <a href="" class="btn"><i class="fas fa-sign-out-alt"></i>Logout</a>
+            </li>
+
+        </div>
+    </div>
+
+    <a href="html 5 form.html" class="anchor">To Learn Form Element</a>
+
+</body>
+
+</html>

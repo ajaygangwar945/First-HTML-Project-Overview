@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="inside html basics.css">
+
+    <style>
+        @media screen and (max-width:1924px) {
+
+            body {
+                font-size: 40px;
+            }
+
+            p {
+                margin: 40px;
+                padding: 40px;
+                text-indent: 25px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 120px;
+            }
+
+            h2 {
+                font-size: 80px;
+            }
+
+            img {
+                width: calc(100% - 80px);
+                border-radius: 14px;
+            }
+
+            .anchor {
+                padding: 20px;
+                margin: 40px 240px;
+                font-size: 40px;
+                border-radius: 14px;
+            }
+
+            a {
+                padding: 20px;
+                font-size: 50px;
+                margin: 60px;
+                border-radius: 14px;
+            }
+
+        }
+
+        @media screen and (max-width:330px) {
+
+            body {
+                font-size: 15px;
+            }
+
+            p {
+                margin: 20px;
+                padding: 20px;
+                text-indent: 15px;
+                border-radius: 7px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            img {
+                width: 280px;
+                border-radius: 7px;
+            }
+
+            .anchor {
+                padding: 10px;
+                margin: 20px 75px;
+                font-size: 20px;
+                border-radius: 7px;
+            }
+
+            a {
+                padding: 10px;
+                font-size: 25px;
+                margin: 30px;
+                border-radius: 7px;
+            }
+
+        }
+    </style>
+
+    <title>IMAGE TAG</title>
+</head>
+
+<body>
+
+    <h1>Image Tag</h1>
+
+    <p>The img tag is used to insert an image.It contains only attributes, and does not have a closing tag.
+        <br><br>
+        The image's URL (address) can be defined using the src attribute.
+    </p>
+
+    <img src="Images/Skull.jpg" alt="SKULL">
+
+    <h2>Image Location</h2>
+
+    <p>You need to put in the image location for the src attribute that is between the quotation marks. <br><br>
+
+        For example, if you have a photo named "tree.jpg" in the same folder as the HTML file.
+    </p>
+
+    <h2>Alt Attribites</h2>
+
+    <p>In case the image cannot be displayed, the alt attribute specifies an alternate text that describes the image in
+        words. The alt attribute is required.</p>
+
+    <h2>Image Resizing</h2>
+
+    <p>To define the image size, use the width and height attributes.
+        The value can be specified in pixels or as a percentage.</p>
+
+    <h2>Image Border</h2>
+
+    <p>By default, an image has no borders. Use the border attribute within the image tag to create a border around the
+        image.</p>
+
+    <h2>Image And Anchor Tag</h2>
+    <p>It is used to open image in full size or new tab.</p>
+
+    <p>When you click on image a full image will open.</p>
+
+    <a href="Images/Avenger 1.jpg" class="image">
+
+        <img src="Images/Avenger 1.jpg" alt="Avenger">
+
+    </a>
+
+    <a href="image box.html">To Open Image Box</a>
+
+    <a href="html basics.html" class="anchor">Take Me Back</a>
+
+</body>
+
+</html>

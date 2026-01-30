@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="inside html basics.css">
+
+    <style>
+        @media screen and (max-width:1924px) {
+
+            body {
+                font-size: 40px;
+            }
+
+            p {
+                margin: 40px;
+                padding: 40px;
+                text-indent: 25px;
+                border-radius: 14px;
+            }
+
+            h1 {
+                font-size: 110px;
+            }
+
+            h2 {
+                font-size: 80px;
+            }
+
+            h3 {
+                font-size: 50px;
+            }
+
+            form {
+                margin: 40px;
+                padding: 50px;
+                border-radius: 14px;
+            }
+
+            input[type="text"],
+            input[type="password"] {
+                border: 8px solid #00e6ac;
+                border-radius: 50px;
+                padding: 20px 10px;
+                margin: 30px auto;
+                width: 240px;
+                font-size: 40px;
+            }
+
+            input[type="text"]:hover,
+            input[type="password"]:hover {
+                width: 360px;
+            }
+
+            input[type="submit"] {
+                margin: 30px auto;
+                border: 8px solid #ffd633;
+                padding: 20px 10px;
+                width: 160px;
+                border-radius: 50px;
+                font-size: 40px;
+            }
+
+            input[type="radio"],
+            input[type="checkbox"] {
+                height: 40px;
+                width: 40px;
+            }
+
+            span {
+                vertical-align: 4px;
+                font-size: 40px;
+                margin: 20px;
+            }
+
+            .anchor {
+                padding: 20px;
+                margin: 40px 240px;
+                font-size: 40px;
+                border-radius: 14px;
+            }
+
+            a {
+                padding: 20px;
+                font-size: 50px;
+                margin: 60px;
+                border-radius: 14px;
+            }
+
+        }
+
+        @media screen and (max-width:330px) {
+
+            body {
+                font-size: 15px;
+            }
+
+            p {
+                margin: 20px;
+                padding: 20px;
+                text-indent: 15px;
+                border-radius: 7px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            form {
+                margin: 20px;
+                padding: 25px;
+                border-radius: 7px;
+            }
+
+            input[type="text"],
+            input[type="password"] {
+                border: 4px solid #00e6ac;
+                border-radius: 25px;
+                padding: 10px 5px;
+                margin: 15px auto;
+                width: 120px;
+                font-size: 20px;
+            }
+
+            input[type="text"]:hover,
+            input[type="password"]:hover {
+                width: 180px;
+            }
+
+            input[type="submit"] {
+                margin: 15px auto;
+                border: 4px solid #ffd633;
+                padding: 10px 5px;
+                width: 80px;
+                border-radius: 25px;
+                font-size: 20px;
+            }
+
+            input[type="radio"],
+            input[type="checkbox"] {
+                height: 20px;
+                width: 20px;
+            }
+
+            span {
+                vertical-align: 2px;
+                font-size: 20px;
+                margin: 10px;
+            }
+
+            .anchor {
+                padding: 10px;
+                margin: 20px 75px;
+                font-size: 20px;
+                border-radius: 7px;
+            }
+
+            a {
+                padding: 10px;
+                font-size: 25px;
+                margin: 30px;
+                border-radius: 7px;
+            }
+
+        }
+    </style>
+
+    <title>FORM</title>
+</head>
+
+<body>
+
+    <h1>Form Element</h1>
+
+    <p>Form element is used to add form in web page.In form user can enter the information.Now a day form is used in
+        various websites.</p>
+
+    <h2>Simple Form</h2>
+
+    <form>
+
+        <input type="text" name="username" placeholder="Username">
+
+        <input type="password" name="password" placeholder="Password">
+
+        <input type="submit" value="Login">
+
+    </form>
+
+    <h2>The Action Attributes</h2>
+
+    <p>Use the action attribute to point to a webpage that will load after the user submits the form. </p>
+
+    <h3>Form Using Action Attributes</h3>
+
+    <form action="https://www.google.com">
+
+        <input type="text" name="username" placeholder="Username">
+
+        <input type="password" name="password" placeholder="Password">
+
+        <input type="submit" value="Login">
+
+    </form>
+
+    <h2>The Method And Name Attribites</h2>
+
+    <p>The method attribute specifies the HTTP method (GET or POST) to be used when forms are submitted (see below for
+        description).POST is more secure than GET.</p>
+
+    <h3>Form Using Method And Name Attribites </h3>
+
+    <form action="https://www.google.com" method="post">
+
+        <input type="text" name="username" placeholder="Username">
+
+        <input type="password" name="password" placeholder="Password">
+
+        <input type="submit" value="Login">
+
+    </form>
+
+    <p>The name attribute specifies a name for a form. </p>
+
+    <h2>Input Element</h2>
+
+    <p>To take in user input, you need the corresponding form elements, such as text fields. The input element has many
+        variations, depending on the type attribute. It can be a text, password, radio, URL, submit, etc. </p>
+
+    <h2>Form Element</h2>
+
+    <h3>Radio Button</h3>
+
+    <p>If we change the input type to radio, it allows the user select only one of a number of choices.</p>
+
+    <form class="form">
+
+        <input type="radio" name="gender"><span>Male
+        </span>
+        <input type="radio" name="gender"><span>Female
+        </span>
+
+    </form>
+
+    <h3>Checkbox Button</h3>
+
+    <p>The checkbox is used to select more than one value.</p>
+
+    <form class="form">
+
+        <input type="checkbox"><span>Hindi</span>
+
+        <input type="checkbox"><span>English</span>
+
+    </form>
+
+    <h3>Submit Button</h3>
+
+    <p>The submit button submits a form to its action attribute.</p>
+
+    <form class="form">
+
+        <input type="submit" value="Login" class="submit">
+
+    </form>
+
+    <a href="registration.html">To Open Registration Form</a>
+
+    <a href="html basics.html" class="anchor">Take Me Back</a>
+
+</body>
+
+</html>

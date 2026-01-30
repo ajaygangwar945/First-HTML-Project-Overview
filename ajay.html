@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Ubuntu", sans-serif;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        /*Profile Card*/
+
+        .body {
+            height: 100vh;
+            background: url(Images/Mount-1.jpg) no-repeat center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-card {
+            width: 138px;
+            text-align: center;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .card-header {
+            background: #2c3a47;
+            padding: 25px 30px;
+        }
+
+        .pic {
+            display: inline-block;
+            padding: 2.5px;
+            background: linear-gradient(150deg, #74b9ff, #e66767);
+            margin: auto;
+            border-radius: 50%;
+            background-size: 200% 200%;
+            animation: textanim 2s linear infinite;
+        }
+
+        @keyframes textanim {
+            25% {
+                background-position: left bottom;
+            }
+
+            50% {
+                background-position: right bottom;
+            }
+
+            75% {
+                background-position: right top;
+            }
+
+            100% {
+                background-position: left top;
+            }
+        }
+
+        .pic img {
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .name {
+            color: #f2f2f2;
+            font-size: 12px;
+            font-weight: 600;
+            margin: 4px 0;
+        }
+
+        .desc {
+            font-size: 8px;
+            color: #e66767;
+        }
+
+        .sm {
+            display: flex;
+            justify-content: center;
+            margin: 8px 0;
+        }
+
+        .sm a {
+            outline: none;
+            background: none;
+            color: #f2f2f2;
+            padding: 0 5px;
+            font-size: 10px;
+            trasition: .3s linear;
+        }
+
+        .sm a:hover {
+            color: #e66767;
+        }
+
+        .contact {
+            outline: none;
+            background: none;
+            display: inline-block;
+            padding: 4px 10px;
+            color: #e66767;
+            border: 1.5px solid #e66767;
+            border-radius: 2px;
+            margin-top: 8px;
+            trasition: .2s linear;
+            font-size: 10px;
+        }
+
+        .contact:hover {
+            background: #e66767;
+            color: #f2f2f2;
+        }
+
+        .card-footer {
+            background: #f4f4f4;
+            padding: 20px 5px;
+        }
+
+        .numbers {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .item {
+            padding: 0 4px;
+            text-transform: uppercase: font-size:10px;
+            color: #2c3a47;
+        }
+
+        b {
+            font-weight: 100;
+        }
+
+        .item div {
+            display: block;
+            color: #e66767;
+            font-size: 8px;
+        }
+
+        .border {
+            width: 0.7px;
+            height: 15px;
+            background: #bbb;
+        }
+    </style>
+
+    <title>AJAY GANGWAR</title>
+</head>
+
+<body>
+
+    <!--Profile Card-->
+
+    <div class="body">
+
+        <div class="profile-card">
+
+            <div class="card-header">
+
+                <div class="pic">
+                    <img src="Images/9.jpg" alt="AJAY">
+                </div>
+
+                <div class="name">Ajay Gangwar</div>
+
+                <div class="desc">Developer & Designer</div>
+
+                <div class="sm">
+                    <a href="" class="fab fa-facebook-f"></a>
+                    <a href="" class="fab fa-twitter"></a>
+                    <a href="" class="fab fa-github"></a>
+                    <a href="" class="fab fa-youtube"></a>
+                </div>
+
+                <a href="#" class="contact">Contact Me</a>
+
+            </div>
+
+            <div class="card-footer">
+
+                <div class="numbers">
+
+                    <div class="item">
+                        <b>120</b>
+                        <div>Posts</div>
+                    </div>
+
+                    <div class="border"></div>
+
+                    <div class="item">
+                        <b>127</b>
+                        <div>Following</div>
+                    </div>
+
+                    <div class="border"></div>
+
+                    <div class="item">
+                        <b>120K</b>
+                        <div>Followers</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!--Info-->
+
+    <section class="info">
+
+        <div class="web">
+
+            <div class="inside">
+
+                <i class="fas fa-times"></i>
+
+                <span>Web Developer And Designer</span>
+
+            </div>
+
+            <div class="a">
+
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="personal">
+        <div class="second">
+
+            <h1>Personal Information</h1>
+
+            <p></p>
+
+            <img>
+
+            <p></p>
+
+            <hr>
+
+            <p></p>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

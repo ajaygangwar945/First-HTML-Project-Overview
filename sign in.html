@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="font awesome/font awesome 1/css/all.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /*Sign In*/
+
+        .sign-in {
+            padding: 50px 0 40px 0;
+            background: #F8F9FA;
+        }
+
+        .inner-width {
+            padding: 0 10px;
+        }
+
+        .link {
+            outline: none;
+            text-decoration: none;
+            color: none;
+        }
+
+        .flag {
+            line-height: 20px;
+            padding-top: 10px;
+            font-size: 50px;
+            color: #339AF0;
+            background: #fff;
+        }
+
+        .form {
+            margin-top: 50px;
+            padding: 20px;
+            background: #fff;
+            border: 2px solid #E9ECEF;
+            border-radius: 5px;
+        }
+
+        h1 {
+            padding-bottom: 8px;
+            font-size: 30px;
+            color: #495057;
+        }
+
+        .para {
+            margin: 0 5px;
+            padding: 0 5px;
+            padding-bottom: 2px;
+            word-spacing: 4px;
+            font-size: 15px;
+            font-weight: 900;
+            color: #1864AB;
+        }
+
+        .fp {
+            padding-top: 10px;
+            padding-bottom: 5px;
+            text-align: left;
+            font-size: 20px;
+            font-weight: 700;
+            color: #4C535A;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            display: block;
+            outline: none;
+            padding: 15px 20px;
+            width: 100%;
+            font-size: 15px;
+            border: 2px solid #DEE2E6;
+            border-radius: 3px;
+        }
+
+        input[type="text"]:hover,
+        input[type="password"]:hover {
+            border: 2px solid #4DABF7;
+            box-shadow: 0px 0px 3px #4DABF7, -0px -0px 3px #4DABF7;
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+            position: relative;
+            font-size: 15px;
+            font-weight: 500;
+            color: #5B6167;
+            margin: 10px 0;
+        }
+
+        .checkbox input {
+            outline: none;
+            width: 17px;
+            height: 17px;
+            -webkit-appearance: none;
+            background: #ededed;
+            border-radius: 2px;
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        .checkbox .fa-check {
+            position: absolute;
+            color: #fff;
+            font-size: 12px;
+            width: 17px;
+            text-align: center;
+            user-select: none;
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        .checkbox input:checked {
+            background-color: #339AF0;
+        }
+
+        .checkbox input:checked+.fa-check {
+            opacity: 1;
+        }
+
+        .me {
+            font-size: 13px;
+        }
+
+        .forget {
+            outline: none;
+            text-decoration: none;
+            color: #228BE6;
+            font-size: 13px;
+            margin-left: 30px;
+            border-bottom: 1px solid #d9d9d9;
+        }
+
+        input[type="submit"] {
+            display: block;
+            outline: none;
+            padding: 15px 20px;
+            width: 100%;
+            font-size: 17px;
+            font-weight: 900;
+            color: #fff;
+            background: #228AE6;
+            border: 2px solid #1B6FB8;
+            border-radius: 4px;
+            border-bottom: 4px solid #1B6FB8;
+        }
+
+        .create {
+            font-size: 15px;
+            padding: 30px 0px 0px 0px;
+            color: #868E96;
+        }
+
+        .use {
+            border-bottom: 1px solid #d9d9d9;
+            outline: none;
+            text-decoration: none;
+            color: #4CA5F0;
+        }
+
+        /*Footer*/
+
+        .black {
+            padding: 30px;
+            background: #212529;
+            color: #ddd;
+            font-size: 15px;
+        }
+
+        .plus {
+            padding: 0 5px;
+            vertical-align: -2px;
+            font-size: 24px;
+            font-weight: 900;
+            color: #868D96;
+        }
+
+        .copy {
+            color: #868D96;
+            padding: 13px;
+        }
+
+        .fa-copyright {
+            margin-right: 8px;
+        }
+
+        .fa-font-awesome-alt {
+            color: #868D96;
+            font-size: 40px;
+        }
+    </style>
+
+    <title>SIGN IN</title>
+</head>
+
+<body>
+
+    <!--Sign In-->
+
+    <section class="sign-in">
+        <div class="inner-width">
+
+            <a href="font awesome.html" class="link">
+
+                <i class="flag fab fa-font-awesome"></i>
+
+            </a>
+
+            <div class="form">
+
+                <h1>Sign In</h1>
+
+                <p class="para">and let's get you to the Awesome!</p>
+
+                <form>
+
+                    <p class="fp">Email Address</p>
+
+                    <input type="text" name="text" placeholder="e.g. severus@hogwarts.ed">
+
+                    <p class="fp">Password</p>
+
+                    <input type="password" placeholder="Password">
+
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <div class="fas fa-check">
+                        </div>
+
+                        <span align="left" class="me">Remember<br> Me</span>
+
+                        <a href="#" class="forget">
+                            Forget your Password?
+                        </a>
+
+                    </div>
+
+                    <input type="submit" value="Sign In">
+
+                </form>
+
+            </div>
+
+            <div class="create">
+
+                <span class="to">
+
+                    <a href="#" class="use">
+                        Create an account </a> to use Font Awesome for free!
+
+                </span>
+
+            </div </div>
+    </section>
+
+    <!--Footer-->
+
+    <section class="black">
+        <div class="inner-width">
+
+            <div class="footer">
+
+                Terms <span class="plus"> + </span> Privacy
+
+                <p class="copy"><i class="far fa-copyright"></i> Fonticons,Inc.</p>
+
+                <i class="fab fa-font-awesome-alt"></i>
+
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
