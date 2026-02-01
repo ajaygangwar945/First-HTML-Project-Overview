@@ -1,64 +1,13 @@
-body{
-margin:0;
-padding:0;
-font-family:"Times New Roman", Times, serif;
-font-size:50px;
-font-style:italic;
-font-weight:900;
-font-variant:small-caps;
-text-align:center;
-text-transform:capitalize;
-color:#00264d;
-} 
+@import url("style.css");
 
-p{
-margin:50px;
-padding:40px;
-word-spacing:5px;
-text-indent:50px;
-text-align:justify;
-color:#00e6ac;
-background-color:#00264d;
-border-radius:25px;
-}
+/* inside special tag.css content seemed simpler, mostly inherited from special tag.css via HTML linking, but confirming modernization */
 
-h1{
-font-size:130px;
-}
-
-h2{
-font-size:100px;
-}
-
-div{
-background-color:#00e6ac;
-color:#00264d;
-margin:50px;
-padding:50px;
-border-radius:25px;
-}
-
-i{
-padding:40px;
-width:calc(33% - 20px);
-font-size:100px;
-}
-
-a{
-outline:none;
-text-decoration:none;
-display:block;
-padding:40px;
-margin:100px 80px;
-font-size:70px;
-background-color:#00264d; 
-border-radius:25px;
-color:#ffd633;
-}
-
-.anchor{
-margin:100px 250px;
-font-size:50px;
-color:#00264d;
-background-color:#00e6ac;
+.anchor {
+    font-size: 1.5rem;
+    margin: 50px auto;
+    color: var(--accent-color);
+    background-color: var(--card-bg);
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 20px;
 }

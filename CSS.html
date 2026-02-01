@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css.css">
 
@@ -139,7 +140,7 @@
 
     <p>Css apply and browser interpets and applied to correspodding elements.
         Css syntax has three parts selector,property and value.</p>
-    <img src="Images/Screenshot_2020-06-16-19-39-20-1-1.png">
+    <img src="Images/Screenshot_2020-06-16-19-39-20-1-1.png" alt="CSS Syntax Diagram">
 
     <h2>Id Selectors</h2>
 
@@ -173,7 +174,7 @@
 
     <p>2-Generic font family in font is similar.</p>
 
-    <img src="Images/Screenshot_2020-06-25-22-42-16-1.png">
+    <img src="Images/Screenshot_2020-06-25-22-42-16-1.png" alt="Font Family Types">
 
     <h2>Font Size Property</h2>
 
@@ -250,7 +251,7 @@
 
     <p>The image shows all properties.</p>
 
-    <img src="Images/Screenshot_2020-06-26-12-57-20-1.png">
+    <img src="Images/Screenshot_2020-06-26-12-57-20-1.png" alt="CSS Box Model Diagram">
 
     <h2>More On Box Model</h2>
 
@@ -318,6 +319,31 @@
 
     <a href="html.html" class="anchor">Take Me Back</a>
 
+    <style>
+        .home-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #1572B6, #2980b9);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            z-index: 9999;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .home-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            color: white;
+        }
+    </style>
+    <a href="index.html" class="home-btn">Home</a>
 </body>
 
 </html>

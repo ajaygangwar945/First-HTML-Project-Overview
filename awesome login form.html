@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
@@ -241,23 +242,23 @@
         <h1>Sign In</h1>
 
         <div class="textb">
-            <input type="text" required>
+            <input type="text" required aria-label="Username">
             <div class="placeholder">Username</div>
         </div>
 
         <div class="textb">
-            <input type="password" required>
+            <input type="password" required aria-label="Password">
             <div class="placeholder">Password</div>
             <div class="show-password fas fa-eye-slash"></div>
         </div>
 
         <div class="checkbox">
-            <input type="checkbox">
+            <input type="checkbox" aria-label="Stay Signed In">
             <div class="fas fa-check">
             </div> Stay Signed In
         </div>
 
-        <button class="btn fas fa-arrow-right"></button>
+        <button type="submit" class="btn fas fa-arrow-right" aria-label="Sign In"></button>
 
         <a href="">Can't Sign In ?</a>
         <a href="">Create Account</a>
@@ -266,6 +267,31 @@
 
     <a href="html 5 form.html" class="anchor">To Learn Form Element</a>
 
+    <style>
+        .home-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #00e6ac, #00c492);
+            color: white;
+            text-decoration: none;
+            border-radius:  5px;
+            font-family: sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            z-index: 9999;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .home-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            color: white;
+        }
+    </style>
+    <a href="index.html" class="home-btn">Home</a>
 </body>
 
 </html>

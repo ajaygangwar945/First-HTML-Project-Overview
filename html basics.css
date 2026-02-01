@@ -1,95 +1,95 @@
-body{
-margin:0;
-padding:0;
-font-family:"Times New Roman", Times, serif;
-font-size:100px;
-font-style:italic;
-font-weight:900;
-font-variant:small-caps;
-text-align:center;
-text-transform:capitalize;
-color:#00264d;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: 900;
+    font-variant: small-caps;
+    text-align: center;
+    text-transform: capitalize;
+    color: #00264d;
 }
 
-p{
-margin:50px;
-padding:40px; 
-font-size:50px;
-font-weight:400;
-text-align:justify; 
-text-indent:50px;
+p {
+    margin: 50px;
+    padding: 40px;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: justify;
+    text-indent: 50px;
 }
 
-#h1{
-margin:0;
-padding:100px 0;
-color:white;
-font-size:150px;
-background-color:#00264d;
+#h1 {
+    margin: 0;
+    padding: 100px 0;
+    color: white;
+    font-size: 150px;
+    background-color: #00264d;
 }
 
-h1{
-font-size:100px;
+h1 {
+    font-size: 100px;
 }
 
-h2{
-font-size:90px;
+h2 {
+    font-size: 90px;
 }
 
-h3{
-font-size:80px;
+h3 {
+    font-size: 80px;
 }
 
-h4{
-font-size:70px;
+h4 {
+    font-size: 70px;
 }
 
-h5{
-font-size:60px;
+h5 {
+    font-size: 60px;
 }
 
-h6{
-font-size:50px;
+h6 {
+    font-size: 50px;
 }
 
-img{
-width:800px;
-border-radius:25px;
+img {
+    width: 800px;
+    border-radius: 25px;
 }
 
-div{
-background-color:#00264d;
-padding:70px 0;
+div {
+    background-color: #00264d;
+    padding: 70px 0;
 }
 
-hr{
-margin:70px;
+hr {
+    margin: 70px;
 }
 
-marquee{
-color:#00e6ac;
+marquee {
+    color: #00e6ac;
 }
 
-ul,ol{
-font-size:50px;
-padding-left:300px;
-text-align:left;
+ul,
+ol {
+    font-size: 50px;
+    padding-left: 300px;
+    text-align: left;
 }
 
-a{
-outline:none;
-text-decoration:none;
-display:block;
-padding:40px;
-margin:100px 80px;
-font-size:50px;
-border-radius:25px;
-background-color:#00264d;
-color:#ffd633;
+a {
+    outline: none;
+    text-decoration: none;
+    display: block;
+    padding: 40px;
+    margin: 100px 80px;
+    font-size: 50px;
+    border-radius: 25px;
+    background-color: #00264d;
+    color: #ffd633;
 }
 
-.anchor{
-margin:100px 250px;
-color:white;
+.anchor {
+    margin: 100px 250px;
+    color: white;
 }
-

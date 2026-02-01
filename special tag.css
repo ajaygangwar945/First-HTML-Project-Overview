@@ -1,147 +1,149 @@
-body{
-margin:0;
-padding:0;
-font-family:"Times New Roman", Times, serif;
-font-size:50px;
-font-style:italic;
-font-weight:900;
-font-variant:small-caps;
-text-align:center;
-text-transform:capitalize;
-background:#00e6ac;
-color:#00264d;
-} 
-
-p{
-margin:50px;
-padding:40px;
-word-spacing:5px;
-text-indent:50px;
-text-align:justify;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 900;
+    font-variant: small-caps;
+    text-align: center;
+    text-transform: capitalize;
+    background: #00e6ac;
+    color: #00264d;
 }
 
-#para{
-text-indent:0px;
+p {
+    margin: 50px;
+    padding: 40px;
+    word-spacing: 5px;
+    text-indent: 50px;
+    text-align: justify;
 }
 
-h1{
-font-size:150px;
+#para {
+    text-indent: 0px;
 }
 
-h2{
-font-size:100px;
+h1 {
+    font-size: 150px;
 }
 
-marquee{
-font-size:70px;
+h2 {
+    font-size: 100px;
 }
 
-img{
-width:880px;
-border-radius:25px;
+marquee {
+    font-size: 70px;
 }
 
-details{
-background-color:#ffd633;
-color:#00264d;
-border-radius:25px;
-margin:50px;
+img {
+    width: 880px;
+    border-radius: 25px;
 }
 
-summary{ 
-background-color:#00e6ac;
-outline:none;
+details {
+    background-color: #ffd633;
+    color: #00264d;
+    border-radius: 25px;
+    margin: 50px;
 }
 
-.fieldset{
-margin:0;
+summary {
+    background-color: #00e6ac;
+    outline: none;
 }
 
-fieldset{
-margin:50px;
-border-radius:25px;
-background-color:#ffd633;
-border-width:0;
+.fieldset {
+    margin: 0;
 }
 
-form{
-background-color:#00264d;
-margin:50px;
-padding:50px;
-border-radius:25px;
+fieldset {
+    margin: 50px;
+    border-radius: 25px;
+    background-color: #ffd633;
+    border-width: 0;
 }
 
-input[type="text"], input[type="password"]{
-background:none;
-display:block;
-outline:none; 
-text-align:center;
-color:white;
-border:10px solid #00e6ac;
-border-radius:80px;
-padding:40px 20px;
-margin:40px auto;
-width:350px;
-trasition:0.25s;
-cursor:pointer;
-font-family:"Times New Roman", Times, serif;
-font-size:50px;
-font-style:italic; 
-font-weight:900;
-font-variant:small-caps;
-text-transform:capitalize;
+form {
+    background-color: #00264d;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 25px;
 }
 
-input[type="text"]:hover, input[type="password"]:hover{
-width:450px;
-border-color:#ffd633;
+input[type="text"],
+input[type="password"] {
+    background: none;
+    display: block;
+    outline: none;
+    text-align: center;
+    color: white;
+    border: 10px solid #00e6ac;
+    border-radius: 80px;
+    padding: 40px 20px;
+    margin: 40px auto;
+    width: 350px;
+    trasition: 0.25s;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 900;
+    font-variant: small-caps;
+    text-transform: capitalize;
 }
 
-input[type="submit"]{
-background:none;
-display:block;
-margin:40px auto;
-text-align:center;
-border:10px solid #ffd633 ;
-padding:40px 20px;
-width:250px;
-outline:none; 
-color:#ffd633;
-font-weight:900;
-border-radius:80px;
-trasition:0.25s;
-cursor:pointer;
-font-family:"Times New Roman", Times, serif;
-font-style:italic; 
-font-variant:small-caps;
-text-transform:capitalize;
-font-size:50px;
+input[type="text"]:hover,
+input[type="password"]:hover {
+    width: 450px;
+    border-color: #ffd633;
 }
 
-input[type="submit"]:hover{
-background-color:#ffd633;
-color:#00264d;
+input[type="submit"] {
+    background: none;
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    border: 10px solid #ffd633;
+    padding: 40px 20px;
+    width: 250px;
+    outline: none;
+    color: #ffd633;
+    font-weight: 900;
+    border-radius: 80px;
+    trasition: 0.25s;
+    cursor: pointer;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    font-size: 50px;
 }
 
-meter{
-width:880px;
-height:100px;
+input[type="submit"]:hover {
+    background-color: #ffd633;
+    color: #00264d;
 }
 
-a{
-outline:none;
-text-decoration:none;
-display:block;
-padding:40px;
-margin:100px 80px;
-font-size:50px;
-background-color:#00264d; 
-border-radius:25px;
-color:#ffd633;
+meter {
+    width: 880px;
+    height: 100px;
 }
 
-.anchor{
-margin:100px 250px;
-background-color:#00264d; 
-color:#00e6ac;
+a {
+    outline: none;
+    text-decoration: none;
+    display: block;
+    padding: 40px;
+    margin: 100px 80px;
+    font-size: 50px;
+    background-color: #00264d;
+    border-radius: 25px;
+    color: #ffd633;
+}
+
+.anchor {
+    margin: 100px 250px;
+    background-color: #00264d;
+    color: #00e6ac;
 }

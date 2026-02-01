@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
 
-    <meta name="viemport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -963,11 +963,11 @@
                 <h1>Hi I'm</h1>
 
                 <div class="sm">
-                    <a href="https://www.facebook.com" class="fab fa-facebook-f"></a>
-                    <a href="https://www.twitter.com" class="fab fa-twitter"></a>
-                    <a href="https://www.instagram.com" class="fab fa-instagram"></a>
-                    <a href="https://www.linkedin.com" class="fab fa-linkedin-in"></a>
-                    <a href="https://www.youtube.com" class="fab fa-youtube"></a>
+                    <a href="https://www.facebook.com" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                    <a href="https://www.twitter.com" class="fab fa-twitter" aria-label="Twitter"></a>
+                    <a href="https://www.instagram.com" class="fab fa-instagram" aria-label="Instagram"></a>
+                    <a href="https://www.linkedin.com" class="fab fa-linkedin-in" aria-label="LinkedIn"></a>
+                    <a href="https://www.youtube.com" class="fab fa-youtube" aria-label="YouTube"></a>
                 </div>
 
                 <div class="buttons">
@@ -1302,11 +1302,11 @@
 
             <div class="sm">
 
-                <a href="https://www.facebook.com" class="fab fa-facebook-f"></a>
-                <a href="https://www.twitter.com" class="fab fa-twitter"></a>
-                <a href="https://www.instagram.com" class="fab fa-instagram"></a>
-                <a href="https://www.linkedin.com" class="fab fa-linkedin-in"></a>
-                <a href="https://www.youtube.com" class="fab fa-youtube"></a>
+                <a href="https://www.facebook.com" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                <a href="https://www.twitter.com" class="fab fa-twitter" aria-label="Twitter"></a>
+                <a href="https://www.instagram.com" class="fab fa-instagram" aria-label="Instagram"></a>
+                <a href="https://www.linkedin.com" class="fab fa-linkedin-in" aria-label="LinkedIn"></a>
+                <a href="https://www.youtube.com" class="fab fa-youtube" aria-label="YouTube"></a>
 
             </div>
 
@@ -1315,7 +1315,7 @@
 
     <!--Go Top BTN-->
 
-    <button class="go-top fas fa-arrow-up">
+    <button class="go-top fas fa-arrow-up" aria-label="Go to Top">
 
     </button>
 
@@ -1331,6 +1331,31 @@
 
     </script>
 
+    <style>
+        .home-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: #48dbfb;
+            color: white;
+            text-decoration: none;
+            border-radius:  5px;
+            font-family: serif;
+            font-size: 25px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            z-index: 9999;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .home-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            color: white;
+        }
+    </style>
+    <a href="index.html" class="home-btn">Home</a>
 </body>
 
 </html>

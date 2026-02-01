@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -99,7 +99,7 @@
             color: #f2f2f2;
             padding: 0 5px;
             font-size: 10px;
-            trasition: .3s linear;
+            transition: .3s linear;
         }
 
         .sm a:hover {
@@ -115,7 +115,7 @@
             border: 1.5px solid #e66767;
             border-radius: 2px;
             margin-top: 8px;
-            trasition: .2s linear;
+            transition: .2s linear;
             font-size: 10px;
         }
 
@@ -137,7 +137,8 @@
 
         .item {
             padding: 0 4px;
-            text-transform: uppercase: font-size:10px;
+            text-transform: uppercase;
+            font-size: 10px;
             color: #2c3a47;
         }
 
@@ -180,10 +181,10 @@
                 <div class="desc">Developer & Designer</div>
 
                 <div class="sm">
-                    <a href="" class="fab fa-facebook-f"></a>
-                    <a href="" class="fab fa-twitter"></a>
-                    <a href="" class="fab fa-github"></a>
-                    <a href="" class="fab fa-youtube"></a>
+                    <a href="" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                    <a href="" class="fab fa-twitter" aria-label="Twitter"></a>
+                    <a href="" class="fab fa-github" aria-label="GitHub"></a>
+                    <a href="" class="fab fa-youtube" aria-label="YouTube"></a>
                 </div>
 
                 <a href="#" class="contact">Contact Me</a>
@@ -274,7 +275,7 @@
 
             <p></p>
 
-            <img>
+            <img alt="">
 
             <p></p>
 
@@ -293,6 +294,31 @@
 
 
 
+    <style>
+        .home-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 4px 10px;
+            background: #e66767;
+            color: white;
+            text-decoration: none;
+            border-radius:  5px;
+            font-family: "Ubuntu", sans-serif;
+            font-size: 10px;
+            font-weight: bold;
+            box-shadow: none;
+            z-index: 9999;
+            transition: background 0.3s ease;
+        }
+
+        .home-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+            color: white;
+        }
+    </style>
+    <a href="index.html" class="home-btn">Home</a>
 </body>
 
 </html>
