@@ -34,18 +34,21 @@
             }
 
             .table {
-                width: 100%;
-                max-width: 800px;
-                height: auto;
+                width: calc(100% - 20px);
+                max-width: 100%;
                 vertical-align: middle;
                 border-radius: 5px;
                 border: 2px solid #00264d;
-                margin: 20px auto;
+                margin: 20px 10px;
             }
 
             .anchor {
+                display: block;
+
+                max-width: fit-content;
+
                 padding: 10px;
-                margin: 20px;
+                margin: 20px auto;
                 font-size: 18px;
                 border-radius: 5px;
             }
@@ -78,11 +81,12 @@
             }
 
             .table {
-                width: 280px;
+                width: calc(100% - 40px);
                 height: 200px;
                 vertical-align: middle;
                 border-radius: 7px;
                 border: 2px solid #00264d;
+                margin: 20px;
             }
 
             .anchor {
@@ -138,56 +142,57 @@
 
     <p>Colspan is uses to make coloumn more width.Rowspan is uses to make row more height.</p>
 
-    <h3>Table Using Colspan And Rowspan Attributes<h3>
+    <h3>Table Using Colspan And Rowspan Attributes</h3>
 
-            <table width="800px" height="400px" border="0" cellpadding="0" cellspacing="0" align="center" class="table">
-                <tr>
-                    <td bgcolor="#3498db" rowspan="2"></td>
-                    <td bgcolor="#2eec71" colspan="2"></td>
-                    <td bgcolor="teal"></td>
-                </tr>
-                <tr>
-                    <td bgcolor="cyan"></td>
-                    <td colspan="2" rowspan="2" bgcolor="purple"></td>
-                </tr>
-                <tr>
-                    <td bgcolor="#FFA07A"></td>
-                    <td rowspan="2" bgcolor="#ffd"></td>
-                </tr>
-                <tr>
-                    <td bgcolor="#818181"></td>
-                    <td bgcolor="#346"></td>
-                    <td></td>
-                </tr>
-            </table>
+    <table width="90%" height="400px" border="0" cellpadding="0" cellspacing="0" align="center" class="table">
+        <tr>
+            <td bgcolor="#3498db" rowspan="2"></td>
+            <td bgcolor="#2eec71" colspan="2"></td>
+            <td bgcolor="teal"></td>
+        </tr>
+        <tr>
+            <td bgcolor="cyan"></td>
+            <td colspan="2" rowspan="2" bgcolor="purple"></td>
+        </tr>
+        <tr>
+            <td bgcolor="#FFA07A"></td>
+            <td rowspan="2" bgcolor="#ffd"></td>
+        </tr>
+        <tr>
+            <td bgcolor="#818181"></td>
+            <td bgcolor="#346"></td>
+            <td></td>
+        </tr>
+    </table>
 
-            <a href="html basics.html" class="anchor">Take Me Back</a>
+    <a href="html basics.html" class="anchor">Take Me Back</a>
 
-            <style>
-                .home-btn {
-                    position: fixed;
-                    bottom: 20px;
-                    right: 20px;
-                    padding: 10px 20px;
-                    background-color: #ffd633;
-                    color: #00264d;
-                    text-decoration: none;
-                    border-radius:  5px;
-                    font-family: sans-serif;
-                    font-size: 18px;
-                    font-weight: bold;
-                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-                    z-index: 9999;
-                    transition: transform 0.3s ease, box-shadow 0.3s ease;
-                }
+    <style>
+        .home-btn {
+            position: fixed;
+            margin: 20px 10px;
+            bottom: 0px;
+            right: 0px;
+            padding: 10px 20px;
+            background-color: #ffd633;
+            color: #00264d;
+            text-decoration: none;
+            border-radius: 5px;
+            /* font-family: sans-serif; */
+            font-size: 18px;
+            font-weight: bold;
+            /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); */
+            z-index: 9999;
+            /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+        }
 
-                .home-btn:hover {
+        /* .home-btn:hover {
                     transform: translateY(-3px);
                     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
                     color: #00264d;
-                }
-            </style>
-            <a href="index.html" class="home-btn">Home</a>
+                } */
+    </style>
+    <a href="index.html" class="home-btn">Home</a>
 </body>
 
 </html>
