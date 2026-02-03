@@ -37,8 +37,9 @@
             }
 
             img {
-                width: 100%;
-                max-width: 600px;
+                margin: 0 20px;
+                width: calc(100% - 40px);
+                max-width: fit-content;
                 border-radius: 5px;
             }
 
@@ -94,14 +95,15 @@
             }
 
             meter {
-                width: 100%;
-                max-width: 600px;
+                width: calc(100% - 40px);
                 height: 20px;
             }
 
             .anchor {
+                display: block;
+                width: fit-content;
                 padding: 10px;
-                margin: 20px;
+                margin: 20px auto;
                 font-size: 18px;
                 border-radius: 5px;
             }
@@ -223,6 +225,7 @@
     </style>
 
     <title>SPECIAL TAG</title>
+    <link rel="stylesheet" href="home-button.css">
 </head>
 
 <body>
@@ -274,7 +277,7 @@
 
     <figure>
 
-        <img src="file:///storage/emulated/0/Pictures/Screenshots/Iron man.png" alt="Iron Man">
+        <img src="Images/Iron_man.png" alt="Iron Man">
 
         <figcaption>
             Iron Man
@@ -284,7 +287,7 @@
 
     <figure>
 
-        <img src="file:///storage/emulated/0/Pictures/Screenshots/Avenger 1.jpg" alt="Avenger">
+        <img src="Images/Avenger 1.jpg" alt="Avenger">
 
         <figcaption>
             Avenger
@@ -393,26 +396,26 @@
     <style>
         .home-btn {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
+            bottom: 0px;
+            right: 0px;
             padding: 10px 20px;
-            background: linear-gradient(135deg, #00264d, #003366);
-            color: #ffd633;
+            background: #00264d;
+            color: #00e6ac;
             text-decoration: none;
             border-radius: 5px;
-            font-family: sans-serif;
+            /* font-family: sans-serif; */
             font-size: 18px;
             font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); */
             z-index: 9999;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
         }
 
-        .home-btn:hover {
+        /* .home-btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
             color: #ffd633;
-        }
+        } */
     </style>
     <a href="index.html" class="home-btn">Home</a>
 </body>

@@ -44,8 +44,8 @@ img {
 }
 
 svg {
-    height: 880px;
-    width: 880px;
+    height: 1200px;
+    width: 100%;
     background-color: #00e6ac;
     border-radius: 25px;
 }

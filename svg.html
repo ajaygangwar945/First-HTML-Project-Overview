@@ -30,14 +30,14 @@
             }
 
             svg {
-                height: auto;
-                width: 100%;
-                max-width: 600px;
+                width: calc(100% - 20px);
+                margin: 10px;
                 border-radius: 5px;
             }
 
             .logo {
-                width: 200px;
+                width: calc(100% - 40px);
+                margin: 10px;
                 padding: 10px;
                 border-radius: 5px;
             }
@@ -48,8 +48,10 @@
             }
 
             .anchor {
+                display: block;
+                width: fit-content;
                 padding: 10px;
-                margin: 20px;
+                margin: 20px auto;
                 font-size: 18px;
                 border-radius: 5px;
             }
@@ -118,6 +120,7 @@
     </style>
 
     <title>SVG</title>
+    <link rel="stylesheet" href="home-button.css">
 </head>
 
 <body>
@@ -135,7 +138,7 @@
     <p> An SVG image can be added to HTML code with just a basic image tag that includes a source attribute pointing to
         the image.</p>
 
-    <img src="file:///storage/emulated/0/Pictures/Screenshots/logo.svg" alt="LOGO" class="logo">
+    <img src="Images/logo.svg" alt="LOGO" class="logo">
 
     <h2>Drawing Shapes With Svg
     </h2>
@@ -313,26 +316,27 @@
     <style>
         .home-btn {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
+            bottom: 10px;
+            right: 0px;
+            margin: 10px;
             padding: 10px 20px;
             background-color: #00e6ac;
             color: #00264d;
             text-decoration: none;
             border-radius: 5px;
-            font-family: sans-serif;
+            /* font-family: sans-serif; */
             font-size: 18px;
             font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); */
             z-index: 9999;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
         }
 
-        .home-btn:hover {
+        /* .home-btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
             color: #00264d;
-        }
+        } */
     </style>
     <a href="index.html" class="home-btn">Home</a>
 </body>

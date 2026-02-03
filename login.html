@@ -16,7 +16,15 @@
             text-align: center;
             text-transform: capitalize;
             background-color: #34495e;
+
+            /* 👇 ADD THESE */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
         }
+
 
         h1 {
             color: white;
@@ -26,8 +34,8 @@
 
         form {
             background-color: #191919;
-            margin: 150px;
-            padding: 50px;
+            /* margin: 150px;
+            padding: 50px; */
         }
 
         input[type="text"],
@@ -97,9 +105,8 @@
             }
 
             form {
-                margin: 20px auto;
+                margin: 20px;
                 padding: 20px;
-                max-width: 400px;
             }
 
             input[type="text"],
@@ -146,6 +153,7 @@
 
             form {
                 margin: 35px;
+                width: calc(100% - 120px);
                 padding: 25px;
             }
 
@@ -183,6 +191,7 @@
     </style>
 
     <title>LOGIN</title>
+    <link rel="stylesheet" href="home-button.css">
 </head>
 
 <body>
@@ -207,23 +216,23 @@
             bottom: 20px;
             right: 20px;
             padding: 10px 20px;
-            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            background: black;
             color: white;
             text-decoration: none;
-            border-radius:  5px;
-            font-family: sans-serif;
+            /* border-radius: 5px; */
+            /* font-family: sans-serif; */
             font-size: 18px;
             font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); */
             z-index: 9999;
-            transition: background 0.5s ease, box-shadow 0.3s ease;
+            /* transition: background 0.5s ease, box-shadow 0.3s ease; */
         }
 
-        .home-btn:hover {
+        /* .home-btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
             color: white;
-        }
+        } */
     </style>
     <a href="index.html" class="home-btn">Home</a>
 </body>

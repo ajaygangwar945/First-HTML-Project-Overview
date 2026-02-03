@@ -9,15 +9,20 @@
 }
 
 body {
-    background: url(Images/Leave.jpg) no-repeat;
-    background-size: 1000px 1800px;
+    background: url(Images/Leave.jpg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .middle {
-    position: absolute;
-    top: 40%;
+    margin-top: 50px;
+    position: relative;
+    /* top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 .menu {
@@ -91,12 +96,11 @@ body {
 }
 
 .anchor {
-    position: absolute;
+    position: relative;
     display: block;
     text-decoration: none;
     outline: none;
-    bottom: 180px;
-    margin: 0 140px;
+    margin: 50px auto;
     width: 680px;
     text-align: center;
     font-size: 54px;
