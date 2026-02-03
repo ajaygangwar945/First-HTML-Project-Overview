@@ -36,8 +36,10 @@
             }
 
             .anchor {
+                display: block;
+                width: fit-content;
                 padding: 10px;
-                margin: 20px;
+                margin: 20px auto;
                 font-size: 18px;
                 border-radius: 5px;
             }
@@ -113,27 +115,27 @@
         .home-btn {
             position: fixed;
             bottom: 20px;
-            right: 20px;
+            right: 10px;
             padding: 10px 20px;
             background-color: #ffd633;
             color: #00264d;
             text-decoration: none;
             border-radius: 5px;
-            font-family: sans-serif;
+            /* font-family: sans-serif; */
             font-size: 18px;
             font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); */
             z-index: 9999;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
             display: inline-block;
             margin: 0;
         }
 
-        .home-btn:hover {
+        /* .home-btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
             color: #00264d;
-        }
+        } */
     </style>
     <a href="index.html" class="home-btn">Home</a>
 </body>
