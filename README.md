@@ -1,4 +1,4 @@
-<img src="Images/project_banner.png" alt="Project Banner" width="100%" height="250" style="object-fit: cover; ">
+<img src="Images/project_banner.png" alt="Project Banner" width="100%" height="200" style="object-fit: cover; ">
 
 <h1 align="center">🌐 First HTML Project Overview - Learning Hub</h1>
 
