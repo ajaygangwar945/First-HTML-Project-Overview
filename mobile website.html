@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <link rel="stylesheet" href="mobile website.css">
+    <title>MOBILE WEBSITE</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23F1C40F'/><text x='50' y='65' font-family='Arial' font-size='60' font-weight='bold' fill='white' text-anchor='middle'>M</text></svg>">
 
     <style>
         * {
@@ -609,7 +610,7 @@
             outline: none;
         }
 
-        @media screen and (max-width:330px) {
+        @media screen and (max-width: 900px) {
 
             /*Navbar*/
 
@@ -989,7 +990,7 @@
 
             <div class="about-content">
 
-                <img src="file:///storage/emulated/0/Pictures/Screenshots/Rose 1.jpg" class="about-pic" alt="Rose">
+                <img src="Images/Rose 1.jpg" class="about-pic" alt="Rose">
 
                 <div class="about-text">
 
@@ -1191,8 +1192,8 @@
 
             <div class="works">
 
-                <a href="file:///storage/emulated/0/Pictures/Screenshots/H.png" class="work">
-                    <img src="file:///storage/emulated/0/Pictures/Screenshots/H.png" alt="Headphones" class="wimage">
+                <a href="Images/H.png" class="work">
+                    <img src="Images/H.png" alt="Headphones" class="wimage">
                     <div class="info">
                         <h3>Work Title</h3>
                         <div class="cat">Music,Headset
@@ -1200,8 +1201,8 @@
                     </div>
                 </a>
 
-                <a href="file:///storage/emulated/0/Pictures/Screenshots/Wa.png" class="work">
-                    <img src="file:///storage/emulated/0/Pictures/Screenshots/Wa.png" alt="Watch" class="wimage">
+                <a href="Images/Wa.png" class="work">
+                    <img src="Images/Wa.png" alt="Watch" class="wimage">
                     <div class="info">
                         <h3>Work Title</h3>
                         <div class="cat">Music,Headset
@@ -1209,8 +1210,8 @@
                     </div>
                 </a>
 
-                <a href="file:///storage/emulated/0/Pictures/Screenshots/N.jpg" class="work">
-                    <img src="file:///storage/emulated/0/Pictures/Screenshots/N.jpg" alt="Nike" class="wimage">
+                <a href="Images/N.jpg" class="work">
+                    <img src="Images/N.jpg" alt="Nike" class="wimage">
                     <div class="info">
                         <h3>Work Title</h3>
                         <div class="cat">Music,Headset
@@ -1218,8 +1219,8 @@
                     </div>
                 </a>
 
-                <a href="file:///storage/emulated/0/Pictures/Screenshots/W.png" class="work">
-                    <img src="file:///storage/emulated/0/Pictures/Screenshots/W.png" alt="Watch" class="wimage">
+                <a href="Images/W.png" class="work">
+                    <img src="Images/W.png" alt="Watch" class="wimage">
                     <div class="info">
                         <h3>Work Title</h3>
                         <div class="cat">Music,Headset
@@ -1227,8 +1228,8 @@
                     </div>
                 </a>
 
-                <a href="file:///storage/emulated/0/Pictures/Screenshots/C.png" class="work">
-                    <img src="file:///storage/emulated/0/Pictures/Screenshots/C.png" alt="Camera" class="wimage">
+                <a href="Images/C.png" class="work">
+                    <img src="Images/C.png" alt="Camera" class="wimage">
                     <div class="info">
                         <h3>Work Title</h3>
                         <div class="cat">Music,Headset
@@ -1236,8 +1237,8 @@
                     </div>
                 </a>
 
-                <a href="file:///storage/emulated/0/Pictures/Screenshots/He.jpg" class="work">
-                    <img src="file:///storage/emulated/0/Pictures/Screenshots/He.jpg" alt="Headphone" class="wimage">
+                <a href="Images/He.jpg" class="work">
+                    <img src="Images/He.jpg" alt="Headphone" class="wimage">
                     <div class="info">
                         <h3>Work Title</h3>
                         <div class="cat">Music,Headset
@@ -1297,7 +1298,7 @@
         <div class="inner-width">
 
             <div class="copyright">
-                &copy; 2020 | Created & Designed By <a href="file:///storage/emulated/0/HTML/ajay.html">Ajay</a>
+                &copy; 2020 | Created & Designed By <a href="ajay.html">Ajay</a>
             </div>
 
             <div class="sm">
@@ -1322,16 +1323,33 @@
     <script>
 
         function openNav() {
-            document.getElementById("mySidenav").style.width = "800px";
+            document.getElementById("mySidenav").style.width = "100%";
         }
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
 
+        const goTopBtn = document.querySelector('.go-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                goTopBtn.style.display = 'block';
+            } else {
+                goTopBtn.style.display = 'none';
+            }
+        });
+
+        goTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
     </script>
 
-    
+
 </body>
 
 </html>
