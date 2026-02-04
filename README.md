@@ -18,15 +18,10 @@ This project is a comprehensive **HTML & CSS Learning Hub** designed to showcase
 
 ---
 
-## 🚀 Live Demos
+## 🚀 Live Demo
 
-Experience the full interactive dashboard and all learning modules live:
-
-| Platform | Link |
-| :--- | :--- |
-| **GitHub Pages** | [**👉 Visit Hub**](https://ajaygangwar945.github.io/First-HTML-Project-Overview/) |
-| **SoftHub App** | [**👉 Visit SoftHub**](https://softhub-bwnd.onrender.com/) |
-
+Experience the full interactive dashboard and all learning modules live on GitHub Pages:
+[**👉 Visit Live Project**](https://ajaygangwar945.github.io/First-HTML-Project-Overview/)
 <br>
 
 [![Live Project](https://img.shields.io/badge/Live_Project-Visit_Site-00e6ac?style=for-the-badge&logo=github&logoColor=white)](https://ajaygangwar945.github.io/First-HTML-Project-Overview/)
@@ -101,16 +96,6 @@ First-HTML-Project-Overview/
 
 2. **Launch**:
    Simply open `index.html` in any modern web browser to enter the hub.
-
----
-
-## 🧹 Maintenance & Optimization
-
-Recent updates include a **comprehensive codebase audit**:
-
-- **Optimized Assets**: Removed all unused CSS and temporary files.
-- **Standardized Navigation**: All modules now use a consistent global `home-button.css`.
-- **Accessibility Fixes**: Images include `alt` tags and interactive elements use `aria-labels`.
 
 ---
 

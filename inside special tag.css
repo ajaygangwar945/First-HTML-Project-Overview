@@ -1,0 +1,11 @@
+/* inside special tag.css content restored to original theme with fixes */
+
+.anchor {
+    font-size: 1.5rem;
+    margin: 50px auto;
+    color: #ffd633;
+    background-color: #00264d;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 20px;
+}
