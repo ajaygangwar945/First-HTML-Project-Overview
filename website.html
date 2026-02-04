@@ -3,702 +3,20 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
 
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
+    <!-- External Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="website.css">
-    <title>WEBSITE</title>
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23F1C40F'/><text x='50' y='65' font-family='Arial' font-size='60' font-weight='bold' fill='white' text-anchor='middle'>W</text></svg>">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            text-decoration: none;
-            font-family: serif;
-            box-sizing: border-box;
-        }
-
-        /*Navbar*/
-
-        .navbar {
-            position: fixed;
-            background-color: #fff;
-            width: 100%;
-            padding: 8px 0;
-            top: 0;
-            z-index: 999;
-            transition: .3s linear;
-        }
-
-        .inner-width {
-            max-width: 1300px;
-            margin: auto;
-            padding: 0 5px;
-        }
-
-        .navbar .inner-width {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo {
-            font-size: 50px;
-            background-size: contain;
-        }
-
-        .menu {
-            font-size: 50px;
-            font-weight: 700;
-        }
-
-        .navbar-menu {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            right: 0;
-            background-color: #fff;
-            overflow-x: hidden;
-            transition: 0.2s;
-            padding: 0px;
-        }
-
-        #abtn a {
-            padding: 25px 40px;
-            font-size: 80px;
-            font-weight: 900;
-        }
-
-        #ahome a {
-            margin-top: 60px;
-        }
-
-        .navbar-menu a {
-            color: #111;
-            text-decoration: none;
-            outline: none;
-            display: block;
-            transition: 0.2s linear;
-        }
-
-        .navbar-menu a:hover,
-        .offcanvas a:focus {
-            color: #48dbfb;
-        }
-
-        .cbtn .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 100px;
-            margin-left: 0px;
-            font-weight: 900;
-        }
-
-
-        /*Home*/
-
-        #home {
-            height: 100vh;
-            min-height: 500px;
-            background: url(Images/Aj.jpeg) no-repeat center;
-            background-size: cover;
-            background-attachment: fixed;
-        }
-
-        #home .inner-width {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            text-align: center;
-        }
-
-        #home .content {
-            width: 100%;
-            color: #fff;
-        }
-
-        #home .content h1 {
-            font-size: 60px;
-            margin-bottom: 60px;
-        }
-
-        #home .content h1::after {
-            content: " Ajay";
-            animation: textanim 10s linear infinite;
-        }
-
-        @keyframes textanim {
-            25% {
-                content: " A Developer";
-            }
-
-            50% {
-                content: " A Designer";
-            }
-
-            75% {
-                content: " A Youtuber";
-            }
-        }
-
-        .sm a {
-            color: #fff;
-            font-size: 25px;
-            margin: 0 10px;
-            transition: .2s linear;
-        }
-
-        .sm a:hover {
-            color: #48dbfb;
-        }
-
-        #home .buttons {
-            margin-top: 60px;
-        }
-
-        #home .buttons a {
-            display: inline-block;
-            margin: 15px 30px;
-            color: #48dbfb;
-            font-size: 25px;
-            font-weight: 500;
-            width: 240px;
-            border: 1px solid #48dbfb;
-            padding: 14px 0;
-            border-radius: 6px;
-            transition: .2s linear;
-        }
-
-        #home .buttons a:hover,
-        #home .buttons a:nth-child(2) {
-            background: #48dbfb;
-            color: #fff;
-        }
-
-        /*About*/
-
-        section {
-            padding: 100px 0;
-            background-color: #f1f1f1;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 80px;
-            position: relative;
-            font-size: 28px;
-            padding-bottom: 20px;
-            color: #111;
-        }
-
-        .section-title::before {
-            content: "";
-            position: absolute;
-            width: 80px;
-            height: 3px;
-            background-color: #111;
-            bottom: 0;
-            left: calc(50% - 40px);
-        }
-
-        .section-title::after {
-            content: "";
-            position: absolute;
-            width: 16px;
-            height: 10px;
-            background-color: #48dbfb;
-            border: 4px solid #f1f1f1;
-            left: calc(50% - 12px);
-            bottom: -7px;
-        }
-
-        .about-content {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .about-pic {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin: 100px;
-        }
-
-        .about-text {
-            flex: 1;
-        }
-
-        .about-text h3 {
-            margin: 10px 0;
-            color: #444;
-            font-size: 16px;
-        }
-
-        .about-text h3 span:nth-child(1):after,
-        .about-text h3 span:nth-child(2):after {
-            content: "";
-            width: 6px;
-            height: 6px;
-            background-color: #444;
-            display: inline-block;
-            border-radius: 50%;
-            margin: 0 14px;
-        }
-
-        p {
-            font-size: 12px;
-        }
-
-        .about-text p {
-            /*font-size:17px;*/
-            text-align: justify;
-            line-height: 26px;
-            margin-top: 20px;
-        }
-
-        .skills {
-            margin-top: 40px;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .skill {
-            width: calc(50% - 20px);
-            margin: 15px 0;
-        }
-
-        .skill-info {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .skill-bar {
-            height: 3px;
-            background-color: #ddd;
-            margin-top: 14px;
-            position: relative;
-        }
-
-        .skill-bar::after {
-            content: "";
-            position: absolute;
-            height: 6px;
-            background-color: #48dbfb;
-            bottom: 0;
-        }
-
-        .html:after {
-            width: 90%;
-        }
-
-        .css:after {
-            width: 80%;
-        }
-
-        .js:after {
-            width: 70%;
-        }
-
-        .php:after {
-            width: 60%;
-        }
-
-        .mysql:after {
-            width: 90%;
-        }
-
-        .c:after {
-            width: 80%;
-        }
-
-        /*Services*/
-
-        section.dark {
-            background-color: #353b48;
-        }
-
-        section.dark .section-title {
-            color: #f1f1f1;
-        }
-
-        section.dark .section-title::before {
-            background-color: #f1f1f1;
-        }
-
-        section.dark .section-title::after {
-            border: 4px solid #353b48;
-        }
-
-        section.dark p {
-            font-size: 18px;
-            line-height: 22px;
-        }
-
-        .services {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .service {
-            width: calc(33% - 20px);
-            text-align: center;
-            border: 4px solid #48dbfb;
-            border-radius: 6px;
-            margin: 20px 0;
-            padding: 40px 20px;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        .service .icon {
-            color: #48dbfb;
-            font-size: 40px;
-            margin-bottom: 20px;
-            transition: .3s linear;
-        }
-
-        .service h4 {
-            font-size: 24px;
-            margin-bottom: 6px;
-        }
-
-        .service:hover {
-            background-color: #48dbfb;
-        }
-
-        .service:hover .icon {
-            color: #fff;
-        }
-
-        /*Education*/
-
-        .time-line,
-        .works {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .block {
-            width: calc(50% - 20px);
-            background: #fff;
-            border: 1px solid #ddd;
-            margin: 10px 0;
-            padding: 30px;
-            position: relative;
-        }
-
-        .block::before {
-            content: "";
-            position: absolute;
-            width: 1px;
-            height: 120%;
-            background-color: #ddd;
-            left: -20px;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .block::after {
-            content: "";
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            background-color: #48dbfb;
-            left: -28px;
-            top: 30px;
-            border-radius: 50%;
-        }
-
-        .block h3 {
-            font-size: 16px;
-            margin: 10px 0;
-        }
-
-        .block p {
-            font-size: 15px;
-            color: #444;
-        }
-
-        /*Works*/
-
-        .work {
-            width: calc(33% - 10px);
-            overflow: hidden;
-            border-radius: 6px;
-            margin: 10px 0;
-            cursor: pointer;
-            position: relative;
-        }
-
-        .work img {
-            width: 100%;
-            height: 100%;
-            transition: .4s linear;
-        }
-
-        .work::before {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            background-color: #48dbfbcc;
-            transition: .2s linear;
-            opacity: 0;
-            transform: scale(0);
-        }
-
-        .work .info {
-            position: absolute;
-            z-index: 2;
-            bottom: 40px;
-            left: 40px;
-            color: #fff;
-            transition: .4s linear;
-            opacity: 0;
-        }
-
-        .work:hover img {
-            transform: scale(1.6) rotate(25deg);
-        }
-
-        .work:hover::before,
-        .work:hover .info {
-            opacity: 1;
-            transform: scale(1);
-        }
-
-        /*Touch*/
-
-        .contact-info {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .contact-info .item {
-            width: calc(33% - 20px);
-            height: 160px;
-            background-color: #353b48;
-            color: #fff;
-            text-align: center;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: .2s linear;
-        }
-
-        .contact-info i {
-            display: block;
-            font-size: 40px;
-            line-height: 120px;
-            height: 100px;
-        }
-
-        .item:hover {
-            background-color: #48dbfb;
-        }
-
-        .contact-form {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            height: 50px;
-            margin: 10px 0;
-            background: #353b48;
-            border: none;
-            outline: none;
-            padding: 20px;
-            border-radius: 4px;
-            color: #fff;
-        }
-
-        .nameZone,
-        .emailZone {
-            max-width: calc(50% - 10px);
-        }
-
-        .messageZone {
-            min-height: 200px;
-            resize: vertical;
-        }
-
-        .contact-form .btn {
-            width: 180px;
-            background-color: transparent;
-            color: #48dbfb;
-            font-size: 16px;
-            border: 2px solid #48dbfb;
-            padding: 0;
-            margin-left: auto;
-            cursor: pointer;
-            transition: .2s linear;
-        }
-
-        .btn:hover {
-            background-color: #48dbfb;
-            color: #fff;
-        }
-
-        /*Footer*/
-
-        footer {
-            background: url(Images/Footer.jpg);
-            color: #fff;
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .copyright {
-            margin-bottom: 20px;
-            font-size: 15px;
-        }
-
-        .copyright a {
-            color: #48dbfb;
-            font-size: 16px;
-        }
-
-        /*Go Top*/
-
-        .go-top {
-            position: fixed;
-            z-index: 999;
-            bottom: 40px;
-            right: 40px;
-            width: 40px;
-            height: 40px;
-            background-color: #48dbfb;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            color: #fff;
-            outline: none;
-        }
-
-
-        @media screen and (max-width:980px) {
-
-            .inner-width {
-                max-width: 800px;
-            }
-
-            .about-pic {
-                margin: 0 auto 60px;
-            }
-
-            .about-text {
-                flex: 100%;
-                text-align: center;
-            }
-
-            .service {
-                width: calc(50% - 20px);
-            }
-
-            .block {
-                width: calc(100% - 20px);
-                margin-left: auto;
-            }
-
-            .work {
-                width: calc(50% - 10px);
-            }
-
-            .contact-info .item {
-                width: 100%;
-                margin: 10px 0;
-            }
-
-        }
-
-        @media screen and (max-width:600px) {
-
-            .inner-width {
-                max-width: 600px;
-                padding: 0 20px;
-            }
-
-            .skill {
-                width: 100%;
-            }
-
-            .service {
-                width: 100%;
-            }
-
-            .work {
-                width: 100%;
-            }
-
-            .nameZone,
-            .emailZone {
-                max-width: 100%;
-            }
-
-        }
-
-        @media screen and (max-width:330px) {
-
-            .navbar {
-                display: none;
-            }
-
-            #home .content h1 {
-                font-size: 30px;
-                margin-bottom: 30px;
-            }
-
-            .sm a {
-                color: #fff;
-                font-size: 20px;
-                margin: 0 10px;
-                transition: .2s linear;
-            }
-
-            .inner-width {
-                padding: 0 15px;
-            }
-
-            .skill {
-                width: 100%;
-            }
-
-            .service {
-                width: 100%;
-            }
-
-            .work {
-                width: 100%;
-            }
-
-            .nameZone,
-            .emailZone {
-                max-width: 100%;
-            }
-
-        }
-    </style>
-
-    <title>WEBSITE</title>
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23F1C40F'/><path d='M20 70 L30 30 L50 60 L70 30 L80 70 Z' fill='white'/></svg>">
     <link rel="stylesheet" href="home-button.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23880E4F'/><path fill='white' d='M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z' transform='scale(0.12) translate(160, 80)'/><text x='50' y='92' font-family='Arial' font-size='22' font-weight='bold' fill='white' text-anchor='middle'>W</text></svg>">
 </head>
 
 <body>
@@ -780,7 +98,7 @@
 
             <div class="about-content">
 
-                <img src="Images/Rose 1.jpg" class="about-pic">
+                <img src="Images/Rose 1.jpg" class="about-pic" alt="Profile Picture of Ajay">
 
                 <div class="about-text">
 
@@ -1043,7 +361,7 @@
             <div class="works">
 
                 <a class="work">
-                    <img src="Images/H.png" alt="">
+                    <img src="Images/H.png" alt="Headset Project">
                     <div class="info">
                         <h3>Work Title</h3>
 
@@ -1055,7 +373,7 @@
 
 
                 <a class="work">
-                    <img src="Images/Wa.png" alt="">
+                    <img src="Images/Wa.png" alt="Watch Project">
                     <div class="info">
                         <h3>Work Title</h3>
 
@@ -1066,7 +384,7 @@
 
 
                 <a class="work">
-                    <img src="Images/N.jpg" alt="">
+                    <img src="Images/N.jpg" alt="Nature Project">
                     <div class="info">
                         <h3>Work Title</h3>
 
@@ -1077,7 +395,7 @@
 
 
                 <a class="work">
-                    <img src="Images/W.png" alt="">
+                    <img src="Images/W.png" alt="Web Design Project">
                     <div class="info">
                         <h3>Work Title</h3>
 
@@ -1088,7 +406,7 @@
 
 
                 <a class="work">
-                    <img src="Images/C.png" alt="">
+                    <img src="Images/C.png" alt="Creative Project">
                     <div class="info">
                         <h3>Work Title</h3>
 
@@ -1100,7 +418,7 @@
 
 
                 <a class="work">
-                    <img src="Images/He.jpg" alt="">
+                    <img src="Images/He.jpg" alt="Health Project">
                     <div class="info">
                         <h3>Work Title</h3>
 
@@ -1127,18 +445,18 @@
             <div class="contact-info">
 
                 <div class="item">
-                    <i class="fas fa-mobile-alt"></i>
+                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
                     +111 111111111
                 </div>
 
 
                 <div class="item">
-                    <i class="fas fa-envelope"></i>
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
                     email@address.com
                 </div>
 
                 <div class="item">
-                    <i class="fas fa-map-marker-alt"></i>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     Uttar Pradesh,India
                 </div>
 
@@ -1146,15 +464,15 @@
 
             <form action="#" class="contact-form">
 
-                <input type="text" class="nameZone" placeholder="Your Full Name">
+                <input type="text" class="nameZone" placeholder="Your Full Name" required aria-label="Full Name">
 
 
-                <input type="email" class="emailZone" placeholder="Your Email">
+                <input type="email" class="emailZone" placeholder="Your Email" required aria-label="Email Address">
 
 
-                <input type="text" class="subjectZone" placeholder="Subject">
+                <input type="text" class="subjectZone" placeholder="Subject" required aria-label="Subject">
 
-                <textarea class="messageZone" placeholder="Message">
+                <textarea class="messageZone" placeholder="Message" required aria-label="Message">
 </textarea>
 
                 <input type="submit" class="btn" value="Send Message">
@@ -1176,12 +494,12 @@
             </div>
 
 
-            <div class="sm">
-                <a href="" class="fab fa-facebook-f"></a>
-                <a href="" class="fab fa-twitter"></a>
-                <a href="" class="fab fa-instagram"></a>
-                <a href="" class="fab fa-linkedin-in"></a>
-                <a href="" class="fab fa-youtube"></a>
+            <div class="sm" style="margin: 10px;">
+                <a href="" class="fab fa-facebook-f" aria-label="Facebook"></a>
+                <a href="" class="fab fa-twitter" aria-label="Twitter"></a>
+                <a href="" class="fab fa-instagram" aria-label="Instagram"></a>
+                <a href="" class="fab fa-linkedin-in" aria-label="LinkedIn"></a>
+                <a href="" class="fab fa-youtube" aria-label="YouTube"></a>
             </div>
 
 
@@ -1189,47 +507,40 @@
 
     </footer>
 
-    <!--Go Top BTN-->
-
-    <button class="go-top fas fa-arrow-up"></button>
-
+    <button class="go-top fas fa-arrow-up" aria-label="Scroll to top"></button>
 
     <script>
+        const scrollBtn = document.querySelector(".go-top");
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 200) {
+                scrollBtn.classList.add("show");
+            } else {
+                scrollBtn.classList.remove("show");
+            }
+        });
+
+        scrollBtn.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
 
         function openNav() {
-            document.getElementById("mySidenav").style.width = "800px";
+            const sideNav = document.getElementById("mySidenav");
+            if (window.innerWidth <= 600) {
+                sideNav.style.width = "100%";
+            } else {
+                sideNav.style.width = "400px";
+            }
         }
 
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
-
     </script>
 
-
-    <style>
-        .home-btn {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            padding: 12px 24px;
-            background: #48dbfb;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-family: sans-serif;
-            font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            z-index: 9999;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .home-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-            color: white;
-        }
-    </style>
     <a href="index.html" class="home-btn">Home</a>
 </body>
 

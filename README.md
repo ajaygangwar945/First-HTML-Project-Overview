@@ -18,10 +18,15 @@ This project is a comprehensive **HTML & CSS Learning Hub** designed to showcase
 
 ---
 
-## 🚀 Live Demo
+## 🚀 Live Demos
 
-Experience the full interactive dashboard and all learning modules live on GitHub Pages:
-[**👉 Visit Live Project**](https://ajaygangwar945.github.io/First-HTML-Project-Overview/)
+Experience the full interactive dashboard and all learning modules live:
+
+| Platform | Link |
+| :--- | :--- |
+| **GitHub Pages** | [**👉 Visit Hub**](https://ajaygangwar945.github.io/First-HTML-Project-Overview/) |
+| **SoftHub App** | [**👉 Visit SoftHub**](https://softhub-bwnd.onrender.com/) |
+
 <br>
 
 [![Live Project](https://img.shields.io/badge/Live_Project-Visit_Site-00e6ac?style=for-the-badge&logo=github&logoColor=white)](https://ajaygangwar945.github.io/First-HTML-Project-Overview/)
@@ -34,13 +39,14 @@ Experience the full interactive dashboard and all learning modules live on GitHu
 - **🌀 3D Backdrop**: Dynamic background animation using **Three.js** to create an engaging user experience.
 - **🔍 Intelligent Search**: Real-time filtering system to navigate through 30+ HTML topics instantly.
 - **📱 Fluid Responsiveness**: Hand-crafted CSS media queries ensuring a perfect experience on desktop, tablet, and mobile.
-- **🏷️ Unique Identity**: Every page features a custom-designed **unique SVG favicon** representative of its content.
+- **🏷️ Unique Identity**: Every single page (31 total) features a custom **unique SVG composite favicon** designed specifically for its topic.
+- **🔝 Premium UX**: Functional "Go Top" button with smooth-scroll and accessibility-first design (ARIA labels, alt text).
 
 ## 📂 Project Structure
 
 ```text
 First-HTML-Project-Overview/
-├── Audio/                      # Sound assets (Cleaned)
+├── Audio/                      # Sound assets
 ├── Images/                     # UI assets & Project Media (Optimized)
 ├── Video/                      # Sample media for video modules
 ├── index.html                  # Main 3D Dashboard & Search Engine
@@ -52,7 +58,6 @@ First-HTML-Project-Overview/
 │   ├── color.html              # Color theory in web
 │   ├── table tag.html          # Data presentation
 │   ├── anchor tag.html         # Hyperlinks
-│   ├── list tag.html           # Lists
 │   └── ajay.html               # Developer Profile Module
 ├── 📑 HTML5 & Advanced API
 │   ├── html 5.html             # New semantic standard
@@ -74,7 +79,7 @@ First-HTML-Project-Overview/
 │   ├── home-button.css         # Global navigation logic
 │   ├── website.css             # Main site architecture
 │   └── *.css                   # Module-specific styling
-└── README.md                   # Updated Project Documentation
+└── README.md                   # Project Documentation
 ```
 
 ## 🛠️ Technologies Used
@@ -84,7 +89,7 @@ First-HTML-Project-Overview/
 - **JavaScript**: Dashboard logic and Three.js integration.
 - **Three.js**: WebGL-based 3D graphics.
 - **Font Awesome**: Premium vector iconography.
-- **Google Fonts**: Outfit Typography.
+- **Google Fonts**: Outfit & Inter Typography.
 
 ## 🚀 How to Get Started
 
@@ -96,6 +101,16 @@ First-HTML-Project-Overview/
 
 2. **Launch**:
    Simply open `index.html` in any modern web browser to enter the hub.
+
+---
+
+## 🧹 Maintenance & Optimization
+
+Recent updates include a **comprehensive codebase audit**:
+
+- **Optimized Assets**: Removed all unused CSS and temporary files.
+- **Standardized Navigation**: All modules now use a consistent global `home-button.css`.
+- **Accessibility Fixes**: Images include `alt` tags and interactive elements use `aria-labels`.
 
 ---
 
