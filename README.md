@@ -20,7 +20,7 @@ This project is a comprehensive **HTML & CSS Learning Hub** designed to showcase
 
 ## 🚀 Live Demo
 
-Experience the full interactive dashboard and all learning modules live on GitHub Pages:
+Experience the full interactive dashboard and all learning modules live on GitHub Pages.
 
 [![Live Project](https://img.shields.io/badge/Live_Project-Visit_Site-00e6ac?style=for-the-badge&logo=github&logoColor=white)](https://ajaygangwar945.github.io/First-HTML-Project-Overview/)
 
