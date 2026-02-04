@@ -69,7 +69,6 @@ First-HTML-Project-Overview/
 │   ├── image box.html          # Modern gallery component
 │   └── mobile website.html     # Fluid mobile-first sandbox
 ├── 📑 Component Assets
-│   ├── home-button.css         # Global navigation logic
 │   ├── website.css             # Main site architecture
 │   └── *.css                   # Module-specific styling
 └── README.md                   # Project Documentation
