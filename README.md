@@ -29,49 +29,71 @@ Experience the full interactive dashboard and all learning modules live on GitHu
 ## ✨ Key Features
 
 - **💎 Glassmorphism UI**: Modern aesthetic with translucent cards, smooth gradients, and interactive hover states.
-- **🌀 3D Backdrop**: Dynamic background animation using **Three.js** to create an engaging user experience.
+- **🌀 3D Backdrop**: Dynamic background animation using **Three.js**.
 - **🔍 Intelligent Search**: Real-time filtering system to navigate through 30+ HTML topics instantly.
-- **📱 Fluid Responsiveness**: Hand-crafted CSS media queries ensuring a perfect experience on desktop, tablet, and mobile.
-- **🏷️ Unique Identity**: Every single page (31 total) features a custom **unique SVG composite favicon** designed specifically for its topic.
-- **🔝 Premium UX**: Functional "Go Top" button with smooth-scroll and accessibility-first design (ARIA labels, alt text).
+- **📱 Fluid Responsiveness**: Hand-crafted CSS media queries for desktop, tablet, and mobile.
+- **🛡️ Security Audited**: Core forms and external scripts reviewed for security best practices.
+- **🔝 Premium UX**: Functional "Go Top" button with smooth-scroll.
 
 ## 📂 Project Structure
 
 ```text
 First-HTML-Project-Overview/
-├── Audio/                      # Sound assets
-├── Images/                     # UI assets & Project Media (Optimized)
-├── Video/                      # Sample media for video modules
-├── index.html                  # Main 3D Dashboard & Search Engine
-├── index.css                   # Essential dashboard styling
-├── 📑 Core Curriculum
-│   ├── html basics.html        # Fundamental tags & attributes
-│   ├── CSS.html                # Styling foundations
+├── Audio/                  # Sound assets (hangouts_incoming_call.ogg)
+├── Images/                 # UI assets, profile pics, and icons (27 total)
+├── Video/                  # Sample media for video modules (sample.mp4)
+├── index.html              # Main 3D Dashboard & Search Engine
+├── index.css               # Essential dashboard styling
+│
+├── 📑 Foundations
+│   ├── html.html           # Introduction to HTML
+│   ├── html basics.html    # Fundamental tags & attributes
 │   ├── basic html document structure.html
-│   ├── color.html              # Color theory in web
-│   ├── table tag.html          # Data presentation
-│   ├── anchor tag.html         # Hyperlinks
-│   └── ajay.html               # Developer Profile Module
-├── 📑 HTML5 & Advanced API
-│   ├── html 5.html             # New semantic standard
-│   ├── html 5 form.html        # Modern validation
-│   ├── svg.html                # Vector implementation
-│   ├── audio.html              # Sound integration
-│   ├── video.html              # Video integration
-│   ├── special tag.html        # Figure, Details, Meter
-│   └── special symbol.html     # Entities & SVG Icons
-├── 📑 Professional UI Suite
-│   ├── registration.html       # Complex form architecture
-│   ├── login.html              # Auth UI
-│   ├── sign in.html            # Alternative Auth
-│   ├── awesome login form.html # Advanced CSS Form
-│   ├── accordian menu.html     # Interactive menu logic
-│   ├── image box.html          # Modern gallery component
-│   └── mobile website.html     # Fluid mobile-first sandbox
-├── 📑 Component Assets
-│   ├── website.css             # Main site architecture
-│   └── *.css                   # Module-specific styling
-└── README.md                   # Project Documentation
+│   ├── anchor tag.html     # Hyperlinks and navigation
+│   ├── image tag.html      # External media rendering
+│   ├── table tag.html      # Data presentation
+│   ├── form.html           # HTML Form foundations
+│   ├── frame.html          # Iframe implementations
+│   ├── color.html          # Color theory and Hex/RGB/RGBA
+│   └── CSS.html            # Styling foundations and selector logic
+│
+├── 📑 Modern Standards (HTML5)
+│   ├── html 5.html         # Semantic elements and new APIs
+│   ├── html 5 form.html    # Modern validation & new input types
+│   ├── svg.html            # Vector graphics implementation
+│   ├── audio.html          # HTML5 Audio integration
+│   ├── video.html          # HTML5 Video integration
+│   ├── special tag.html    # Figure, Details, Summary, Meter
+│   └── special symbol.html # HTML Entities and SVG Icon usage
+│
+├── 📑 UI Suite & Identity
+│   ├── ajay.html           # Developer Profile Module
+│   ├── website.html        # Multi-section portal showcase
+│   ├── mobile website.html # Mobile-first fluid design sandbox
+│   ├── registration.html   # Complex form architecture
+│   ├── login.html          # Classic Authentication UI
+│   ├── sign in.html        # Alternative Modern Auth UI
+│   ├── awesome login form.html # Advanced CSS-focused Form
+│   ├── accordian menu.html # Interactive collapsible navigation
+│   └── image box.html      # Modern lightbox gallery component
+│
+├── 📑 Extras
+│   ├── font awesome.html   # Icon library integration (v5)
+│   ├── font awesome 6.html # Latest font awesome exploration
+│   ├── free.html           # Creative sandbox
+│   └── full screen.html    # Layout scaling techniques
+│
+└── 📑 Global Styles
+    ├── website.css         # Main site architecture & layout
+    ├── css.css             # Component styling library
+    ├── accordian menu.css  # Logic-specific component styles
+    ├── html basics.css     # Theming for foundations
+    ├── basic html document structure.css
+    ├── inside html basics.css
+    ├── html 5.css          # Semantic UI standards
+    ├── inside html 5.css
+    ├── special tag.css     # Component styling for HTML5 tags
+    └── awesome login form.css
 ```
 
 ## 🛠️ Technologies Used
