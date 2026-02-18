@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width= device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <title>FONT AWESOME</title>
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2369F0AE'/><path fill='white' d='M448 48V384C385 407 366 416 329 416C266 416 242 384 179 384C159 384 143 388 128 392V328C143 324 159 320 179 320C242 320 266 352 329 352C349 352 364 349 384 343V135C364 141 349 144 329 144C266 144 242 112 179 112C128 112 104 133 64 141V448C64 466 50 480 32 480S0 466 0 448V64C0 46 14 32 32 32S64 46 64 64V77C104 69 128 48 179 48C242 48 266 80 329 80C366 80 385 71 448 48Z' transform='scale(0.12) translate(195, 80)'/><text x='50' y='92' font-family='Arial' font-size='22' font-weight='bold' fill='white' text-anchor='middle'>FA</text></svg>">
+
 
     <style>
         * {
@@ -112,6 +113,23 @@
             color: #495057;
         }
 
+        .navbar-menu .closebtn-container {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+
+        .navbar-menu .close-icon {
+            font-size: 30px;
+            color: #8acfba;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .navbar-menu .close-icon:hover {
+            color: #fff;
+        }
+
         .navbar-menu a:hover {
             background: #000;
             color: #fff;
@@ -168,23 +186,24 @@
         /*Awesome*/
 
         .awesome {
-            padding: 80px 0;
+            padding: 40px 0;
             text-align: center;
             background: #009469;
         }
 
         .awesome .fa-font-awesome {
             margin: 0;
-            padding: 0;
-            line-height: 39px;
-            font-size: 60px;
+            padding: 15px;
+            font-size: 40px;
             color: #087F5B;
             background: #fff;
+            border-radius: 12px;
+            display: inline-block;
         }
 
         .awesome .title {
-            padding: 15px 0;
-            font-size: 30px;
+            padding: 10px 0;
+            font-size: 24px;
             color: #fff;
         }
 
@@ -204,6 +223,7 @@
             border-radius: 6px;
             color: #fff;
             background: #0B7285;
+            display: inline-block;
         }
 
         .awesome a {
@@ -227,6 +247,7 @@
             border-radius: 6px;
             color: #fff;
             background: #74B816;
+            display: inline-block;
         }
 
         .fa-rocket {
@@ -557,6 +578,10 @@
 
                 <div id="mySidenav" class="navbar-menu">
 
+                    <div class="closebtn-container">
+                        <i class="fas fa-times close-icon" onclick="closeNav()"></i>
+                    </div>
+
                     <a href="#home" class="closebtn" onclick="closeNav()">
                         <i class="fas fa-home"></i>
 
@@ -610,7 +635,7 @@
                     <a href="html.html" class="closebtn" onclick="closeNav()">
                         <i class="fab fa-html5"></i>
 
-                        Html
+                        HTML
 
                     </a>
 
@@ -843,9 +868,6 @@
 
     </section>
 
-    </div>
-    </section>
-
     <!--Duotone-->
 
     <section class="duotone">
@@ -910,7 +932,6 @@
 
     <section class="desktop" id="desktop">
         <div class="inner-width">
-
             <div class="access">
 
                 <i class="fas fa-phone"></i>

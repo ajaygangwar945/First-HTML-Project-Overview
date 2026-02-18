@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width= device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <title>FONT AWESOME 6</title>
@@ -41,10 +41,15 @@
             font-size: 20px;
         }
 
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         .fa-sign-in-alt {
             color: #183153;
             font-size: 20px;
-            padding-left: 240px;
         }
 
         .bottom {
@@ -354,143 +359,64 @@
 
         .make {
             padding: 25px 0 0 0;
-        }
-
-        .make .flex {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .make>div {
+            width: 18%;
+            min-width: 150px;
             text-align: center;
-            justify-content: space-between;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e9ecef;
         }
 
-        .first,
-        .third {
-            padding-right: 30px;
-        }
-
-        .first .fa-icons,
-        .third .fa-icons {
-            padding: 35px 30px;
+        .fa-icons {
             display: block;
-            font-size: 65px;
-            background: #FFD43B;
+            padding: 30px 0;
+            font-size: 50px;
             color: #193154;
             border-radius: 8px 8px 0 0;
         }
 
-        .first .solid,
-        .third .solid {
-            padding: 10px 0;
-            display: block;
-            font-size: 15px;
-            font-weight: 600;
-            color: #193154;
-            background: #fff;
-        }
-
-        .first .harp,
-        .third .harp {
-            display: block;
-            padding: 0 0 10px 0;
-            font-size: 15px;
-            font-weight: 600;
-            color: #193154;
-            background: #fff;
-            border-radius: 0 0 8px 8px;
-        }
-
-        .arp {
-            display: block;
-            padding: 5px;
-            margin: 0 15px 10px 15px;
-            font-size: 12px;
-            border: 1.5px solid #193154;
+        .first .fa-icons,
+        .third .fa-icons,
+        .fifth .fa-icons {
+            background: #FFD43B;
         }
 
         .second .fa-icons,
         .fourth .fa-icons {
-            padding: 35px 30px;
-            display: block;
-            font-size: 65px;
             background: #FAB005;
-            color: #193154;
-            border-radius: 8px 8px 0 0;
         }
 
-        .second .solid,
-        .fourth .solid {
-            padding: 10px 0;
+        .solid {
+            padding: 12px 0 4px 0;
             display: block;
-            font-size: 15px;
-            font-weight: 600;
+            font-size: 14px;
+            font-weight: 700;
             color: #193154;
             background: #fff;
         }
 
-        .second .harp,
-        .fourth .harp {
+        .harp {
             display: block;
-            padding: 0 0 10px 0;
-            font-size: 15px;
-            font-weight: 600;
-            color: #193154;
+            padding: 0 0 12px 0;
             background: #fff;
-            border-radius: 0 0 8px 8px;
         }
 
-        .second .arp,
-        .fourth .arp {
-            display: block;
-            padding: 5px;
-            margin: 0 15px 10px 15px;
-            font-size: 12px;
+        .arp {
+            display: inline-block;
+            padding: 3px 12px;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
             border: 1.5px solid #193154;
-        }
-
-        .third,
-        .fourth {
-            padding-top: 20px;
-        }
-
-        .fifth {
-            margin: 0 75px;
-            padding-top: 20px;
-            text-align: center;
-        }
-
-        .fifth .fa-icons {
-            padding: 35px 30px;
-            display: block;
-            font-size: 65px;
-            background: #FFD43B;
+            border-radius: 3px;
             color: #193154;
-            border-radius: 8px 8px 0 0;
-        }
-
-        .fifth .solid {
-            padding: 10px 0;
-            display: block;
-            font-size: 15px;
-            font-weight: 600;
-            color: #193154;
-            background: #fff;
-        }
-
-        .fifth .harp {
-            display: block;
-            padding: 0 0 10px 0;
-            font-size: 15px;
-            font-weight: 600;
-            color: #193154;
-            background: #fff;
-            border-radius: 0 0 8px 8px;
-        }
-
-        .fifth .arp {
-            display: block;
-            padding: 5px;
-            margin: 0 15px 10px 15px;
-            font-size: 12px;
-            border: 1.5px solid #193154;
         }
 
         /*Setting*/
@@ -520,9 +446,10 @@
             border-radius: 8px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-start;
             margin: 15px 0 40px 0;
-            padding: 20px 30px 0px 30px;
+            padding: 20px 30px;
+            gap: 30px;
         }
 
         .la {
@@ -560,7 +487,6 @@
         }
 
         .word h6 {
-            padding-left: 30px;
             color: #183153;
             font-weight: 900;
             text-align: left;
@@ -568,7 +494,6 @@
         }
 
         .word p {
-            padding-left: 30px;
             color: #183153;
             font-weight: 300;
             line-height: 20px;
@@ -598,16 +523,15 @@
         }
 
         .add .logo {
-            padding: 10px 0 20px 0;
+            padding: 10px 0;
             display: flex;
-            justify-content: space-between;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
         }
 
         .logo i {
-            width: 36px;
             font-size: 23px;
-            padding-top: 8px;
-            padding-right: 13px;
             color: #63E6BE;
         }
 
@@ -620,15 +544,15 @@
         }
 
         .add .ready {
-            padding: 10px 0 20px 0;
+            padding: 10px 0;
             display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
         }
 
         .ready i {
-            width: 36px;
             font-size: 25px;
-            padding-top: 8px;
-            padding-right: 20px;
             color: #63E6BE;
         }
 
@@ -658,13 +582,13 @@
             padding: 0 5px;
             padding-bottom: 40px;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
+            gap: 30px;
             color: #183153;
         }
 
         .get i {
             font-size: 40px;
-            padding-right: 20px;
         }
 
         .get h6 {
@@ -804,6 +728,201 @@
             padding-right: 0;
             font-size: 10px;
             color: #747F95;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 768px) {
+            .inner-width {
+                padding: 0 15px;
+            }
+
+            video {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .now span {
+                margin: 0 30px;
+            }
+
+            .order p {
+                margin: 0 20px 25px 20px;
+            }
+
+            .pre {
+                margin: 25px 30px;
+            }
+
+            .about {
+                margin: 25px 30px;
+            }
+
+            .brew span {
+                margin: 0 30px;
+            }
+
+            .fifth {
+                margin: 0 40px;
+            }
+
+            .official {
+                min-width: 0;
+                padding: 15px;
+            }
+
+            .official i {
+                font-size: 30px;
+                margin-right: 15px;
+            }
+
+            .word h6 {
+                font-size: 13px;
+                padding-left: 0;
+            }
+
+            .word p {
+                font-size: 11px;
+                padding-left: 0;
+                line-height: 16px;
+            }
+
+            .make .flex {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .first,
+            .second,
+            .third,
+            .fourth,
+            .fifth {
+                width: 45%;
+                margin: 5px;
+                padding: 0;
+            }
+
+            .first .right,
+            .third .right {
+                padding-right: 0;
+            }
+
+            .get {
+                flex-wrap: wrap;
+                padding-bottom: 20px;
+            }
+
+            .get i {
+                font-size: 28px;
+                padding-right: 15px;
+            }
+
+            .get h6 {
+                font-size: 13px;
+            }
+
+            .get p {
+                font-size: 9px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .bottom h1 {
+                font-size: 24px;
+            }
+
+            .bottom p {
+                font-size: 12px;
+            }
+
+            .now span {
+                margin: 0 15px;
+            }
+
+            .order p {
+                margin: 0 10px 20px 10px;
+            }
+
+            .pre {
+                margin: 20px 15px;
+            }
+
+            .about {
+                margin: 20px 15px;
+            }
+
+            .brew span {
+                margin: 0 15px;
+            }
+
+            .fifth {
+                margin: 0 20px;
+            }
+
+            .new h1 {
+                font-size: 20px;
+            }
+
+            .setting h2 {
+                font-size: 20px;
+            }
+
+            .setting p {
+                font-size: 13px;
+            }
+
+            .soon {
+                margin: 10px 80px 0 80px;
+            }
+
+            .bike i {
+                font-size: 40px;
+                padding: 0 6px;
+            }
+
+            .bike {
+                padding: 40px 0;
+            }
+
+            .bell {
+                padding: 40px 0;
+            }
+
+            .bell i {
+                font-size: 40px;
+                padding: 0 6px;
+            }
+
+            .first .fa-icons,
+            .third .fa-icons,
+            .second .fa-icons,
+            .fourth .fa-icons,
+            .fifth .fa-icons {
+                font-size: 30px;
+                padding: 15px 10px;
+            }
+
+            .contact {
+                text-align: center;
+            }
+
+            .contact span {
+                font-size: 9px;
+                padding: 0 3px;
+            }
+
+            .fa-copyright {
+                padding-left: 0;
+                font-size: 9px;
+            }
+
+            .footer h6 {
+                font-size: 13px;
+            }
+
+            .footer p {
+                font-size: 13px;
+            }
         }
     </style>
 
@@ -1030,51 +1149,43 @@
 
                 <div class="make">
 
-                    <div class="flex">
+                    <div class="first">
 
-                        <div class="first">
+                        <span class="fas fa-icons"></span>
 
-                            <span class="fas fa-icons"></span>
+                        <span class="solid">Solid</span>
 
-                            <span class="solid">Solid</span>
-
-                            <span class="harp"><span class="arp">SHARP</span></span>
-
-                        </div>
-
-                        <div class="second">
-
-                            <span class="fas fa-icons"></span>
-
-                            <span class="solid">Regular</span>
-
-                            <span class="harp"><span class="arp">SHARP</span></span>
-
-                        </div>
+                        <span class="harp"><span class="arp">SHARP</span></span>
 
                     </div>
 
-                    <div class="flex">
+                    <div class="second">
 
-                        <div class="third">
+                        <span class="fas fa-icons"></span>
 
-                            <span class="fas fa-icons"></span>
+                        <span class="solid">Regular</span>
 
-                            <span class="solid">Light</span>
+                        <span class="harp"><span class="arp">SHARP</span></span>
 
-                            <span class="harp"><span class="arp">SHARP</span></span>
+                    </div>
 
-                        </div>
+                    <div class="third">
 
-                        <div class="fourth">
+                        <span class="fas fa-icons"></span>
 
-                            <span class="fas fa-icons"></span>
+                        <span class="solid">Light</span>
 
-                            <span class="solid">Thin</span>
+                        <span class="harp"><span class="arp">SHARP</span></span>
 
-                            <span class="harp"><span class="arp">SHARP</span></span>
+                    </div>
 
-                        </div>
+                    <div class="fourth">
+
+                        <span class="fas fa-icons"></span>
+
+                        <span class="solid">Thin</span>
+
+                        <span class="harp"><span class="arp">SHARP</span></span>
 
                     </div>
 

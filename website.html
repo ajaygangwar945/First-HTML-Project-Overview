@@ -4,14 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ajay Gangwar — Full-Stack Developer, Data Analyst & Designer. Explore my portfolio of web applications, data analysis projects, and more.">
     <title>WEBSITE</title>
 
     <!-- External Fonts and Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="website.css">
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23880E4F'/><path fill='white' d='M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z' transform='scale(0.12) translate(160, 80)'/><text x='50' y='92' font-family='Arial' font-size='22' font-weight='bold' fill='white' text-anchor='middle'>W</text></svg>">
@@ -19,63 +22,66 @@
 
 <body>
 
-
     <!--Navbar-->
-
-
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
         <div class="inner-width">
 
-            <div class="logo fas fa-crown"></div>
+            <a href="#home" class="logo" aria-label="Ajay Gangwar Home">
+                <i class="fas fa-code"></i>
+                <span>Ajay Gangwar</span>
+            </a>
 
-            <div id="mySidenav" class="navbar-menu">
+            <div id="mySidenav" class="navbar-menu" role="dialog" aria-label="Navigation Menu">
 
                 <div class="cbtn">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                        aria-label="Close menu">&times;</a>
                 </div>
 
                 <div id="abtn">
-
-                    <span id="ahome"><a href="#home">Home</a></span>
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#education">Education</a>
-                    <a href="#works">Works</a>
-                    <a href="#contact">Contact</a>
-
+                    <a href="#home" onclick="closeNav()">Home</a>
+                    <a href="#about" onclick="closeNav()">About</a>
+                    <a href="#services" onclick="closeNav()">Services</a>
+                    <a href="#education" onclick="closeNav()">Education</a>
+                    <a href="#works" onclick="closeNav()">Projects</a>
+                    <a href="#contact" onclick="closeNav()">Contact</a>
                 </div>
 
             </div>
 
-            <div class="menu fas fa-bars" onclick="openNav()">
-            </div>
+            <div class="menu fas fa-bars" onclick="openNav()" role="button" tabindex="0" aria-label="Open menu"></div>
 
         </div>
     </nav>
 
 
-    <!--Home-->
-
-
+    <!--Home / Hero-->
     <section id="home">
 
         <div class="inner-width">
 
             <div class="content">
 
-                <h1>Hi I'm</h1>
+                <div class="hero-badge">Full-Stack Developer & Data Analyst</div>
+
+                <h1>Hi, I'm</h1>
+
+                <p class="hero-subtitle">I build modern web applications and turn data into insights.</p>
 
                 <div class="sm">
-                    <a href="#" class="fab fa-facebook-f" aria-label="Facebook"></a>
-                    <a href="#" class="fab fa-twitter" aria-label="Twitter"></a>
-                    <a href="#" class="fab fa-instagram" aria-label="Instagram"></a>
-                    <a href="#" class="fab fa-linkedin-in" aria-label="LinkedIn"></a>
-                    <a href="" class="fab fa-youtube" aria-label="YouTube"></a>
+                    <a href="https://github.com/ajaygangwar945" target="_blank" rel="noopener noreferrer"
+                        class="fab fa-github" aria-label="GitHub"></a>
+                    <a href="https://www.linkedin.com/in/ajaygangwar945/" target="_blank" rel="noopener noreferrer"
+                        class="fab fa-linkedin-in" aria-label="LinkedIn"></a>
+                    <a href="https://www.instagram.com/ajaygangwar.945" class="fab fa-instagram" aria-label="Instagram"
+                        target="_blank" rel="noopener noreferrer"></a>
+                    <a href="https://www.youtube.com/@ajaygangwar945" class="fab fa-youtube" aria-label="YouTube"
+                        target="_blank" rel="noopener noreferrer"></a>
                 </div>
 
                 <div class="buttons">
-                    <a href="">Contact Me</a>
-                    <a href="">Download CV</a>
+                    <a href="#contact">Contact Me</a>
+                    <a href="#works">View Projects</a>
                 </div>
 
             </div>
@@ -86,31 +92,32 @@
 
 
     <!--About-->
-
-
     <section id="about">
 
         <div class="inner-width">
 
-            <h1 class="section-title">About</h1>
+            <h1 class="section-title">About Me</h1>
 
             <div class="about-content">
 
-                <img src="Images/Rose 1.jpg" class="about-pic" alt="Profile Picture of Ajay">
+                <img src="Images/Rose 1.jpg" class="about-pic" alt="Ajay Gangwar">
 
                 <div class="about-text">
 
-                    <h2>Hi! I'm Ajay</h2>
+                    <h2>Hi! I'm Ajay Gangwar</h2>
 
                     <h3>
-                        <span>Developer</span>
-                        <span>Designer</span>
-                        <span>Youtuber</span>
+                        <span><i class="fas fa-code"></i> Developer</span>
+                        <span><i class="fas fa-chart-line"></i> Data Analyst</span>
+                        <span><i class="fas fa-palette"></i> Designer</span>
                     </h3>
 
                     <p>
-                        HTML stands for Hyper Text Markup Language it was created by Berners-Lee in late 1991, which is
-                        the most widely used language on Web to develop web pages.
+                        I'm a passionate B.Tech Computer Science student with a strong foundation in
+                        full-stack web development, data analysis, and UI/UX design. I love building
+                        scalable web applications, analyzing complex datasets, and creating intuitive
+                        user experiences. From React frontends to Java backends, from Python data
+                        pipelines to interactive dashboards — I enjoy turning ideas into impactful solutions.
                     </p>
 
                 </div>
@@ -120,57 +127,63 @@
             <div class="skills">
 
                 <div class="skill">
-
                     <div class="skill-info">
-                        <span>HTML</span>
-                        <span>90%</span>
+                        <span>Java</span>
+                        <span>85%</span>
                     </div>
-                    <div class="skill-bar html"></div>
+                    <div class="skill-bar">
+                        <div style="width: 85%; background: linear-gradient(90deg, #f89820, #e76f00);"></div>
+                    </div>
                 </div>
 
                 <div class="skill">
-
                     <div class="skill-info">
-                        <span>CSS</span>
+                        <span>Python</span>
                         <span>80%</span>
                     </div>
-                    <div class="skill-bar css"></div>
-                </div>
-
-                <div class="skill">
-
-                    <div class="skill-info">
-                        <span>JAVASCRIPT</span>
-                        <span>70%</span>
+                    <div class="skill-bar">
+                        <div style="width: 80%; background: linear-gradient(90deg, #306998, #FFD43B);"></div>
                     </div>
-                    <div class="skill-bar js"></div>
                 </div>
 
                 <div class="skill">
-
                     <div class="skill-info">
-                        <span>PHP</span>
-                        <span>60%</span>
-                    </div>
-                    <div class="skill-bar php"></div>
-                </div>
-
-                <div class="skill">
-
-                    <div class="skill-info">
-                        <span>MY SQL</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill-bar mysql"></div>
-                </div>
-
-                <div class="skill">
-
-                    <div class="skill-info">
-                        <span>C++</span>
+                        <span>React / JavaScript</span>
                         <span>80%</span>
                     </div>
-                    <div class="skill-bar c"></div>
+                    <div class="skill-bar">
+                        <div style="width: 80%; background: linear-gradient(90deg, #61dafb, #282c34);"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>HTML & CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div style="width: 90%; background: linear-gradient(90deg, #e34c26, #264de4);"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>SQL / Databases</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div style="width: 85%; background: linear-gradient(90deg, #00758f, #f29111);"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-info">
+                        <span>Data Analysis & Visualization</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div style="width: 75%; background: linear-gradient(90deg, #e97627, #150458);"></div>
+                    </div>
                 </div>
 
             </div>
@@ -181,74 +194,54 @@
 
 
     <!--Services-->
-
-
     <section id="services" class="dark">
 
         <div class="inner-width">
 
-            <h1 class="section-title">Services</h1>
+            <h1 class="section-title">What I Do</h1>
 
             <div class="services">
 
                 <div class="service">
+                    <i class="icon fas fa-laptop-code"></i>
+                    <h4>Full-Stack Web Development</h4>
+                    <p>Building responsive, modern web applications using React, Next.js, Node.js, and Java Spring Boot
+                        with clean architecture and REST APIs.</p>
+                </div>
 
+                <div class="service">
+                    <i class="icon fas fa-chart-bar"></i>
+                    <h4>Data Analysis & Visualization</h4>
+                    <p>Analyzing complex datasets using Python, Pandas, and Matplotlib. Creating interactive dashboards
+                        with Power BI, Tableau, and Excel.</p>
+                </div>
+
+                <div class="service">
                     <i class="icon fas fa-paint-brush"></i>
-
-                    <h4>Design</h4>
-
-                    <p> Web browsers can read HTML files and compose them into visible or audible web pages. </p>
-
+                    <h4>UI/UX Design</h4>
+                    <p>Designing intuitive, visually stunning user interfaces with modern aesthetics — glassmorphism,
+                        micro-animations, and responsive layouts.</p>
                 </div>
 
                 <div class="service">
-
-                    <i class="icon fas fa-pager"></i>
-
-                    <h4>Build Websites</h4>
-
-                    <p> Web browsers can read HTML files and compose them into visible or audible web pages. </p>
-
-                </div>
-
-                <div class="service">
-
                     <i class="icon fas fa-database"></i>
-
-                    <h4>Manage Databases</h4>
-
-                    <p> Web browsers can read HTML files and compose them into visible or audible web pages. </p>
-
+                    <h4>Backend & Database Engineering</h4>
+                    <p>Designing scalable backend systems with Java, Python, and SQL databases. Building secure APIs and
+                        optimizing query performance.</p>
                 </div>
 
                 <div class="service">
-
-                    <i class="icon fab fa-android"></i>
-
-                    <h4>Android Apps</h4>
-
-                    <p> Web browsers can read HTML files and compose them into visible or audible web pages. </p>
-
+                    <i class="icon fas fa-brain"></i>
+                    <h4>Machine Learning & AI</h4>
+                    <p>Developing intelligent solutions including ATS resume scoring, intrusion detection systems, and
+                        predictive analytics using Python and Streamlit.</p>
                 </div>
 
                 <div class="service">
-
-                    <i class="icon fas fa-credit-card"></i>
-
-                    <h4>Ui Design</h4>
-
-                    <p> Web browsers can read HTML files and compose them into visible or audible web pages. </p>
-
-                </div>
-
-                <div class="service">
-
-                    <i class="icon fas fa-keyboard"></i>
-
-                    <h4>Edit text</h4>
-
-                    <p> Web browsers can read HTML files and compose them into visible or audible web pages. </p>
-
+                    <i class="icon fas fa-shield-halved"></i>
+                    <h4>Cybersecurity Analysis</h4>
+                    <p>Building intrusion detection systems and analyzing cyber warfare patterns. Applying graph
+                        algorithms and data structures to security problems.</p>
                 </div>
 
             </div>
@@ -259,85 +252,44 @@
 
 
     <!--Education-->
-
-
     <section id="education">
 
         <div class="inner-width">
 
-            <h1 class="section-title">Education & Experiences</h1>
+            <h1 class="section-title">Education & Experience</h1>
 
             <div class="time-line">
 
                 <div class="block">
-
-                    <h4>2018-2019</h4>
-
-                    <h3>Software Engineering</h3>
-                    <p>
-                        HTML can be edited by using a professional HTML editor like Adobe Dreamweaver ,Microsoft
-                        Expression Web,CoffeeCup HTML Editor. </p>
-
-
-                </div>
-
-
-                <div class="block">
-
-                    <h4>2018-2019</h4>
-
-                    <h3>Software Engineering</h3>
-                    <p>
-                        HTML can be edited by using a professional HTML editor like Adobe Dreamweaver ,Microsoft
-                        Expression Web,CoffeeCup HTML Editor. </p>
-
-
+                    <div class="block-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h4>2023 – Present</h4>
+                    <h3>B.Tech in Computer Science & Engineering</h3>
+                    <p>Pursuing B.Tech CSE with focus on Data Structures & Algorithms, Database Management, Web
+                        Technologies, and Machine Learning.</p>
                 </div>
 
                 <div class="block">
-
-                    <h4>2018-2019</h4>
-
-                    <h3>Software Engineering</h3>
-                    <p>
-                        HTML can be edited by using a professional HTML editor like Adobe Dreamweaver ,Microsoft
-                        Expression Web,CoffeeCup HTML Editor. </p>
-
-
+                    <div class="block-icon"><i class="fas fa-trophy"></i></div>
+                    <h4>2025</h4>
+                    <h3>Smart India Hackathon (SIH)</h3>
+                    <p>Developed the Ayush FHIR & ICD Mapping Intelligence system for healthcare data standardization
+                        using Python and modern web technologies.</p>
                 </div>
 
                 <div class="block">
-
-                    <h4>2018-2019</h4>
-
-                    <h3>Software Engineering</h3>
-                    <p>
-                        HTML can be edited by using a professional HTML editor like Adobe Dreamweaver ,Microsoft
-                        Expression Web,CoffeeCup HTML Editor. </p>
-
-
+                    <div class="block-icon"><i class="fas fa-briefcase"></i></div>
+                    <h4>2024 – Present</h4>
+                    <h3>Full-Stack Developer</h3>
+                    <p>Building and deploying production web applications — SoftHub, EventFolio, Portfolio Hub,
+                        Certificates & Docs Portal — using React, Node.js, and cloud platforms.</p>
                 </div>
 
                 <div class="block">
-
-                    <h4>2018-2019</h4>
-
-                    <h3>Software Engineering</h3>
-                    <p>
-                        HTML can be edited by using a professional HTML editor like Adobe Dreamweaver ,Microsoft
-                        Expression Web,CoffeeCup HTML Editor. </p>
-
-
-                </div>
-                <div class="block">
-
-                    <h4>2018-2019</h4>
-
-                    <h3>Software Engineering</h3>
-                    <p>
-                        HTML can be edited by using a professional HTML editor like Adobe Dreamweaver ,Microsoft
-                        Expression Web,CoffeeCup HTML Editor. </p>
-
+                    <div class="block-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h4>2024 – Present</h4>
+                    <h3>Data Analyst</h3>
+                    <p>Conducting in-depth analysis on real-world datasets — Indian Rainfall patterns, Global Terrorism
+                        trends — using Python, Pandas, and visualization tools.</p>
                 </div>
 
             </div>
@@ -347,84 +299,83 @@
     </section>
 
 
-    <!--Works-->
-
-
+    <!--Works / Projects-->
     <section id="works" class="dark">
 
         <div class="inner-width">
 
-            <h1 class="section-title">Works</h1>
+            <h1 class="section-title">My Projects</h1>
 
             <div class="works">
 
-                <a class="work">
-                    <img src="Images/H.png" alt="Headset Project">
+                <a class="work" href="https://softhub-bwnd.onrender.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="work-placeholder"><i class="fas fa-store"></i></div>
                     <div class="info">
-                        <h3>Work Title</h3>
-
-                        <div class="cat">Music,Headset</div>
-
+                        <h3>SoftHub</h3>
+                        <div class="cat">Web Application</div>
                     </div>
                 </a>
 
-
-
-                <a class="work">
-                    <img src="Images/Wa.png" alt="Watch Project">
+                <a class="work" href="https://weather-forcasting-temperature.netlify.app/" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="work-placeholder"><i class="fas fa-cloud-sun"></i></div>
                     <div class="info">
-                        <h3>Work Title</h3>
-
-                        <div class="cat">Music,Headset</div>
-
+                        <h3>Weather App</h3>
+                        <div class="cat">JavaScript, API</div>
                     </div>
                 </a>
 
-
-                <a class="work">
-                    <img src="Images/N.jpg" alt="Nature Project">
+                <a class="work" href="https://pet-adoption-animal-welfare.netlify.app/" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="work-placeholder"><i class="fas fa-paw"></i></div>
                     <div class="info">
-                        <h3>Work Title</h3>
-
-                        <div class="cat">Music,Headset</div>
-
+                        <h3>Pet Adoption & Animal Welfare</h3>
+                        <div class="cat">HTML, CSS, JavaScript</div>
                     </div>
                 </a>
 
-
-                <a class="work">
-                    <img src="Images/W.png" alt="Web Design Project">
+                <a class="work" href="https://ats-resume-score-945.streamlit.app/" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="work-placeholder"><i class="fas fa-file-alt"></i></div>
                     <div class="info">
-                        <h3>Work Title</h3>
-
-                        <div class="cat">Music,Headset</div>
-
+                        <h3>ATS Resume Score</h3>
+                        <div class="cat">Python, Streamlit, AI</div>
                     </div>
                 </a>
 
-
-                <a class="work">
-                    <img src="Images/C.png" alt="Creative Project">
+                <a class="work" href="https://certificates-docs-portal.vercel.app/" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="work-placeholder"><i class="fas fa-certificate"></i></div>
                     <div class="info">
-                        <h3>Work Title</h3>
-
-                        <div class="cat">Music,Headset</div>
-
+                        <h3>Certificates & Docs Portal</h3>
+                        <div class="cat">React, Vercel</div>
                     </div>
                 </a>
 
-
-
-                <a class="work">
-                    <img src="Images/He.jpg" alt="Health Project">
+                <a class="work" href="https://eventfolio.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <div class="work-placeholder"><i class="fas fa-calendar-alt"></i></div>
                     <div class="info">
-                        <h3>Work Title</h3>
-
-                        <div class="cat">Music,Headset</div>
-
+                        <h3>EventFolio</h3>
+                        <div class="cat">React, Vercel</div>
                     </div>
                 </a>
 
+                <a class="work" href="https://icd-mapping.onrender.com/" target="_blank" rel="noopener noreferrer">
+                    <div class="work-placeholder"><i class="fas fa-heartbeat"></i></div>
+                    <div class="info">
+                        <h3>Ayush Intelligence</h3>
+                        <div class="cat">Healthcare, AI</div>
+                    </div>
+                </a>
+
+                <a class="work" href="https://cyber-warfare-intrusion-detection.onrender.com/" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="work-placeholder"><i class="fas fa-shield-alt"></i></div>
+                    <div class="info">
+                        <h3>Intrusion Detection System</h3>
+                        <div class="cat">Cybersecurity, Python</div>
+                    </div>
+                </a>
 
             </div>
 
@@ -433,7 +384,6 @@
     </section>
 
     <!--Contact-->
-
     <section id="contact">
 
         <div class="inner-width">
@@ -443,19 +393,22 @@
             <div class="contact-info">
 
                 <div class="item">
-                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-                    +111 111111111
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <h4>Location</h4>
+                    <span>Uttar Pradesh, India</span>
                 </div>
 
+                <div class="item">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                    <h4>GitHub</h4>
+                    <a href="https://github.com/ajaygangwar945" target="_blank"
+                        rel="noopener noreferrer">ajaygangwar945</a>
+                </div>
 
                 <div class="item">
                     <i class="fas fa-envelope" aria-hidden="true"></i>
-                    email@address.com
-                </div>
-
-                <div class="item">
-                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                    Uttar Pradesh,India
+                    <h4>Email</h4>
+                    <span>ajaygangwar945@gmail.com</span>
                 </div>
 
             </div>
@@ -464,14 +417,12 @@
 
                 <input type="text" class="nameZone" placeholder="Your Full Name" required aria-label="Full Name">
 
-
                 <input type="email" class="emailZone" placeholder="Your Email" required aria-label="Email Address">
-
 
                 <input type="text" class="subjectZone" placeholder="Subject" required aria-label="Subject">
 
-                <textarea class="messageZone" placeholder="Message" required aria-label="Message">
-</textarea>
+                <textarea class="messageZone" placeholder="Your Message" rows="5" required
+                    aria-label="Message"></textarea>
 
                 <input type="submit" class="btn" value="Send Message">
 
@@ -482,24 +433,24 @@
     </section>
 
     <!--Footer-->
-
     <footer>
 
         <div class="inner-width">
 
             <div class="copyright">
-                &copy; 2020 | Created & Designed By <a href="ajay.html">Ajay</a>
+                &copy; 2026 Ajay Gangwar | Built with <i class="fas fa-heart" style="color: #ff6b6b;"></i> and Code
             </div>
 
-
-            <div class="sm" style="margin: 10px;">
-                <a href="" class="fab fa-facebook-f" aria-label="Facebook"></a>
-                <a href="" class="fab fa-twitter" aria-label="Twitter"></a>
-                <a href="" class="fab fa-instagram" aria-label="Instagram"></a>
-                <a href="" class="fab fa-linkedin-in" aria-label="LinkedIn"></a>
-                <a href="" class="fab fa-youtube" aria-label="YouTube"></a>
+            <div class="sm" style="margin: 15px 0 0;">
+                <a href="https://github.com/ajaygangwar945" target="_blank" rel="noopener noreferrer"
+                    class="fab fa-github" aria-label="GitHub"></a>
+                <a href="https://www.linkedin.com/in/ajaygangwar945/" target="_blank" rel="noopener noreferrer"
+                    class="fab fa-linkedin-in" aria-label="LinkedIn"></a>
+                <a href="https://www.instagram.com/ajaygangwar.945" class="fab fa-instagram" aria-label="Instagram"
+                    target="_blank" rel="noopener noreferrer"></a>
+                <a href="https://www.youtube.com/@ajaygangwar945" class="fab fa-youtube" aria-label="YouTube"
+                    target="_blank" rel="noopener noreferrer"></a>
             </div>
-
 
         </div>
 
@@ -508,8 +459,8 @@
     <button class="go-top fas fa-arrow-up" aria-label="Scroll to top"></button>
 
     <script>
+        // Scroll-to-top button
         const scrollBtn = document.querySelector(".go-top");
-
         window.addEventListener("scroll", function () {
             if (window.scrollY > 200) {
                 scrollBtn.classList.add("show");
@@ -519,26 +470,47 @@
         });
 
         scrollBtn.addEventListener("click", function () {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
+            window.scrollTo({ top: 0, behavior: "smooth" });
         });
 
+        // Side navigation
         function openNav() {
-            const sideNav = document.getElementById("mySidenav");
-            if (window.innerWidth <= 600) {
-                sideNav.style.width = "100%";
-            } else {
-                sideNav.style.width = "400px";
-            }
+            document.getElementById("mySidenav").classList.add("open");
+            document.body.style.overflow = "hidden";
         }
 
         function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav").classList.remove("open");
+            document.body.style.overflow = "";
         }
-    </script>
 
+        // Close nav on window resize to desktop
+        window.addEventListener("resize", function () {
+            if (window.innerWidth > 980) {
+                closeNav();
+            }
+        });
+
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("revealed");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll(".service, .block, .work, .skill, .contact-info .item").forEach(el => {
+            el.classList.add("reveal");
+            observer.observe(el);
+        });
+    </script>
 
 </body>
 

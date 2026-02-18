@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width= device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>SIGN IN</title>
@@ -19,11 +19,18 @@
             box-sizing: border-box;
         }
 
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
         /*Sign In*/
 
         .sign-in {
             padding: 50px 0 40px 0;
             background: #F8F9FA;
+            flex: 1;
         }
 
         .inner-width {
@@ -108,8 +115,8 @@
             outline: none;
             width: 17px;
             height: 17px;
-            appearance: none;
             -webkit-appearance: none;
+            appearance: none;
             background: #ededed;
             border-radius: 2px;
             margin-right: 8px;
@@ -122,6 +129,7 @@
             font-size: 12px;
             width: 17px;
             text-align: center;
+            -webkit-user-select: none;
             user-select: none;
             pointer-events: none;
             opacity: 0;
@@ -178,7 +186,7 @@
         /*Footer*/
 
         .black {
-            padding: 30px;
+            padding: 40px 0;
             background: #212529;
             color: #ddd;
             font-size: 15px;
@@ -202,8 +210,75 @@
         }
 
         .fa-font-awesome-alt {
-            color: #868D96;
+            color: #495057;
             font-size: 40px;
+            margin-top: 15px;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 768px) {
+            .inner-width {
+                padding: 0 15px;
+            }
+
+            .form {
+                margin-top: 35px;
+                padding: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sign-in {
+                padding: 30px 0 30px 0;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .para {
+                font-size: 13px;
+            }
+
+            .fp {
+                font-size: 17px;
+            }
+
+            input[type="text"],
+            input[type="password"] {
+                padding: 10px 12px;
+                font-size: 13px;
+            }
+
+            .checkbox {
+                flex-wrap: nowrap;
+                font-size: 13px;
+            }
+
+            .forget {
+                margin-left: 15px;
+                font-size: 11px;
+            }
+
+            input[type="submit"] {
+                padding: 12px 15px;
+                font-size: 15px;
+            }
+
+            .create {
+                font-size: 13px;
+                padding: 20px 0 0 0;
+            }
+
+            .black {
+                padding: 20px;
+                font-size: 13px;
+            }
+
+            .fa-font-awesome-alt {
+                font-size: 30px;
+            }
         }
     </style>
 
@@ -259,15 +334,12 @@
             </div>
 
             <div class="create">
-
                 <span class="to">
-
-                    <a href="registration.html" class="use">
-                        Create an account </a> to use Font Awesome for free!
-
+                    <a href="registration.html" class="use"> Create an account </a> to use Font Awesome for free!
                 </span>
+            </div>
 
-            </div </div>
+        </div>
     </section>
 
     <!--Footer-->

@@ -103,6 +103,23 @@
             color: #495057;
         }
 
+        .navbar-menu .closebtn-container {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+
+        .navbar-menu .close-icon {
+            font-size: 30px;
+            color: #8acfba;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .navbar-menu .close-icon:hover {
+            color: #fff;
+        }
+
         .navbar-menu a:hover {
             background: #000;
             color: #fff;
@@ -116,13 +133,15 @@
         }
 
         .header .fa-font-awesome {
-            width: 28px;
-            padding: 0;
-            margin: 5px 94px 0 94px;
-            line-height: 24px;
-            font-size: 40px;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 35px;
             background: #fff;
             color: #0F3B66;
+            margin: 0 auto;
+            border-radius: 5px;
         }
 
         .header .f {
@@ -450,6 +469,99 @@
             font-weight: 900;
             color: #858D95;
         }
+
+        /* Responsive */
+
+        @media (max-width: 768px) {
+            .inner-width {
+                padding: 0 15px;
+            }
+
+            .header .fa-font-awesome {
+                margin: 5px 60px 0 60px;
+            }
+
+            .free .form {
+                margin: 30px 0;
+            }
+
+            .site {
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+            .other .download,
+            .other .desktop {
+                padding: 20px;
+            }
+
+            .plan {
+                padding: 30px 10px 35px 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header .fa-font-awesome {
+                margin: 5px 30px 0 30px;
+                font-size: 34px;
+            }
+
+            .header .fa-bars {
+                top: 28px;
+            }
+
+            .header .f {
+                top: 28px;
+            }
+
+            .free h1 {
+                font-size: 24px;
+                padding: 15px 10px;
+            }
+
+            .free p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .free .form {
+                margin: 25px 0;
+            }
+
+            .site h6 {
+                font-size: 14px;
+            }
+
+            .site p {
+                font-size: 11px;
+            }
+
+            .other h1 {
+                font-size: 22px;
+                padding-bottom: 25px;
+            }
+
+            .plan h1 {
+                font-size: 22px;
+            }
+
+            .every p {
+                font-size: 13px;
+            }
+
+            footer {
+                padding: 0 0 30px 0;
+            }
+
+            .made {
+                padding: 25px 0;
+            }
+
+            .made p {
+                font-size: 9px;
+                padding: 0 10px;
+            }
+        }
     </style>
 
     <title>FREE</title>
@@ -465,6 +577,10 @@
             <i class="fas fa-bars" onclick="openNav()"></i>
 
             <div id="mySidenav" class="navbar-menu">
+
+                <div class="closebtn-container">
+                    <i class="fas fa-times close-icon" onclick="closeNav()"></i>
+                </div>
 
                 <a href="#home" class="closebtn" onclick="closeNav()">
                     <i class="fas fa-home"></i>
@@ -519,7 +635,7 @@
                 <a href="html.html" class="closebtn" onclick="closeNav()">
                     <i class="fab fa-html5"></i>
 
-                    Html
+                    HTML
 
                 </a>
 
