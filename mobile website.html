@@ -627,51 +627,59 @@
 
             .logo {
                 margin: 10px 0;
-                font-size: 15px;
+                font-size: 20px;
                 background-size: contain;
             }
 
             .menu {
-                display: none;
+                display: block;
+                font-size: 20px;
+                cursor: pointer;
             }
 
             .navbar-menu {
-                height: 35px;
-                width: 91%;
+                height: 100vh;
+                width: 0;
+                position: fixed;
+                z-index: 999;
+                top: 0;
+                right: 0;
                 background-color: #fff;
-                padding: 10px 0px;
-                margin: 0;
+                overflow-x: hidden;
+                transition: 0.2s;
+                padding: 0;
             }
 
             #abtn a {
-                padding: 0;
-                margin: 0;
-                font-size: 11px;
-                padding-right: 2px;
+                padding: 15px 30px;
+                font-size: 18px;
                 font-weight: 700;
+                display: block;
             }
 
             #ahome a {
-                margin-left: -46px;
-                margin-top: 0px;
+                margin-top: 80px;
+                margin-left: 0;
             }
 
             .navbar-menu a {
-                padding: 0px;
-                margin: 0px;
-                right: -50px;
                 position: relative;
                 color: #111;
-                display: inline;
+                display: block;
+                right: 0;
+                padding: 15px 30px;
             }
 
-            .navbar-menu a:hover,
-            .offcanvas a:focus {
+            .navbar-menu a:hover {
                 color: #48dbfb;
             }
 
             .cbtn .closebtn {
-                display: none;
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 20px;
+                font-size: 30px;
             }
 
             /*Home*/
